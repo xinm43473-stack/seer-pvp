@@ -13,7 +13,7 @@
 - **体系画布**：21 套已登记体系、34 条显式联动边、24 条双向互证联动声明，用画布展示精灵之间的出场顺序与联动条件。
 - **完全离线**：前端是单个 HTML 文件（约 11 MB），数据全部内联，双击即可打开，不依赖服务器与网络。
 - **可编辑**：内置编辑器，可修改精灵资料、备注、技能与体系，支持导出/导入体系文件。
-- **多端**：Windows 桌面版（exe）、Android 安装包（APK，构建脚本在仓库内）。
+- **桌面版**：Windows 桌面程序（exe），双击启动，同一份前端也可用浏览器直接打开。
 
 ## 界面预览
 
@@ -29,19 +29,13 @@
 
 ![体系画布](docs/images/ui-systems.png)
 
-### 手机版
-
-窄屏自动切换为头像卡片墙，点开进入图鉴详情。
-
-![手机版](docs/images/ui-mobile.png)
-
 ### 整体架构
 
 ![架构图](docs/images/architecture.png)
 
 ## 下载与使用
 
-### Windows 桌面版（推荐）
+### Windows 桌面版
 
 1. 打开 [Releases 页面](https://github.com/xinm43473-stack/seer-pvp/releases/latest)，下载 `SeerPeak-win64.zip`（约 96 MB）。
 2. 解压到任意目录。
@@ -66,10 +60,6 @@ SeerPeak/
 
 前端是单文件 HTML，构建后在 `references/spirit_synergy_view.html`，用浏览器直接打开即可。图片资源按相对路径读取 `assets/`，若本地缺失会回退到 SeerAPI 静态资源仓库的在线地址。
 
-### Android 版
-
-构建脚本位于 `desktop/android/build_apk.py`，产物为 `dist/SeerPeak.apk`。该安装包体积较大（约 83 MB），未随仓库分发，可自行构建。
-
 ## 功能说明
 
 | 功能 | 说明 |
@@ -83,7 +73,6 @@ SeerPeak/
 | 编辑器 | 编辑精灵、定位、魂印、备注、技能，支持导出体系 JSON |
 | 全量拉取 | 从 SeerAPI 拉取最新魂印与种族值，写入覆盖层，不破坏人工数据 |
 | 主题 | 深色 / 浅色主题，跟随系统并记忆选择 |
-| 移动端 | 窄屏下切换为卡片墙 + 详情两页布局 |
 
 ## 仓库结构
 
@@ -103,7 +92,6 @@ seer-pvp/
 ├── scripts/                    # Python 数据构建、抓取、校验脚本
 ├── desktop/
 │   ├── exe/                    # Windows 桌面版：启动器与打包脚本
-│   ├── android/                # Android 版构建脚本
 │   └── tools/                  # 构建工具链安装脚本
 ├── release/                    # 发行包：SeerPeak-win64.zip
 └── docs/images/                # 本文档用图
@@ -115,7 +103,6 @@ seer-pvp/
 
 - Python 3.10 及以上
 - 构建桌面版需要 `pywebview` 与 `pyinstaller`，可用脚本一键安装：`pwsh desktop/tools/install_toolchain.ps1`
-- 构建 Android 版需要 JDK、Android SDK build-tools 与 apksigner
 
 ### 重建前端
 
@@ -132,12 +119,6 @@ pwsh desktop\exe\build_exe.ps1
 ```
 
 产物在 `dist/desktop/SeerPeak/`。打包脚本会自动探测工具链目录（`D:\ruanjianmen\dabao\venv-exe`、`E:\seerskill\.buildtools\venv-exe` 或项目内 `.buildtools\venv-exe`）。
-
-### 打包 Android 版
-
-```powershell
-python desktop\android\build_apk.py
-```
 
 ### 校验（提交前必须全绿）
 
@@ -161,7 +142,7 @@ python scripts\smoke_test.py        # 端到端冒烟，要求 54/54
 | 种族值 | 4951 条 |
 | 魂印名词 | 548 条 |
 
-数据来源包括 BWIKI 精灵页、SeerAPI 图鉴接口、官方限制池与赛季榜单，以及两位攻略作者（蝶夏Channel、不要脸的狗子）的作品索引。收录标准以作品覆盖为准，不以魂印条数或自动评分判断；详细口径见 `SKILL.md` 与 `references/docs/`。
+数据来源为 **SeerAPI 开源项目**与 **BWIKI 精灵页**：图鉴、魂印全文、六维、技能与克制面均取自这两处。精灵的强度分级参考百度贴吧吧主「叫颤于不是鳝鱼」的月度竞技图鉴与强度排行，并用官方限制池与赛季榜单校准。收录以可复核的图鉴原文与实战记录为准，不以魂印条数或自动评分判断；详细口径见 `SKILL.md` 与 `references/docs/`。
 
 ## 免责声明
 
