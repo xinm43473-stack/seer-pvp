@@ -1,0 +1,466 @@
+{
+  "generated_at": "2026-11-06",
+  "purpose": "本地 soul_full 与 SeerAPI soulmark 的版本比对；只登记差异线索与待人工复核队列，不自动判定当前生效版、不自动替换本地文本。",
+  "source": "https://api.seerapi.com/v1（GitHub: SeerAPI/seerapi，官方 seerapi-cli skill）",
+  "policy": "desc_formatting_adjustment（has_format）只是版本信号，不是判据。4364 当前版 1588 的成立依据是 BWIKI 网页原文＋用户明确指认；其余多魂印精灵必须逐只抓网页／公告复核，禁止按文本长度、ID 或 has_format 自动改数据。",
+  "stats": {
+    "multi_soulmark": 32,
+    "flagged": 2,
+    "spirits": 133,
+    "version_signals": 32
+  },
+  "items": [
+    {
+      "id": 4002,
+      "name": "御象灵尊",
+      "flag": "本地与所有 API 版本相似度低（可能改版、抓取差异或排版差异，须回原文核）",
+      "local_len": 269,
+      "versions": [
+        {
+          "id": 1258,
+          "cov": 0.545,
+          "head": "常驻效果： / 自身不在场时每回合增加1层蓄力 / 自身在场时，使用攻击技能后使蓄力层数-1以附加自身最大体力1/4的百分比伤害 / 登场效果： / 自身每次登场时若自身的蓄力层数≥6层则免疫受到",
+          "len": 236,
+          "has_format": true
+        }
+      ],
+      "local_matches": 1258,
+      "best_cov": 0.545,
+      "formatted_versions": [
+        1258
+      ],
+      "action": "只登记待核，不自动改本地文本"
+    },
+    {
+      "id": 4373,
+      "name": "龙焉",
+      "flag": "本地与所有 API 版本相似度低（可能改版、抓取差异或排版差异，须回原文核）",
+      "local_len": 241,
+      "versions": [
+        {
+          "id": 1598,
+          "cov": 0.551,
+          "head": "登场效果： / 自身登场后触发渎龙轮舞： / 奇数次选择的攻击技能先制-1且造成的攻击伤害提升50% / 偶数次选择的攻击技能先制+1且使用后吸取对手最大体力的1/3 / 回合开始效果： / 回合开始",
+          "len": 213,
+          "has_format": true
+        }
+      ],
+      "local_matches": 1598,
+      "best_cov": 0.551,
+      "formatted_versions": [
+        1598
+      ],
+      "action": "只登记待核，不自动改本地文本"
+    }
+  ],
+  "version_signals": [
+    {
+      "id": 2987,
+      "name": "重生之翼",
+      "local_matches": 574,
+      "best_cov": 0.663,
+      "formatted_versions": [
+        372,
+        574
+      ],
+      "other_versions": [
+        372
+      ]
+    },
+    {
+      "id": 3142,
+      "name": "王·雷伊",
+      "local_matches": 527,
+      "best_cov": 1.0,
+      "formatted_versions": [],
+      "other_versions": [
+        484
+      ]
+    },
+    {
+      "id": 3507,
+      "name": "冥王·苍月影",
+      "local_matches": 1718,
+      "best_cov": 0.832,
+      "formatted_versions": [
+        817,
+        1718
+      ],
+      "other_versions": [
+        817
+      ]
+    },
+    {
+      "id": 3613,
+      "name": "芳馨·茉蕊儿",
+      "local_matches": 1825,
+      "best_cov": 0.693,
+      "formatted_versions": [
+        909,
+        1825
+      ],
+      "other_versions": [
+        909
+      ]
+    },
+    {
+      "id": 3623,
+      "name": "鬼面幽蝶",
+      "local_matches": 1863,
+      "best_cov": 0.896,
+      "formatted_versions": [
+        917,
+        1863
+      ],
+      "other_versions": [
+        917
+      ]
+    },
+    {
+      "id": 3637,
+      "name": "不灭地威·萨瑞卡",
+      "local_matches": 1474,
+      "best_cov": 0.827,
+      "formatted_versions": [
+        928,
+        1474
+      ],
+      "other_versions": [
+        928
+      ]
+    },
+    {
+      "id": 3670,
+      "name": "圣耀之光·黄金天马",
+      "local_matches": 1710,
+      "best_cov": 0.771,
+      "formatted_versions": [
+        956,
+        1710
+      ],
+      "other_versions": [
+        956
+      ]
+    },
+    {
+      "id": 3924,
+      "name": "凛戾·寂灭魔神",
+      "local_matches": 1189,
+      "best_cov": 0.761,
+      "formatted_versions": [
+        1189,
+        1366
+      ],
+      "other_versions": [
+        1366
+      ]
+    },
+    {
+      "id": 3954,
+      "name": "枫眠",
+      "local_matches": 1730,
+      "best_cov": 0.82,
+      "formatted_versions": [
+        1218,
+        1730
+      ],
+      "other_versions": [
+        1218
+      ]
+    },
+    {
+      "id": 4163,
+      "name": "逆魂·佩特菲德",
+      "local_matches": 1690,
+      "best_cov": 0.804,
+      "formatted_versions": [
+        1389,
+        1690
+      ],
+      "other_versions": [
+        1389
+      ]
+    },
+    {
+      "id": 4270,
+      "name": "提西弗涅",
+      "local_matches": 1492,
+      "best_cov": 0.789,
+      "formatted_versions": [
+        1492,
+        1760
+      ],
+      "other_versions": [
+        1760
+      ]
+    },
+    {
+      "id": 4329,
+      "name": "倪克斯",
+      "local_matches": 1735,
+      "best_cov": 0.815,
+      "formatted_versions": [
+        1555,
+        1735
+      ],
+      "other_versions": [
+        1555
+      ]
+    },
+    {
+      "id": 4361,
+      "name": "洛基",
+      "local_matches": 1586,
+      "best_cov": 0.644,
+      "formatted_versions": [
+        1586
+      ],
+      "other_versions": [
+        2055
+      ]
+    },
+    {
+      "id": 4364,
+      "name": "尤莉米特",
+      "local_matches": 1588,
+      "best_cov": 1.0,
+      "formatted_versions": [
+        1588
+      ],
+      "other_versions": [
+        2080
+      ]
+    },
+    {
+      "id": 4706,
+      "name": "奥菲利娅",
+      "local_matches": 1940,
+      "best_cov": 1.0,
+      "formatted_versions": [
+        1901,
+        1940
+      ],
+      "other_versions": [
+        1901
+      ]
+    },
+    {
+      "id": 3740,
+      "name": "怒涛·沧岚",
+      "local_matches": 1932,
+      "best_cov": 0.884,
+      "formatted_versions": [
+        1014,
+        1932
+      ],
+      "other_versions": [
+        1014
+      ]
+    },
+    {
+      "id": 4219,
+      "name": "红莲之誓·安卡",
+      "local_matches": 1992,
+      "best_cov": 1.0,
+      "formatted_versions": [
+        1438,
+        1992
+      ],
+      "other_versions": [
+        1438
+      ]
+    },
+    {
+      "id": 3524,
+      "name": "乔列尼德",
+      "local_matches": 2005,
+      "best_cov": 0.881,
+      "formatted_versions": [
+        832,
+        2005
+      ],
+      "other_versions": [
+        832
+      ]
+    },
+    {
+      "id": 3847,
+      "name": "魂帝·天循道",
+      "local_matches": 1620,
+      "best_cov": 0.748,
+      "formatted_versions": [
+        1120,
+        1620
+      ],
+      "other_versions": [
+        1120
+      ]
+    },
+    {
+      "id": 4333,
+      "name": "哀·拉伯克",
+      "local_matches": 1851,
+      "best_cov": 0.831,
+      "formatted_versions": [
+        1559,
+        1851
+      ],
+      "other_versions": [
+        1559
+      ]
+    },
+    {
+      "id": 3941,
+      "name": "混沌暗王霍德尔",
+      "local_matches": 1834,
+      "best_cov": 0.811,
+      "formatted_versions": [
+        1204,
+        1834
+      ],
+      "other_versions": [
+        1204
+      ]
+    },
+    {
+      "id": 3516,
+      "name": "混沌地王莱茵哈特",
+      "local_matches": 1985,
+      "best_cov": 0.903,
+      "formatted_versions": [
+        828,
+        1985
+      ],
+      "other_versions": [
+        828
+      ]
+    },
+    {
+      "id": 3711,
+      "name": "圣光莫妮卡",
+      "local_matches": 2072,
+      "best_cov": 0.99,
+      "formatted_versions": [
+        987
+      ],
+      "other_versions": [
+        987
+      ]
+    },
+    {
+      "id": 4354,
+      "name": "狂沙之主·萨特",
+      "local_matches": 2079,
+      "best_cov": 0.984,
+      "formatted_versions": [
+        1578
+      ],
+      "other_versions": [
+        1578
+      ]
+    },
+    {
+      "id": 3886,
+      "name": "冰魄·柯尔德",
+      "local_matches": 1971,
+      "best_cov": 0.792,
+      "formatted_versions": [
+        1155,
+        1971
+      ],
+      "other_versions": [
+        1155
+      ]
+    },
+    {
+      "id": 4358,
+      "name": "杰特洛",
+      "local_matches": 1905,
+      "best_cov": 0.894,
+      "formatted_versions": [
+        1583,
+        1905
+      ],
+      "other_versions": [
+        1583
+      ]
+    },
+    {
+      "id": 4125,
+      "name": "洪荒·列奥尼达",
+      "local_matches": 2051,
+      "best_cov": 0.996,
+      "formatted_versions": [
+        1356
+      ],
+      "other_versions": [
+        1356
+      ]
+    },
+    {
+      "id": 4024,
+      "name": "地葬界神",
+      "local_matches": 1539,
+      "best_cov": 0.621,
+      "formatted_versions": [
+        1282,
+        1539
+      ],
+      "other_versions": [
+        1282
+      ]
+    },
+    {
+      "id": 4075,
+      "name": "混沌界神",
+      "local_matches": 1320,
+      "best_cov": 0.786,
+      "formatted_versions": [
+        1320,
+        1544
+      ],
+      "other_versions": [
+        1544
+      ]
+    },
+    {
+      "id": 3685,
+      "name": "孙权",
+      "local_matches": 967,
+      "best_cov": 0.794,
+      "formatted_versions": [
+        967,
+        973
+      ],
+      "other_versions": [
+        973
+      ]
+    },
+    {
+      "id": 4184,
+      "name": "贝狄薇尔",
+      "local_matches": 1580,
+      "best_cov": 0.732,
+      "formatted_versions": [
+        1408,
+        1580
+      ],
+      "other_versions": [
+        1408
+      ]
+    },
+    {
+      "id": 4186,
+      "name": "镇世·乔特鲁德",
+      "local_matches": 2028,
+      "best_cov": 0.929,
+      "formatted_versions": [
+        1409,
+        2028
+      ],
+      "other_versions": [
+        1409
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1350 @@
+{
+  "generated_at": "2026-11-10",
+  "purpose": "审计 roster.json 深研层逐只战术链的研究深度；一句话 play 只作机制索引，不算完整操作链。",
+  "required_fields": [
+    "conditions",
+    "sequence",
+    "resources",
+    "bp_cost",
+    "failure_points",
+    "replacement_check"
+  ],
+  "field_meanings": {
+    "conditions": "成立条件",
+    "sequence": "逐回合顺序",
+    "resources": "PP／血线／背包位／阵亡顺序等资源",
+    "bp_cost": "BP 成本",
+    "failure_points": "失效点",
+    "replacement_check": "上位替代结论（无上位／有上位但独立价值／有上位则排除）"
+  },
+  "total_spirits": 133,
+  "full_chain_count": 17,
+  "full_chain_ids": [
+    3033,
+    3056,
+    3237,
+    3414,
+    3739,
+    3788,
+    4169,
+    4288,
+    4361,
+    4510,
+    4515,
+    4541,
+    4605,
+    4622,
+    4808,
+    4853,
+    4872
+  ],
+  "full_chain_names": [
+    "帝天战佛",
+    "圣甲·盖亚",
+    "大威势明王",
+    "混沌魔君索伦森",
+    "混元天尊",
+    "弑序神罗",
+    "龙仪·机械塔克林",
+    "洛基",
+    "卫岳",
+    "霍光",
+    "莫塔里安",
+    "希拓",
+    "讳迹·米修莉",
+    "无限·欧根尼克",
+    "梅赫维特",
+    "玛洛迪斯",
+    "妙时天女"
+  ],
+  "pending_count": 116,
+  "priority_counts": {
+    "high": 20,
+    "medium": 49,
+    "normal": 47
+  },
+  "queue": [
+    {
+      "id": 4586,
+      "name": "空元行者",
+      "system_refs": 6,
+      "play_len": 47,
+      "placeholder": false,
+      "soul_full_len": 487,
+      "priority": "high"
+    },
+    {
+      "id": 4126,
+      "name": "乌拉诺斯",
+      "system_refs": 6,
+      "play_len": 43,
+      "placeholder": false,
+      "soul_full_len": 295,
+      "priority": "high"
+    },
+    {
+      "id": 3954,
+      "name": "枫眠",
+      "system_refs": 5,
+      "play_len": 71,
+      "placeholder": false,
+      "soul_full_len": 176,
+      "priority": "high"
+    },
+    {
+      "id": 4554,
+      "name": "圣谕邪魇",
+      "system_refs": 4,
+      "play_len": 137,
+      "placeholder": false,
+      "soul_full_len": 378,
+      "priority": "high"
+    },
+    {
+      "id": 3613,
+      "name": "芳馨·茉蕊儿",
+      "system_refs": 4,
+      "play_len": 85,
+      "placeholder": false,
+      "soul_full_len": 281,
+      "priority": "high"
+    },
+    {
+      "id": 4749,
+      "name": "对神兵器肯扎特",
+      "system_refs": 4,
+      "play_len": 72,
+      "placeholder": false,
+      "soul_full_len": 228,
+      "priority": "high"
+    },
+    {
+      "id": 4875,
+      "name": "永烬劫炎·上古炎兽",
+      "system_refs": 4,
+      "play_len": 69,
+      "placeholder": false,
+      "soul_full_len": 208,
+      "priority": "high"
+    },
+    {
+      "id": 4643,
+      "name": "蓓丽安特",
+      "system_refs": 4,
+      "play_len": 52,
+      "placeholder": false,
+      "soul_full_len": 283,
+      "priority": "high"
+    },
+    {
+      "id": 4517,
+      "name": "铃熙",
+      "system_refs": 4,
+      "play_len": 51,
+      "placeholder": false,
+      "soul_full_len": 206,
+      "priority": "high"
+    },
+    {
+      "id": 4386,
+      "name": "缔笙",
+      "system_refs": 4,
+      "play_len": 47,
+      "placeholder": false,
+      "soul_full_len": 358,
+      "priority": "high"
+    },
+    {
+      "id": 4706,
+      "name": "奥菲利娅",
+      "system_refs": 3,
+      "play_len": 240,
+      "placeholder": false,
+      "soul_full_len": 499,
+      "priority": "high"
+    },
+    {
+      "id": 4800,
+      "name": "无极圣武",
+      "system_refs": 3,
+      "play_len": 137,
+      "placeholder": false,
+      "soul_full_len": 374,
+      "priority": "high"
+    },
+    {
+      "id": 3886,
+      "name": "冰魄·柯尔德",
+      "system_refs": 3,
+      "play_len": 53,
+      "placeholder": false,
+      "soul_full_len": 365,
+      "priority": "high"
+    },
+    {
+      "id": 4275,
+      "name": "命运之轮·莫伊莱",
+      "system_refs": 3,
+      "play_len": 46,
+      "placeholder": false,
+      "soul_full_len": 242,
+      "priority": "high"
+    },
+    {
+      "id": 3291,
+      "name": "瀚宇星皇",
+      "system_refs": 3,
+      "play_len": 45,
+      "placeholder": false,
+      "soul_full_len": 334,
+      "priority": "high"
+    },
+    {
+      "id": 4676,
+      "name": "神觉·米斯蒂克",
+      "system_refs": 3,
+      "play_len": 43,
+      "placeholder": false,
+      "soul_full_len": 209,
+      "priority": "high"
+    },
+    {
+      "id": 3986,
+      "name": "启灵元神",
+      "system_refs": 3,
+      "play_len": 41,
+      "placeholder": false,
+      "soul_full_len": 498,
+      "priority": "high"
+    },
+    {
+      "id": 4468,
+      "name": "始皇帝·嬴政",
+      "system_refs": 3,
+      "play_len": 40,
+      "placeholder": false,
+      "soul_full_len": 543,
+      "priority": "high"
+    },
+    {
+      "id": 4553,
+      "name": "万里春·北鸟",
+      "system_refs": 3,
+      "play_len": 38,
+      "placeholder": false,
+      "soul_full_len": 266,
+      "priority": "high"
+    },
+    {
+      "id": 2987,
+      "name": "重生之翼",
+      "system_refs": 3,
+      "play_len": 33,
+      "placeholder": false,
+      "soul_full_len": 360,
+      "priority": "high"
+    },
+    {
+      "id": 4364,
+      "name": "尤莉米特",
+      "system_refs": 2,
+      "play_len": 260,
+      "placeholder": false,
+      "soul_full_len": 253,
+      "priority": "medium"
+    },
+    {
+      "id": 4219,
+      "name": "红莲之誓·安卡",
+      "system_refs": 2,
+      "play_len": 214,
+      "placeholder": false,
+      "soul_full_len": 291,
+      "priority": "medium"
+    },
+    {
+      "id": 4321,
+      "name": "至序圣华",
+      "system_refs": 2,
+      "play_len": 213,
+      "placeholder": false,
+      "soul_full_len": 1118,
+      "priority": "medium"
+    },
+    {
+      "id": 4184,
+      "name": "贝狄薇尔",
+      "system_refs": 2,
+      "play_len": 188,
+      "placeholder": false,
+      "soul_full_len": 299,
+      "priority": "medium"
+    },
+    {
+      "id": 4373,
+      "name": "龙焉",
+      "system_refs": 2,
+      "play_len": 180,
+      "placeholder": false,
+      "soul_full_len": 241,
+      "priority": "medium"
+    },
+    {
+      "id": 4125,
+      "name": "洪荒·列奥尼达",
+      "system_refs": 2,
+      "play_len": 136,
+      "placeholder": false,
+      "soul_full_len": 254,
+      "priority": "medium"
+    },
+    {
+      "id": 3697,
+      "name": "擎空·凡尔斯",
+      "system_refs": 2,
+      "play_len": 123,
+      "placeholder": false,
+      "soul_full_len": 149,
+      "priority": "medium"
+    },
+    {
+      "id": 4620,
+      "name": "孤烛灯使",
+      "system_refs": 2,
+      "play_len": 118,
+      "placeholder": false,
+      "soul_full_len": 238,
+      "priority": "medium"
+    },
+    {
+      "id": 4600,
+      "name": "斯布林蒂",
+      "system_refs": 2,
+      "play_len": 77,
+      "placeholder": false,
+      "soul_full_len": 372,
+      "priority": "medium"
+    },
+    {
+      "id": 4797,
+      "name": "极渊DS-001",
+      "system_refs": 2,
+      "play_len": 48,
+      "placeholder": false,
+      "soul_full_len": 197,
+      "priority": "medium"
+    },
+    {
+      "id": 4500,
+      "name": "武心婵",
+      "system_refs": 2,
+      "play_len": 47,
+      "placeholder": false,
+      "soul_full_len": 650,
+      "priority": "medium"
+    },
+    {
+      "id": 4599,
+      "name": "灵巢之主·索杰德尔",
+      "system_refs": 2,
+      "play_len": 45,
+      "placeholder": false,
+      "soul_full_len": 348,
+      "priority": "medium"
+    },
+    {
+      "id": 3586,
+      "name": "战之狂热·英卡洛斯",
+      "system_refs": 2,
+      "play_len": 42,
+      "placeholder": false,
+      "soul_full_len": 236,
+      "priority": "medium"
+    },
+    {
+      "id": 4648,
+      "name": "星光·鲁斯王",
+      "system_refs": 2,
+      "play_len": 42,
+      "placeholder": false,
+      "soul_full_len": 224,
+      "priority": "medium"
+    },
+    {
+      "id": 4762,
+      "name": "湮灭之主·咤克斯",
+      "system_refs": 2,
+      "play_len": 42,
+      "placeholder": false,
+      "soul_full_len": 209,
+      "priority": "medium"
+    },
+    {
+      "id": 3623,
+      "name": "鬼面幽蝶",
+      "system_refs": 2,
+      "play_len": 38,
+      "placeholder": false,
+      "soul_full_len": 185,
+      "priority": "medium"
+    },
+    {
+      "id": 4712,
+      "name": "龙琰",
+      "system_refs": 2,
+      "play_len": 36,
+      "placeholder": false,
+      "soul_full_len": 184,
+      "priority": "medium"
+    },
+    {
+      "id": 3673,
+      "name": "艾夏拉",
+      "system_refs": 2,
+      "play_len": 34,
+      "placeholder": false,
+      "soul_full_len": 225,
+      "priority": "medium"
+    },
+    {
+      "id": 4329,
+      "name": "倪克斯",
+      "system_refs": 1,
+      "play_len": 249,
+      "placeholder": true,
+      "soul_full_len": 302,
+      "priority": "medium"
+    },
+    {
+      "id": 4400,
+      "name": "圣律剑灵",
+      "system_refs": 1,
+      "play_len": 203,
+      "placeholder": false,
+      "soul_full_len": 884,
+      "priority": "medium"
+    },
+    {
+      "id": 4186,
+      "name": "镇世·乔特鲁德",
+      "system_refs": 1,
+      "play_len": 201,
+      "placeholder": false,
+      "soul_full_len": 401,
+      "priority": "medium"
+    },
+    {
+      "id": 4594,
+      "name": "摆渡者·费雷",
+      "system_refs": 1,
+      "play_len": 176,
+      "placeholder": false,
+      "soul_full_len": 109,
+      "priority": "medium"
+    },
+    {
+      "id": 3734,
+      "name": "混沌飞王凡尔斯",
+      "system_refs": 1,
+      "play_len": 138,
+      "placeholder": false,
+      "soul_full_len": 138,
+      "priority": "medium"
+    },
+    {
+      "id": 4861,
+      "name": "涂蝶",
+      "system_refs": 1,
+      "play_len": 124,
+      "placeholder": false,
+      "soul_full_len": 125,
+      "priority": "medium"
+    },
+    {
+      "id": 4333,
+      "name": "哀·拉伯克",
+      "system_refs": 1,
+      "play_len": 115,
+      "placeholder": false,
+      "soul_full_len": 258,
+      "priority": "medium"
+    },
+    {
+      "id": 4503,
+      "name": "库坦",
+      "system_refs": 1,
+      "play_len": 102,
+      "placeholder": false,
+      "soul_full_len": 130,
+      "priority": "medium"
+    },
+    {
+      "id": 4903,
+      "name": "帝录天锋",
+      "system_refs": 1,
+      "play_len": 80,
+      "placeholder": false,
+      "soul_full_len": 394,
+      "priority": "medium"
+    },
+    {
+      "id": 4661,
+      "name": "无为觉者",
+      "system_refs": 1,
+      "play_len": 60,
+      "placeholder": false,
+      "soul_full_len": 242,
+      "priority": "medium"
+    },
+    {
+      "id": 4450,
+      "name": "逐界苍星",
+      "system_refs": 1,
+      "play_len": 59,
+      "placeholder": false,
+      "soul_full_len": 631,
+      "priority": "medium"
+    },
+    {
+      "id": 4635,
+      "name": "枫落殇·西叶",
+      "system_refs": 1,
+      "play_len": 54,
+      "placeholder": false,
+      "soul_full_len": 239,
+      "priority": "medium"
+    },
+    {
+      "id": 4947,
+      "name": "不灭战魂·盖亚",
+      "system_refs": 1,
+      "play_len": 53,
+      "placeholder": true,
+      "soul_full_len": 304,
+      "priority": "medium"
+    },
+    {
+      "id": 4946,
+      "name": "万霆神律·雷伊",
+      "system_refs": 1,
+      "play_len": 52,
+      "placeholder": false,
+      "soul_full_len": 356,
+      "priority": "medium"
+    },
+    {
+      "id": 3941,
+      "name": "混沌暗王霍德尔",
+      "system_refs": 1,
+      "play_len": 50,
+      "placeholder": false,
+      "soul_full_len": 305,
+      "priority": "medium"
+    },
+    {
+      "id": 4677,
+      "name": "星辰万象·天启星魂",
+      "system_refs": 1,
+      "play_len": 50,
+      "placeholder": false,
+      "soul_full_len": 291,
+      "priority": "medium"
+    },
+    {
+      "id": 4761,
+      "name": "琉梦",
+      "system_refs": 1,
+      "play_len": 50,
+      "placeholder": false,
+      "soul_full_len": 168,
+      "priority": "medium"
+    },
+    {
+      "id": 3396,
+      "name": "灾厄女神潘多拉",
+      "system_refs": 1,
+      "play_len": 49,
+      "placeholder": false,
+      "soul_full_len": 214,
+      "priority": "medium"
+    },
+    {
+      "id": 3711,
+      "name": "圣光莫妮卡",
+      "system_refs": 1,
+      "play_len": 48,
+      "placeholder": false,
+      "soul_full_len": 200,
+      "priority": "medium"
+    },
+    {
+      "id": 4000,
+      "name": "薇尔诗",
+      "system_refs": 1,
+      "play_len": 47,
+      "placeholder": false,
+      "soul_full_len": 323,
+      "priority": "medium"
+    },
+    {
+      "id": 4765,
+      "name": "怒雷神裁·雷伊",
+      "system_refs": 1,
+      "play_len": 46,
+      "placeholder": false,
+      "soul_full_len": 347,
+      "priority": "medium"
+    },
+    {
+      "id": 5000,
+      "name": "圣灵谱尼",
+      "system_refs": 1,
+      "play_len": 46,
+      "placeholder": false,
+      "soul_full_len": 327,
+      "priority": "medium"
+    },
+    {
+      "id": 4766,
+      "name": "灭战神决·盖亚",
+      "system_refs": 1,
+      "play_len": 45,
+      "placeholder": false,
+      "soul_full_len": 283,
+      "priority": "medium"
+    },
+    {
+      "id": 3467,
+      "name": "不灭·艾恩斯",
+      "system_refs": 1,
+      "play_len": 43,
+      "placeholder": false,
+      "soul_full_len": 161,
+      "priority": "medium"
+    },
+    {
+      "id": 3516,
+      "name": "混沌地王莱茵哈特",
+      "system_refs": 1,
+      "play_len": 43,
+      "placeholder": false,
+      "soul_full_len": 416,
+      "priority": "medium"
+    },
+    {
+      "id": 4647,
+      "name": "星光·丽莎布布",
+      "system_refs": 1,
+      "play_len": 42,
+      "placeholder": false,
+      "soul_full_len": 197,
+      "priority": "medium"
+    },
+    {
+      "id": 4627,
+      "name": "赫斯提亚",
+      "system_refs": 1,
+      "play_len": 39,
+      "placeholder": false,
+      "soul_full_len": 289,
+      "priority": "medium"
+    },
+    {
+      "id": 3550,
+      "name": "天启帝君",
+      "system_refs": 1,
+      "play_len": 38,
+      "placeholder": false,
+      "soul_full_len": 398,
+      "priority": "medium"
+    },
+    {
+      "id": 3577,
+      "name": "光之惩戒·英卡洛斯",
+      "system_refs": 1,
+      "play_len": 38,
+      "placeholder": false,
+      "soul_full_len": 258,
+      "priority": "medium"
+    },
+    {
+      "id": 4649,
+      "name": "星光·魔焰猩猩",
+      "system_refs": 1,
+      "play_len": 35,
+      "placeholder": false,
+      "soul_full_len": 204,
+      "priority": "medium"
+    },
+    {
+      "id": 4387,
+      "name": "坦普瑞",
+      "system_refs": 1,
+      "play_len": 34,
+      "placeholder": false,
+      "soul_full_len": 152,
+      "priority": "medium"
+    },
+    {
+      "id": 4032,
+      "name": "六界御神",
+      "system_refs": 0,
+      "play_len": 180,
+      "placeholder": false,
+      "soul_full_len": 247,
+      "priority": "normal"
+    },
+    {
+      "id": 4001,
+      "name": "无上·万魔天尊",
+      "system_refs": 0,
+      "play_len": 179,
+      "placeholder": false,
+      "soul_full_len": 167,
+      "priority": "normal"
+    },
+    {
+      "id": 4189,
+      "name": "凌雪·樱",
+      "system_refs": 0,
+      "play_len": 174,
+      "placeholder": false,
+      "soul_full_len": 187,
+      "priority": "normal"
+    },
+    {
+      "id": 4024,
+      "name": "地葬界神",
+      "system_refs": 0,
+      "play_len": 173,
+      "placeholder": false,
+      "soul_full_len": 163,
+      "priority": "normal"
+    },
+    {
+      "id": 3488,
+      "name": "阴灵魂姬",
+      "system_refs": 0,
+      "play_len": 171,
+      "placeholder": false,
+      "soul_full_len": 182,
+      "priority": "normal"
+    },
+    {
+      "id": 4454,
+      "name": "爵刻·黑沃德",
+      "system_refs": 0,
+      "play_len": 169,
+      "placeholder": false,
+      "soul_full_len": 185,
+      "priority": "normal"
+    },
+    {
+      "id": 4445,
+      "name": "古温婆婆",
+      "system_refs": 0,
+      "play_len": 167,
+      "placeholder": true,
+      "soul_full_len": 94,
+      "priority": "normal"
+    },
+    {
+      "id": 4495,
+      "name": "彼尔德",
+      "system_refs": 0,
+      "play_len": 166,
+      "placeholder": false,
+      "soul_full_len": 158,
+      "priority": "normal"
+    },
+    {
+      "id": 4075,
+      "name": "混沌界神",
+      "system_refs": 0,
+      "play_len": 159,
+      "placeholder": false,
+      "soul_full_len": 156,
+      "priority": "normal"
+    },
+    {
+      "id": 3529,
+      "name": "幻世·海瑟薇",
+      "system_refs": 0,
+      "play_len": 156,
+      "placeholder": false,
+      "soul_full_len": 181,
+      "priority": "normal"
+    },
+    {
+      "id": 4925,
+      "name": "米罗博士",
+      "system_refs": 0,
+      "play_len": 152,
+      "placeholder": false,
+      "soul_full_len": 172,
+      "priority": "normal"
+    },
+    {
+      "id": 3685,
+      "name": "孙权",
+      "system_refs": 0,
+      "play_len": 139,
+      "placeholder": false,
+      "soul_full_len": 156,
+      "priority": "normal"
+    },
+    {
+      "id": 4355,
+      "name": "终末大天使",
+      "system_refs": 0,
+      "play_len": 130,
+      "placeholder": false,
+      "soul_full_len": 294,
+      "priority": "normal"
+    },
+    {
+      "id": 4421,
+      "name": "赤胆游龙·赵云",
+      "system_refs": 0,
+      "play_len": 123,
+      "placeholder": false,
+      "soul_full_len": 377,
+      "priority": "normal"
+    },
+    {
+      "id": 3430,
+      "name": "星域之魂",
+      "system_refs": 0,
+      "play_len": 118,
+      "placeholder": false,
+      "soul_full_len": 153,
+      "priority": "normal"
+    },
+    {
+      "id": 3524,
+      "name": "乔列尼德",
+      "system_refs": 0,
+      "play_len": 57,
+      "placeholder": false,
+      "soul_full_len": 406,
+      "priority": "normal"
+    },
+    {
+      "id": 4816,
+      "name": "伊芙",
+      "system_refs": 0,
+      "play_len": 57,
+      "placeholder": false,
+      "soul_full_len": 115,
+      "priority": "normal"
+    },
+    {
+      "id": 4633,
+      "name": "腐坏幽魔·克劳里菲",
+      "system_refs": 0,
+      "play_len": 53,
+      "placeholder": false,
+      "soul_full_len": 218,
+      "priority": "normal"
+    },
+    {
+      "id": 4358,
+      "name": "杰特洛",
+      "system_refs": 0,
+      "play_len": 52,
+      "placeholder": false,
+      "soul_full_len": 296,
+      "priority": "normal"
+    },
+    {
+      "id": 4501,
+      "name": "普达戈尔",
+      "system_refs": 0,
+      "play_len": 52,
+      "placeholder": false,
+      "soul_full_len": 121,
+      "priority": "normal"
+    },
+    {
+      "id": 4618,
+      "name": "佩洛瑟斯",
+      "system_refs": 0,
+      "play_len": 51,
+      "placeholder": false,
+      "soul_full_len": 193,
+      "priority": "normal"
+    },
+    {
+      "id": 4354,
+      "name": "狂沙之主·萨特",
+      "system_refs": 0,
+      "play_len": 50,
+      "placeholder": false,
+      "soul_full_len": 252,
+      "priority": "normal"
+    },
+    {
+      "id": 4717,
+      "name": "原始黑洞·尤纳斯",
+      "system_refs": 0,
+      "play_len": 49,
+      "placeholder": false,
+      "soul_full_len": 112,
+      "priority": "normal"
+    },
+    {
+      "id": 4644,
+      "name": "克雷弗德",
+      "system_refs": 0,
+      "play_len": 48,
+      "placeholder": false,
+      "soul_full_len": 327,
+      "priority": "normal"
+    },
+    {
+      "id": 4732,
+      "name": "闪光皮神",
+      "system_refs": 0,
+      "play_len": 48,
+      "placeholder": false,
+      "soul_full_len": 208,
+      "priority": "normal"
+    },
+    {
+      "id": 3740,
+      "name": "怒涛·沧岚",
+      "system_refs": 0,
+      "play_len": 45,
+      "placeholder": false,
+      "soul_full_len": 340,
+      "priority": "normal"
+    },
+    {
+      "id": 4496,
+      "name": "箫澈",
+      "system_refs": 0,
+      "play_len": 45,
+      "placeholder": false,
+      "soul_full_len": 232,
+      "priority": "normal"
+    },
+    {
+      "id": 4604,
+      "name": "萨芙凯特",
+      "system_refs": 0,
+      "play_len": 45,
+      "placeholder": false,
+      "soul_full_len": 332,
+      "priority": "normal"
+    },
+    {
+      "id": 3847,
+      "name": "魂帝·天循道",
+      "system_refs": 0,
+      "play_len": 44,
+      "placeholder": false,
+      "soul_full_len": 157,
+      "priority": "normal"
+    },
+    {
+      "id": 4208,
+      "name": "锢灵·舞",
+      "system_refs": 0,
+      "play_len": 43,
+      "placeholder": false,
+      "soul_full_len": 187,
+      "priority": "normal"
+    },
+    {
+      "id": 4697,
+      "name": "华光之翼·杰洛恩",
+      "system_refs": 0,
+      "play_len": 43,
+      "placeholder": false,
+      "soul_full_len": 194,
+      "priority": "normal"
+    },
+    {
+      "id": 3665,
+      "name": "厉魇魔王·咤克斯",
+      "system_refs": 0,
+      "play_len": 42,
+      "placeholder": false,
+      "soul_full_len": 152,
+      "priority": "normal"
+    },
+    {
+      "id": 4716,
+      "name": "赫尔卡长老",
+      "system_refs": 0,
+      "play_len": 42,
+      "placeholder": false,
+      "soul_full_len": 329,
+      "priority": "normal"
+    },
+    {
+      "id": 3670,
+      "name": "圣耀之光·黄金天马",
+      "system_refs": 0,
+      "play_len": 41,
+      "placeholder": true,
+      "soul_full_len": 332,
+      "priority": "normal"
+    },
+    {
+      "id": 4270,
+      "name": "提西弗涅",
+      "system_refs": 0,
+      "play_len": 41,
+      "placeholder": false,
+      "soul_full_len": 130,
+      "priority": "normal"
+    },
+    {
+      "id": 3568,
+      "name": "圣地卡修斯",
+      "system_refs": 0,
+      "play_len": 39,
+      "placeholder": false,
+      "soul_full_len": 128,
+      "priority": "normal"
+    },
+    {
+      "id": 3809,
+      "name": "龙神哈莫",
+      "system_refs": 0,
+      "play_len": 39,
+      "placeholder": false,
+      "soul_full_len": 285,
+      "priority": "normal"
+    },
+    {
+      "id": 3328,
+      "name": "圣王·萨格罗斯",
+      "system_refs": 0,
+      "play_len": 38,
+      "placeholder": false,
+      "soul_full_len": 122,
+      "priority": "normal"
+    },
+    {
+      "id": 3142,
+      "name": "王·雷伊",
+      "system_refs": 0,
+      "play_len": 37,
+      "placeholder": false,
+      "soul_full_len": 122,
+      "priority": "normal"
+    },
+    {
+      "id": 3924,
+      "name": "凛戾·寂灭魔神",
+      "system_refs": 0,
+      "play_len": 37,
+      "placeholder": false,
+      "soul_full_len": 179,
+      "priority": "normal"
+    },
+    {
+      "id": 4002,
+      "name": "御象灵尊",
+      "system_refs": 0,
+      "play_len": 37,
+      "placeholder": true,
+      "soul_full_len": 269,
+      "priority": "normal"
+    },
+    {
+      "id": 3507,
+      "name": "冥王·苍月影",
+      "system_refs": 0,
+      "play_len": 36,
+      "placeholder": false,
+      "soul_full_len": 152,
+      "priority": "normal"
+    },
+    {
+      "id": 4509,
+      "name": "梅林",
+      "system_refs": 0,
+      "play_len": 36,
+      "placeholder": false,
+      "soul_full_len": 147,
+      "priority": "normal"
+    },
+    {
+      "id": 3378,
+      "name": "阿尔蒂克",
+      "system_refs": 0,
+      "play_len": 34,
+      "placeholder": false,
+      "soul_full_len": 188,
+      "priority": "normal"
+    },
+    {
+      "id": 3637,
+      "name": "不灭地威·萨瑞卡",
+      "system_refs": 0,
+      "play_len": 34,
+      "placeholder": false,
+      "soul_full_len": 106,
+      "priority": "normal"
+    },
+    {
+      "id": 4163,
+      "name": "逆魂·佩特菲德",
+      "system_refs": 0,
+      "play_len": 34,
+      "placeholder": true,
+      "soul_full_len": 216,
+      "priority": "normal"
+    },
+    {
+      "id": 3539,
+      "name": "混沌布莱克",
+      "system_refs": 0,
+      "play_len": 32,
+      "placeholder": false,
+      "soul_full_len": 154,
+      "priority": "normal"
+    }
+  ],
+  "short_soul_text": {
+    "count": 38,
+    "note": "短文本不等于抓取截断：如 3033 帝天战佛 52 字已是完整魂印；只有引用了未展开状态名的条目才按 soul_expansions.json 方法追技能页。",
+    "ids": [
+      {
+        "id": 3033,
+        "name": "帝天战佛",
+        "len": 52,
+        "expanded": false
+      },
+      {
+        "id": 3056,
+        "name": "圣甲·盖亚",
+        "len": 104,
+        "expanded": false
+      },
+      {
+        "id": 3142,
+        "name": "王·雷伊",
+        "len": 122,
+        "expanded": false
+      },
+      {
+        "id": 3237,
+        "name": "大威势明王",
+        "len": 76,
+        "expanded": false
+      },
+      {
+        "id": 3328,
+        "name": "圣王·萨格罗斯",
+        "len": 122,
+        "expanded": false
+      },
+      {
+        "id": 3467,
+        "name": "不灭·艾恩斯",
+        "len": 161,
+        "expanded": false
+      },
+      {
+        "id": 3507,
+        "name": "冥王·苍月影",
+        "len": 152,
+        "expanded": false
+      },
+      {
+        "id": 3539,
+        "name": "混沌布莱克",
+        "len": 154,
+        "expanded": false
+      },
+      {
+        "id": 3568,
+        "name": "圣地卡修斯",
+        "len": 128,
+        "expanded": false
+      },
+      {
+        "id": 3637,
+        "name": "不灭地威·萨瑞卡",
+        "len": 106,
+        "expanded": false
+      },
+      {
+        "id": 3665,
+        "name": "厉魇魔王·咤克斯",
+        "len": 152,
+        "expanded": false
+      },
+      {
+        "id": 3734,
+        "name": "混沌飞王凡尔斯",
+        "len": 138,
+        "expanded": false
+      },
+      {
+        "id": 3924,
+        "name": "凛戾·寂灭魔神",
+        "len": 179,
+        "expanded": false
+      },
+      {
+        "id": 3954,
+        "name": "枫眠",
+        "len": 176,
+        "expanded": false
+      },
+      {
+        "id": 4270,
+        "name": "提西弗涅",
+        "len": 130,
+        "expanded": false
+      },
+      {
+        "id": 4387,
+        "name": "坦普瑞",
+        "len": 152,
+        "expanded": false
+      },
+      {
+        "id": 4501,
+        "name": "普达戈尔",
+        "len": 121,
+        "expanded": false
+      },
+      {
+        "id": 4509,
+        "name": "梅林",
+        "len": 147,
+        "expanded": false
+      },
+      {
+        "id": 4541,
+        "name": "莫塔里安",
+        "len": 145,
+        "expanded": false
+      },
+      {
+        "id": 4622,
+        "name": "希拓",
+        "len": 120,
+        "expanded": false
+      },
+      {
+        "id": 4761,
+        "name": "琉梦",
+        "len": 168,
+        "expanded": false
+      },
+      {
+        "id": 4503,
+        "name": "库坦",
+        "len": 130,
+        "expanded": false
+      },
+      {
+        "id": 4925,
+        "name": "米罗博士",
+        "len": 172,
+        "expanded": false
+      },
+      {
+        "id": 3430,
+        "name": "星域之魂",
+        "len": 153,
+        "expanded": false
+      },
+      {
+        "id": 4605,
+        "name": "无限·欧根尼克",
+        "len": 176,
+        "expanded": false
+      },
+      {
+        "id": 4717,
+        "name": "原始黑洞·尤纳斯",
+        "len": 112,
+        "expanded": false
+      },
+      {
+        "id": 3847,
+        "name": "魂帝·天循道",
+        "len": 157,
+        "expanded": false
+      },
+      {
+        "id": 4816,
+        "name": "伊芙",
+        "len": 115,
+        "expanded": false
+      },
+      {
+        "id": 4594,
+        "name": "摆渡者·费雷",
+        "len": 109,
+        "expanded": false
+      },
+      {
+        "id": 4861,
+        "name": "涂蝶",
+        "len": 125,
+        "expanded": false
+      },
+      {
+        "id": 4872,
+        "name": "妙时天女",
+        "len": 102,
+        "expanded": true
+      },
+      {
+        "id": 3697,
+        "name": "擎空·凡尔斯",
+        "len": 149,
+        "expanded": false
+      },
+      {
+        "id": 4024,
+        "name": "地葬界神",
+        "len": 163,
+        "expanded": false
+      },
+      {
+        "id": 4075,
+        "name": "混沌界神",
+        "len": 156,
+        "expanded": false
+      },
+      {
+        "id": 4495,
+        "name": "彼尔德",
+        "len": 158,
+        "expanded": false
+      },
+      {
+        "id": 3685,
+        "name": "孙权",
+        "len": 156,
+        "expanded": false
+      },
+      {
+        "id": 4445,
+        "name": "古温婆婆",
+        "len": 94,
+        "expanded": false
+      },
+      {
+        "id": 4001,
+        "name": "无上·万魔天尊",
+        "len": 167,
+        "expanded": false
+      }
+    ]
+  },
+  "soul_expansion_ids": [
+    4872
+  ],
+  "policy": "按 system_refs 降序逐只补写；改动 roster.json 的 spirits 或 deep_dive 后必须重跑本脚本，再跑 check_roster.py。不得为了凑数量把机制推演写成当月强度。"
+}

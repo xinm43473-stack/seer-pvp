@@ -1,0 +1,3939 @@
+{
+  "generated_at": "2026-11-08",
+  "source": "data/pool.json 自动评分（本地机制完整度，非社区月榜）",
+  "criteria": "pool.tier 属 T0/T1/T2 且未写入 roster.json 的 spirits（未写逐回合战术链）",
+  "t0_t2_total": 367,
+  "missing_deep_dive": 272,
+  "policy": "此队列用于排深研优先级，不表示这些精灵强度不足，也不表示可直接推荐；结论仍以当月竞技图鉴与魂印原文为准。",
+  "items": [
+    {
+      "id": 4748,
+      "name": "超算鲁比克",
+      "attr": "机械",
+      "tier": "T1",
+      "score": 54.5,
+      "tags": [
+        "免控",
+        "免红",
+        "免粉",
+        "弹固伤",
+        "续航",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4898,
+      "name": "教皇",
+      "attr": "机械地面",
+      "tier": "T1",
+      "score": 52.9,
+      "tags": [
+        "免控",
+        "免红",
+        "免粉",
+        "续航",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4912,
+      "name": "生之焰·灰蛾",
+      "attr": "火虫",
+      "tier": "T1",
+      "score": 52.1,
+      "tags": [
+        "免红",
+        "免粉",
+        "续航",
+        "吸血",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4525,
+      "name": "二郎神",
+      "attr": "圣灵次元",
+      "tier": "T1",
+      "score": 52.0,
+      "tags": [
+        "免控",
+        "续航",
+        "吸血",
+        "先制",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4805,
+      "name": "黄眉怪",
+      "attr": "邪灵",
+      "tier": "T1",
+      "score": 50.5,
+      "tags": [
+        "吸血",
+        "增伤",
+        "控场",
+        "真伤",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 7
+    },
+    {
+      "id": 4931,
+      "name": "炎龙铠甲",
+      "attr": "火龙",
+      "tier": "T1",
+      "score": 49.5,
+      "tags": [
+        "免控",
+        "续航",
+        "增伤",
+        "控场",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4888,
+      "name": "慈辉永颂·瑞亚",
+      "attr": "光",
+      "tier": "T1",
+      "score": 49.3,
+      "tags": [
+        "免红",
+        "续航",
+        "先制",
+        "增伤",
+        "消强",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4535,
+      "name": "诡魅浮踪·幽美",
+      "attr": "暗影神秘",
+      "tier": "T1",
+      "score": 48.1,
+      "tags": [
+        "免红",
+        "续航",
+        "增伤",
+        "消强",
+        "控场",
+        "驱逐"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4287,
+      "name": "混灵·莱茵哈特",
+      "attr": "混沌地面",
+      "tier": "T1",
+      "score": 48.0,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤",
+        "消强",
+        "控场",
+        "死亡收益"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4679,
+      "name": "赛罗奥特曼",
+      "attr": "圣灵战斗",
+      "tier": "T1",
+      "score": 47.7,
+      "tags": [
+        "免控",
+        "免红",
+        "续航",
+        "先制",
+        "增伤",
+        "层数成长"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4743,
+      "name": "星光·纳多雷",
+      "attr": "地面",
+      "tier": "T1",
+      "score": 46.8,
+      "tags": [
+        "免粉",
+        "弹固伤",
+        "吸血",
+        "控场",
+        "护盾",
+        "反伤"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4915,
+      "name": "西曼德妮",
+      "attr": "圣灵",
+      "tier": "T1",
+      "score": 46.7,
+      "tags": [
+        "复活",
+        "续航",
+        "先制",
+        "消强",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 6
+    },
+    {
+      "id": 4829,
+      "name": "卡布达超级形态",
+      "attr": "电战斗",
+      "tier": "T1",
+      "score": 46.6,
+      "tags": [
+        "免控",
+        "续航",
+        "吸血",
+        "先制",
+        "增伤",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4524,
+      "name": "孙悟空",
+      "attr": "圣灵火",
+      "tier": "T1",
+      "score": 46.5,
+      "tags": [
+        "免控",
+        "免疫弱化",
+        "先制",
+        "增伤",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4807,
+      "name": "黑石女妖",
+      "attr": "混沌飞行",
+      "tier": "T1",
+      "score": 46.0,
+      "tags": [
+        "免控",
+        "免红",
+        "吸血",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4840,
+      "name": "霞冠·星礼",
+      "attr": "战斗自然",
+      "tier": "T1",
+      "score": 46.0,
+      "tags": [
+        "免控",
+        "免红",
+        "续航",
+        "吸血",
+        "增伤",
+        "清PP"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4532,
+      "name": "堕息·迹",
+      "attr": "混沌远古",
+      "tier": "T1",
+      "score": 45.6,
+      "tags": [
+        "免控",
+        "续航",
+        "先制",
+        "控场",
+        "属性压制"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 9
+    },
+    {
+      "id": 4860,
+      "name": "希尔瑟拉",
+      "attr": "远古邪灵",
+      "tier": "T1",
+      "score": 45.6,
+      "tags": [
+        "免控",
+        "免红",
+        "增伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4499,
+      "name": "德布比特",
+      "attr": "圣灵轮回",
+      "tier": "T1",
+      "score": 45.5,
+      "tags": [
+        "免控",
+        "续航",
+        "增伤",
+        "消强",
+        "封属"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 11
+    },
+    {
+      "id": 4597,
+      "name": "织灵者·维伊",
+      "attr": "圣灵超能",
+      "tier": "T1",
+      "score": 45.5,
+      "tags": [
+        "免控",
+        "免红",
+        "续航",
+        "先制",
+        "控场",
+        "反伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4937,
+      "name": "星光·雷纳多",
+      "attr": "机械",
+      "tier": "T1",
+      "score": 45.5,
+      "tags": [
+        "免红",
+        "续航",
+        "增伤",
+        "消强",
+        "护盾",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4830,
+      "name": "鲨鱼辣椒超级形态",
+      "attr": "神秘战斗",
+      "tier": "T1",
+      "score": 45.4,
+      "tags": [
+        "免控",
+        "免疫弱化",
+        "免粉",
+        "吸血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4498,
+      "name": "天后·弗丽嘉",
+      "attr": "自然",
+      "tier": "T1",
+      "score": 45.0,
+      "tags": [
+        "续航",
+        "先制",
+        "清PP",
+        "控场",
+        "真伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 7
+    },
+    {
+      "id": 4745,
+      "name": "阿尔忒弥斯",
+      "attr": "草战斗",
+      "tier": "T1",
+      "score": 44.5,
+      "tags": [
+        "增伤",
+        "护盾",
+        "真伤",
+        "层数成长"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4930,
+      "name": "帝皇铠甲",
+      "attr": "王",
+      "tier": "T1",
+      "score": 44.5,
+      "tags": [
+        "续航",
+        "清PP",
+        "控场",
+        "层数成长"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4642,
+      "name": "逆世之瞳·哀目黑子",
+      "attr": "暗影邪灵",
+      "tier": "T1",
+      "score": 44.1,
+      "tags": [
+        "免控",
+        "续航",
+        "控场",
+        "命中/闪避",
+        "封回血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 3983,
+      "name": "灵·辰坤星魂",
+      "attr": "圣灵地面",
+      "tier": "T1",
+      "score": 44.0,
+      "tags": [
+        "免红",
+        "续航",
+        "清PP",
+        "控场",
+        "护盾",
+        "真伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4801,
+      "name": "小猪妖",
+      "attr": "普通",
+      "tier": "T1",
+      "score": 44.0,
+      "tags": [
+        "免控",
+        "免红",
+        "增伤",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4567,
+      "name": "灵石守卫",
+      "attr": "远古战斗",
+      "tier": "T1",
+      "score": 43.8,
+      "tags": [
+        "免红",
+        "续航",
+        "吸血",
+        "增伤",
+        "清PP",
+        "死亡收益"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4822,
+      "name": "星光·里奥斯",
+      "attr": "火",
+      "tier": "T1",
+      "score": 42.7,
+      "tags": [
+        "免红",
+        "续航",
+        "消强",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4905,
+      "name": "西西弗",
+      "attr": "冰",
+      "tier": "T1",
+      "score": 42.7,
+      "tags": [
+        "免红",
+        "续航",
+        "封回血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 8
+    },
+    {
+      "id": 4866,
+      "name": "埃斯宾诺",
+      "attr": "虫",
+      "tier": "T1",
+      "score": 42.3,
+      "tags": [
+        "续航",
+        "吸血",
+        "清PP",
+        "真伤",
+        "封回血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4934,
+      "name": "刑天铠甲",
+      "attr": "电次元",
+      "tier": "T1",
+      "score": 42.0,
+      "tags": [
+        "免控",
+        "续航",
+        "增伤",
+        "清PP"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4489,
+      "name": "普鲁修托",
+      "attr": "光暗影",
+      "tier": "T1",
+      "score": 41.9,
+      "tags": [
+        "续航",
+        "增伤",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 6
+    },
+    {
+      "id": 4680,
+      "name": "贝利亚奥特曼",
+      "attr": "远古邪灵",
+      "tier": "T1",
+      "score": 41.9,
+      "tags": [
+        "免红",
+        "续航",
+        "增伤",
+        "控场"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4823,
+      "name": "雪璞",
+      "attr": "自然冰",
+      "tier": "T1",
+      "score": 41.9,
+      "tags": [
+        "续航",
+        "清PP",
+        "消强",
+        "控场",
+        "护盾",
+        "属性压制"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4372,
+      "name": "幻魅灵狐·苏璃",
+      "attr": "火超能",
+      "tier": "T1",
+      "score": 41.6,
+      "tags": [
+        "免红",
+        "先制",
+        "增伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 6
+    },
+    {
+      "id": 4911,
+      "name": "星光·艾欧丽娅",
+      "attr": "自然冰",
+      "tier": "T1",
+      "score": 41.3,
+      "tags": [
+        "先制",
+        "清PP"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4725,
+      "name": "花灯仙子",
+      "attr": "光",
+      "tier": "T1",
+      "score": 41.3,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤",
+        "控场",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4612,
+      "name": "魂弦",
+      "attr": "圣灵光",
+      "tier": "T1",
+      "score": 41.1,
+      "tags": [
+        "免控",
+        "吸血",
+        "增伤",
+        "清PP",
+        "消强",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4035,
+      "name": "邪影梦魇",
+      "attr": "混沌远古",
+      "tier": "T1",
+      "score": 40.9,
+      "tags": [
+        "续航",
+        "吸血",
+        "先制",
+        "增伤",
+        "控场",
+        "封回血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4636,
+      "name": "西塔伦",
+      "attr": "草超能",
+      "tier": "T1",
+      "score": 40.8,
+      "tags": [
+        "免红",
+        "续航",
+        "增伤",
+        "消强",
+        "死亡收益"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4753,
+      "name": "命运玛酷索",
+      "attr": "飞行超能",
+      "tier": "T1",
+      "score": 40.8,
+      "tags": [
+        "免红",
+        "控场",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4854,
+      "name": "西忒蕾妃",
+      "attr": "草",
+      "tier": "T1",
+      "score": 40.8,
+      "tags": [
+        "吸血",
+        "减伤",
+        "控场",
+        "护盾",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4950,
+      "name": "帝皇之戎",
+      "attr": "次元战斗",
+      "tier": "T1",
+      "score": 40.8,
+      "tags": [
+        "免控",
+        "先制",
+        "增伤",
+        "护盾",
+        "真伤",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 7
+    },
+    {
+      "id": 4738,
+      "name": "绮芒·蝠迪",
+      "attr": "飞行",
+      "tier": "T1",
+      "score": 40.7,
+      "tags": [
+        "免红",
+        "续航",
+        "吸血",
+        "先制",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4814,
+      "name": "娜诺",
+      "attr": "战斗",
+      "tier": "T1",
+      "score": 40.6,
+      "tags": [
+        "续航",
+        "清PP",
+        "锁血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 6
+    },
+    {
+      "id": 4685,
+      "name": "云盈",
+      "attr": "混沌飞行",
+      "tier": "T1",
+      "score": 40.4,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4783,
+      "name": "斯弗洛浦亚",
+      "attr": "水暗影",
+      "tier": "T1",
+      "score": 40.4,
+      "tags": [
+        "续航",
+        "增伤",
+        "消强",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4629,
+      "name": "霜之荆棘·蒙鲁特",
+      "attr": "自然冰",
+      "tier": "T1",
+      "score": 40.2,
+      "tags": [
+        "免红",
+        "先制",
+        "清PP",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4870,
+      "name": "康迪亚克",
+      "attr": "地面",
+      "tier": "T1",
+      "score": 40.2,
+      "tags": [
+        "吸血",
+        "先制",
+        "增伤",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4777,
+      "name": "挖掘型TOH",
+      "attr": "机械",
+      "tier": "T1",
+      "score": 40.1,
+      "tags": [
+        "吸血",
+        "增伤",
+        "清PP"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 6
+    },
+    {
+      "id": 4942,
+      "name": "极度冰凌·阿克希亚",
+      "attr": "冰",
+      "tier": "T1",
+      "score": 40.1,
+      "tags": [
+        "增伤",
+        "驱逐"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4397,
+      "name": "沐怜",
+      "attr": "冰暗影",
+      "tier": "T1",
+      "score": 40.0,
+      "tags": [
+        "复活",
+        "续航",
+        "吸血",
+        "增伤",
+        "封回血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 7
+    },
+    {
+      "id": 4422,
+      "name": "天奔流·东辉",
+      "attr": "水次元",
+      "tier": "T1",
+      "score": 40.0,
+      "tags": [
+        "续航",
+        "清PP",
+        "消强",
+        "控场",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4611,
+      "name": "渊枭",
+      "attr": "混沌暗影",
+      "tier": "T1",
+      "score": 39.9,
+      "tags": [
+        "免红",
+        "续航",
+        "先制",
+        "增伤",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4625,
+      "name": "伏尔格安",
+      "attr": "混沌火",
+      "tier": "T1",
+      "score": 39.9,
+      "tags": [
+        "免红",
+        "续航"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 6
+    },
+    {
+      "id": 4683,
+      "name": "帕诺·海啸武装",
+      "attr": "水机械",
+      "tier": "T1",
+      "score": 39.9,
+      "tags": [
+        "免红",
+        "增伤",
+        "清PP",
+        "消强",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4414,
+      "name": "瓦普特",
+      "attr": "圣灵次元",
+      "tier": "T1",
+      "score": 39.6,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤",
+        "清PP",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4593,
+      "name": "血刎剑姬",
+      "attr": "战斗暗影",
+      "tier": "T1",
+      "score": 39.5,
+      "tags": [
+        "吸血",
+        "先制",
+        "增伤",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4327,
+      "name": "极战·阿尔斯兰",
+      "attr": "战斗",
+      "tier": "T1",
+      "score": 39.4,
+      "tags": [
+        "先制",
+        "增伤",
+        "真伤"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 7
+    },
+    {
+      "id": 4467,
+      "name": "冥契·格斯塔丝",
+      "attr": "混沌邪灵",
+      "tier": "T1",
+      "score": 39.4,
+      "tags": [
+        "续航",
+        "先制",
+        "清PP",
+        "驱逐"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4894,
+      "name": "安瑟伦",
+      "attr": "暗影",
+      "tier": "T1",
+      "score": 39.4,
+      "tags": [
+        "吸血",
+        "先制",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4068,
+      "name": "苍穹之望·艾希丝",
+      "attr": "自然冰",
+      "tier": "T1",
+      "score": 39.2,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤",
+        "控场",
+        "命中/闪避",
+        "封回血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4401,
+      "name": "破世之拳·特罗斯",
+      "attr": "战斗龙",
+      "tier": "T1",
+      "score": 39.2,
+      "tags": [
+        "续航",
+        "增伤",
+        "消强",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4377,
+      "name": "蒂朵",
+      "attr": "光次元",
+      "tier": "T1",
+      "score": 39.0,
+      "tags": [
+        "续航",
+        "增伤",
+        "清PP",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 6
+    },
+    {
+      "id": 4345,
+      "name": "圣心女皇·卡托娜",
+      "attr": "圣灵地面",
+      "tier": "T1",
+      "score": 38.9,
+      "tags": [
+        "续航",
+        "先制",
+        "驱逐",
+        "护盾",
+        "封回血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4646,
+      "name": "时钟试炼官·极",
+      "attr": "圣灵",
+      "tier": "T1",
+      "score": 38.9,
+      "tags": [
+        "免控",
+        "先制",
+        "减伤",
+        "清PP"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4876,
+      "name": "方术·悠悠",
+      "attr": "光",
+      "tier": "T1",
+      "score": 38.9,
+      "tags": [
+        "续航",
+        "护盾",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4239,
+      "name": "浩渺之源·努恩",
+      "attr": "水龙",
+      "tier": "T1",
+      "score": 38.7,
+      "tags": [
+        "免控",
+        "清PP",
+        "护盾",
+        "封回血"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4657,
+      "name": "浮掠双刃·卓尔布",
+      "attr": "冰火",
+      "tier": "T1",
+      "score": 38.7,
+      "tags": [
+        "免红",
+        "吸血",
+        "增伤",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4744,
+      "name": "皎梦·悠悠",
+      "attr": "普通",
+      "tier": "T1",
+      "score": 38.6,
+      "tags": [
+        "免控",
+        "清PP",
+        "消强",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4222,
+      "name": "核爆·机械塔克林",
+      "attr": "机械龙",
+      "tier": "T1",
+      "score": 38.5,
+      "tags": [
+        "免控",
+        "增伤",
+        "护盾",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4432,
+      "name": "恶咒巫师·科萨斯",
+      "attr": "混沌暗影",
+      "tier": "T1",
+      "score": 38.5,
+      "tags": [
+        "免粉",
+        "先制",
+        "增伤",
+        "护盾",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4750,
+      "name": "云境归真·始祖灵兽",
+      "attr": "草",
+      "tier": "T1",
+      "score": 38.5,
+      "tags": [
+        "续航",
+        "控场"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4871,
+      "name": "嘲风",
+      "attr": "火飞行",
+      "tier": "T1",
+      "score": 38.5,
+      "tags": [
+        "吸血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4678,
+      "name": "迪迦奥特曼",
+      "attr": "光超能",
+      "tier": "T1",
+      "score": 38.3,
+      "tags": [
+        "免控",
+        "续航",
+        "增伤",
+        "清PP"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 1
+    },
+    {
+      "id": 4908,
+      "name": "蕊沃尔",
+      "attr": "火",
+      "tier": "T1",
+      "score": 38.3,
+      "tags": [
+        "续航",
+        "先制",
+        "消强"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4655,
+      "name": "锚点相座",
+      "attr": "机械次元",
+      "tier": "T1",
+      "score": 38.2,
+      "tags": [
+        "续航",
+        "增伤",
+        "减伤",
+        "死亡收益"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4785,
+      "name": "铭唤",
+      "attr": "混沌远古",
+      "tier": "T1",
+      "score": 38.2,
+      "tags": [
+        "增伤",
+        "清PP"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 6
+    },
+    {
+      "id": 4901,
+      "name": "特维耶",
+      "attr": "战斗",
+      "tier": "T1",
+      "score": 38.2,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4933,
+      "name": "修罗铠甲",
+      "attr": "混沌圣灵",
+      "tier": "T1",
+      "score": 38.2,
+      "tags": [],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4589,
+      "name": "曜焰万象·文森特",
+      "attr": "光火",
+      "tier": "T1",
+      "score": 38.1,
+      "tags": [
+        "续航",
+        "吸血",
+        "清PP",
+        "消强",
+        "控场"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4798,
+      "name": "霸颚鲛",
+      "attr": "水",
+      "tier": "T1",
+      "score": 38.1,
+      "tags": [
+        "增伤",
+        "控场",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4943,
+      "name": "瑞特拉尼",
+      "attr": "地面",
+      "tier": "T1",
+      "score": 38.1,
+      "tags": [
+        "斩杀",
+        "控场",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4511,
+      "name": "不破帝·南霜",
+      "attr": "冰暗影",
+      "tier": "T1",
+      "score": 38.0,
+      "tags": [
+        "先制",
+        "增伤",
+        "护盾",
+        "命中/闪避"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4606,
+      "name": "加尔鲁特",
+      "attr": "草",
+      "tier": "T1",
+      "score": 38.0,
+      "tags": [
+        "免红",
+        "续航",
+        "增伤",
+        "层数成长",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4714,
+      "name": "古代巨型机器人",
+      "attr": "机械神秘",
+      "tier": "T1",
+      "score": 38.0,
+      "tags": [
+        "吸血",
+        "清PP"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4885,
+      "name": "灰蛾",
+      "attr": "虫",
+      "tier": "T2",
+      "score": 37.9,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4902,
+      "name": "莱布缇",
+      "attr": "光",
+      "tier": "T2",
+      "score": 37.8,
+      "tags": [
+        "免控",
+        "护盾",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4909,
+      "name": "钢傀",
+      "attr": "机械战斗",
+      "tier": "T2",
+      "score": 37.8,
+      "tags": [
+        "续航",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4613,
+      "name": "艾克特希",
+      "attr": "地面龙",
+      "tier": "T2",
+      "score": 37.7,
+      "tags": [
+        "免红",
+        "续航",
+        "先制",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4631,
+      "name": "塞弥丝珂",
+      "attr": "地面超能",
+      "tier": "T2",
+      "score": 37.7,
+      "tags": [
+        "续航",
+        "吸血",
+        "控场",
+        "护盾"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4651,
+      "name": "天阶机器人",
+      "attr": "机械超能",
+      "tier": "T2",
+      "score": 37.7,
+      "tags": [
+        "免控",
+        "吸血",
+        "清PP",
+        "消强"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4828,
+      "name": "蜻蜓队长",
+      "attr": "电次元",
+      "tier": "T2",
+      "score": 37.4,
+      "tags": [
+        "清PP",
+        "护盾",
+        "真伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4663,
+      "name": "凌虎·关银屏",
+      "attr": "战斗火",
+      "tier": "T2",
+      "score": 37.3,
+      "tags": [
+        "先制",
+        "增伤",
+        "控场"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4746,
+      "name": "王之查尔顿",
+      "attr": "战斗",
+      "tier": "T2",
+      "score": 37.3,
+      "tags": [
+        "免控",
+        "免红",
+        "续航"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4654,
+      "name": "鲸沫",
+      "attr": "水战斗",
+      "tier": "T2",
+      "score": 37.2,
+      "tags": [
+        "吸血",
+        "先制",
+        "清PP",
+        "命中/闪避"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4721,
+      "name": "黯魂·索比拉特",
+      "attr": "暗影",
+      "tier": "T2",
+      "score": 37.2,
+      "tags": [
+        "免红",
+        "吸血",
+        "消强"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4936,
+      "name": "拿瓦铠甲",
+      "attr": "战斗火",
+      "tier": "T2",
+      "score": 37.2,
+      "tags": [
+        "增伤",
+        "消强",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 3979,
+      "name": "炽魂·邪恶魔神",
+      "attr": "战斗火",
+      "tier": "T2",
+      "score": 37.1,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤",
+        "减伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4444,
+      "name": "百罗鬼帝",
+      "attr": "神秘战斗",
+      "tier": "T2",
+      "score": 37.1,
+      "tags": [
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4671,
+      "name": "噬夜疾袭·库拉塔克",
+      "attr": "火暗影",
+      "tier": "T2",
+      "score": 37.1,
+      "tags": [
+        "吸血",
+        "先制",
+        "清PP",
+        "命中/闪避"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4780,
+      "name": "布贝巴拉",
+      "attr": "水超能",
+      "tier": "T2",
+      "score": 37.0,
+      "tags": [
+        "吸血",
+        "增伤",
+        "控场",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4818,
+      "name": "福尔摩苏斯",
+      "attr": "光神秘",
+      "tier": "T2",
+      "score": 36.9,
+      "tags": [
+        "免控",
+        "续航",
+        "吸血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4863,
+      "name": "艾莉安娜",
+      "attr": "虫",
+      "tier": "T2",
+      "score": 36.9,
+      "tags": [
+        "续航",
+        "先制",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4085,
+      "name": "凯布利",
+      "attr": "远古地面",
+      "tier": "T2",
+      "score": 36.8,
+      "tags": [
+        "免控",
+        "免红",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4182,
+      "name": "堕魂·格特鲁德",
+      "attr": "混沌龙",
+      "tier": "T2",
+      "score": 36.8,
+      "tags": [
+        "先制",
+        "增伤",
+        "控场",
+        "真伤",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4650,
+      "name": "风暴龙灵",
+      "attr": "龙",
+      "tier": "T2",
+      "score": 36.8,
+      "tags": [
+        "免红",
+        "续航",
+        "先制",
+        "清PP"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4686,
+      "name": "帕诺·绿光武装",
+      "attr": "草机械",
+      "tier": "T2",
+      "score": 36.8,
+      "tags": [
+        "续航",
+        "增伤",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4688,
+      "name": "库洛妮",
+      "attr": "冰神秘",
+      "tier": "T2",
+      "score": 36.8,
+      "tags": [
+        "吸血",
+        "清PP",
+        "控场",
+        "属性压制"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4848,
+      "name": "谜之英雄",
+      "attr": "光神秘",
+      "tier": "T2",
+      "score": 36.6,
+      "tags": [
+        "增伤",
+        "护盾",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4623,
+      "name": "裂岩·艾克特希",
+      "attr": "地面龙",
+      "tier": "T2",
+      "score": 36.5,
+      "tags": [
+        "先制",
+        "增伤",
+        "清PP",
+        "护盾"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4850,
+      "name": "图特摩斯",
+      "attr": "战斗地面",
+      "tier": "T2",
+      "score": 36.5,
+      "tags": [
+        "免控"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4890,
+      "name": "B-12",
+      "attr": "机械地面",
+      "tier": "T2",
+      "score": 36.5,
+      "tags": [
+        "续航",
+        "吸血",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4684,
+      "name": "帕诺·烈焰武装",
+      "attr": "火机械",
+      "tier": "T2",
+      "score": 36.4,
+      "tags": [
+        "清PP",
+        "控场",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4662,
+      "name": "雷瀑飞雪·桑多姆",
+      "attr": "电冰",
+      "tier": "T2",
+      "score": 36.3,
+      "tags": [
+        "增伤",
+        "控场",
+        "真伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4728,
+      "name": "考沃莱恩",
+      "attr": "草战斗",
+      "tier": "T2",
+      "score": 36.3,
+      "tags": [
+        "免红",
+        "增伤",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4834,
+      "name": "重装·派鲁基达",
+      "attr": "机械",
+      "tier": "T2",
+      "score": 36.2,
+      "tags": [
+        "续航",
+        "吸血",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4787,
+      "name": "机械钢牙鲨",
+      "attr": "水机械",
+      "tier": "T2",
+      "score": 36.1,
+      "tags": [
+        "续航",
+        "控场",
+        "真伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4564,
+      "name": "帕泽",
+      "attr": "光暗影",
+      "tier": "T2",
+      "score": 36.0,
+      "tags": [
+        "免红",
+        "吸血",
+        "先制",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4929,
+      "name": "鬼地行者",
+      "attr": "混沌地面",
+      "tier": "T2",
+      "score": 36.0,
+      "tags": [
+        "续航",
+        "吸血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4568,
+      "name": "幽魅之影·杰格",
+      "attr": "邪灵神秘",
+      "tier": "T2",
+      "score": 35.9,
+      "tags": [
+        "吸血",
+        "先制",
+        "增伤",
+        "属性压制"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4215,
+      "name": "撼地之力·坎贝尔",
+      "attr": "战斗火",
+      "tier": "T2",
+      "score": 35.8,
+      "tags": [
+        "续航",
+        "清PP",
+        "控场",
+        "护盾",
+        "属性压制"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4831,
+      "name": "蝎子莱莱",
+      "attr": "地面暗影",
+      "tier": "T2",
+      "score": 35.8,
+      "tags": [
+        "免红",
+        "吸血",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4658,
+      "name": "仿生兽·库比",
+      "attr": "虚空混沌",
+      "tier": "T2",
+      "score": 35.7,
+      "tags": [
+        "续航",
+        "吸血"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4919,
+      "name": "卡鲁维德",
+      "attr": "虚空",
+      "tier": "T2",
+      "score": 35.7,
+      "tags": [
+        "续航",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4347,
+      "name": "裁罪魔剪·塞泽丝",
+      "attr": "战斗暗影",
+      "tier": "T2",
+      "score": 35.6,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤",
+        "命中/闪避"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4461,
+      "name": "追光·兰可",
+      "attr": "机械龙",
+      "tier": "T2",
+      "score": 35.6,
+      "tags": [
+        "免控",
+        "先制",
+        "减伤",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4507,
+      "name": "拉托奥",
+      "attr": "机械",
+      "tier": "T2",
+      "score": 35.6,
+      "tags": [
+        "免控",
+        "续航",
+        "先制",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4845,
+      "name": "白图泰",
+      "attr": "光超能",
+      "tier": "T2",
+      "score": 35.5,
+      "tags": [
+        "吸血",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4628,
+      "name": "圣血猎者·赫布洛",
+      "attr": "混沌圣灵",
+      "tier": "T2",
+      "score": 35.3,
+      "tags": [
+        "免控",
+        "吸血",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4803,
+      "name": "猩猩怪",
+      "attr": "战斗",
+      "tier": "T2",
+      "score": 35.3,
+      "tags": [
+        "续航",
+        "增伤",
+        "属性压制"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4557,
+      "name": "红月祭司",
+      "attr": "神秘超能",
+      "tier": "T2",
+      "score": 35.2,
+      "tags": [
+        "免控",
+        "先制",
+        "清PP"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4592,
+      "name": "夜居魔使",
+      "attr": "混沌地面",
+      "tier": "T2",
+      "score": 35.2,
+      "tags": [
+        "先制",
+        "控场",
+        "命中/闪避",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4825,
+      "name": "卡布达",
+      "attr": "电战斗",
+      "tier": "T2",
+      "score": 35.2,
+      "tags": [
+        "吸血",
+        "先制",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4492,
+      "name": "斯达莱斯",
+      "attr": "邪灵",
+      "tier": "T2",
+      "score": 35.1,
+      "tags": [
+        "控场",
+        "驱逐",
+        "属性压制"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4582,
+      "name": "斥星",
+      "attr": "远古神秘",
+      "tier": "T2",
+      "score": 35.1,
+      "tags": [
+        "续航",
+        "增伤",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4583,
+      "name": "巴特勒",
+      "attr": "暗影龙",
+      "tier": "T2",
+      "score": 35.1,
+      "tags": [
+        "免红",
+        "增伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4726,
+      "name": "机魂核心·卡尔玛",
+      "attr": "机械",
+      "tier": "T2",
+      "score": 35.1,
+      "tags": [
+        "吸血",
+        "增伤",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4887,
+      "name": "托勒斯",
+      "attr": "自然",
+      "tier": "T2",
+      "score": 35.1,
+      "tags": [
+        "先制"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4562,
+      "name": "森曼",
+      "attr": "战斗自然",
+      "tier": "T2",
+      "score": 35.0,
+      "tags": [
+        "吸血",
+        "先制",
+        "增伤",
+        "清PP"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4693,
+      "name": "星光·蘑菇怪",
+      "attr": "草",
+      "tier": "T2",
+      "score": 35.0,
+      "tags": [
+        "免红",
+        "控场"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4923,
+      "name": "莫缇",
+      "attr": "机械地面",
+      "tier": "T2",
+      "score": 35.0,
+      "tags": [
+        "先制",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 1
+    },
+    {
+      "id": 4365,
+      "name": "环·格",
+      "attr": "邪灵机械",
+      "tier": "T2",
+      "score": 34.9,
+      "tags": [
+        "免红",
+        "续航",
+        "先制",
+        "封回血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4588,
+      "name": "茵茵",
+      "attr": "草超能",
+      "tier": "T2",
+      "score": 34.9,
+      "tags": [
+        "免控",
+        "控场",
+        "护盾"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4704,
+      "name": "吉甘提卡",
+      "attr": "超能",
+      "tier": "T2",
+      "score": 34.9,
+      "tags": [
+        "免红",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4784,
+      "name": "诺尔玛罗",
+      "attr": "战斗龙",
+      "tier": "T2",
+      "score": 34.9,
+      "tags": [
+        "续航",
+        "吸血",
+        "封回血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 3763,
+      "name": "乌瑞娅",
+      "attr": "地面神秘",
+      "tier": "T2",
+      "score": 34.8,
+      "tags": [
+        "免控",
+        "续航",
+        "增伤",
+        "护盾",
+        "转伤",
+        "反伤"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4573,
+      "name": "PLD",
+      "attr": "机械战斗",
+      "tier": "T2",
+      "score": 34.8,
+      "tags": [
+        "续航",
+        "增伤",
+        "消强",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4939,
+      "name": "决囚钢骨",
+      "attr": "机械次元",
+      "tier": "T2",
+      "score": 34.8,
+      "tags": [
+        "续航",
+        "真伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 3961,
+      "name": "极影魔兽",
+      "attr": "混沌飞行",
+      "tier": "T2",
+      "score": 34.7,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤",
+        "驱逐",
+        "封回血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4264,
+      "name": "库莱姆斯",
+      "attr": "邪灵龙",
+      "tier": "T2",
+      "score": 34.7,
+      "tags": [
+        "免红",
+        "先制",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4621,
+      "name": "雾灯徘徊者",
+      "attr": "远古邪灵",
+      "tier": "T2",
+      "score": 34.7,
+      "tags": [
+        "吸血",
+        "先制",
+        "增伤",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4587,
+      "name": "蛇舞·天鸣",
+      "attr": "电战斗",
+      "tier": "T2",
+      "score": 34.6,
+      "tags": [
+        "先制",
+        "增伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4865,
+      "name": "超维·瑞泽",
+      "attr": "次元战斗",
+      "tier": "T2",
+      "score": 34.6,
+      "tags": [],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4494,
+      "name": "嫉妒·哲利斯",
+      "attr": "暗影神秘",
+      "tier": "T2",
+      "score": 34.4,
+      "tags": [
+        "免红",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4546,
+      "name": "巨鲸座",
+      "attr": "飞行神秘",
+      "tier": "T2",
+      "score": 34.4,
+      "tags": [
+        "吸血",
+        "增伤",
+        "清PP",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4542,
+      "name": "视界·明德里奇",
+      "attr": "机械次元",
+      "tier": "T2",
+      "score": 34.3,
+      "tags": [
+        "先制",
+        "增伤",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4569,
+      "name": "霆终陨灭·罗库",
+      "attr": "飞行电",
+      "tier": "T2",
+      "score": 34.3,
+      "tags": [
+        "先制",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4665,
+      "name": "重塑之子·利塞特",
+      "attr": "光暗影",
+      "tier": "T2",
+      "score": 34.3,
+      "tags": [
+        "增伤",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4811,
+      "name": "拉米兹",
+      "attr": "火电",
+      "tier": "T2",
+      "score": 34.3,
+      "tags": [
+        "续航",
+        "真伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4058,
+      "name": "魏武帝·曹操",
+      "attr": "远古神秘",
+      "tier": "T2",
+      "score": 34.2,
+      "tags": [
+        "续航",
+        "先制",
+        "控场",
+        "属性压制",
+        "命中/闪避"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4105,
+      "name": "沉睡之眼",
+      "attr": "虚空",
+      "tier": "T2",
+      "score": 34.2,
+      "tags": [
+        "免控",
+        "先制",
+        "减伤",
+        "反伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4316,
+      "name": "沙狱使者",
+      "attr": "战斗地面",
+      "tier": "T2",
+      "score": 34.2,
+      "tags": [
+        "先制",
+        "增伤",
+        "控场",
+        "属性压制",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4332,
+      "name": "鲍尔斯",
+      "attr": "电火",
+      "tier": "T2",
+      "score": 34.2,
+      "tags": [
+        "续航",
+        "减伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4376,
+      "name": "圣谕之风·岚",
+      "attr": "自然圣灵",
+      "tier": "T2",
+      "score": 34.2,
+      "tags": [
+        "免疫弱化",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4734,
+      "name": "参天巨型仙人掌",
+      "attr": "草",
+      "tier": "T2",
+      "score": 34.2,
+      "tags": [
+        "免红",
+        "续航"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4711,
+      "name": "奇塔·解算型",
+      "attr": "机械超能",
+      "tier": "T2",
+      "score": 34.0,
+      "tags": [
+        "免红",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4739,
+      "name": "绒霜·柯蓝",
+      "attr": "冰",
+      "tier": "T2",
+      "score": 34.0,
+      "tags": [
+        "吸血",
+        "增伤",
+        "清PP"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4540,
+      "name": "堕魂之手",
+      "attr": "邪灵机械",
+      "tier": "T2",
+      "score": 33.9,
+      "tags": [
+        "免控",
+        "续航",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4559,
+      "name": "提米",
+      "attr": "草",
+      "tier": "T2",
+      "score": 33.9,
+      "tags": [
+        "续航",
+        "清PP",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4874,
+      "name": "瓏首",
+      "attr": "远古",
+      "tier": "T2",
+      "score": 33.9,
+      "tags": [
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4948,
+      "name": "亚巴兰托",
+      "attr": "战斗火",
+      "tier": "T2",
+      "score": 33.9,
+      "tags": [
+        "增伤",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4392,
+      "name": "斯凯普",
+      "attr": "混沌超能",
+      "tier": "T2",
+      "score": 33.8,
+      "tags": [
+        "免红",
+        "先制",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4493,
+      "name": "冰骷使者",
+      "attr": "冰神秘",
+      "tier": "T2",
+      "score": 33.8,
+      "tags": [
+        "续航",
+        "控场",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4904,
+      "name": "小珍妮",
+      "attr": "机械",
+      "tier": "T2",
+      "score": 33.8,
+      "tags": [
+        "消强",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 3705,
+      "name": "守护者·艾里克",
+      "attr": "飞行电",
+      "tier": "T2",
+      "score": 33.7,
+      "tags": [
+        "吸血",
+        "先制",
+        "控场",
+        "护盾",
+        "属性压制"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 8
+    },
+    {
+      "id": 4483,
+      "name": "艾隆德",
+      "attr": "冰龙",
+      "tier": "T2",
+      "score": 33.7,
+      "tags": [
+        "增伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4617,
+      "name": "猛虎之刃·泰伯",
+      "attr": "电火",
+      "tier": "T2",
+      "score": 33.7,
+      "tags": [
+        "先制",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4718,
+      "name": "渊夜门徒·洛比特",
+      "attr": "暗影",
+      "tier": "T2",
+      "score": 33.7,
+      "tags": [
+        "控场",
+        "死亡收益"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4820,
+      "name": "贝尔恩克",
+      "attr": "火暗影",
+      "tier": "T2",
+      "score": 33.7,
+      "tags": [
+        "续航",
+        "减伤",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 1
+    },
+    {
+      "id": 4505,
+      "name": "婕克拉德",
+      "attr": "混沌飞行",
+      "tier": "T2",
+      "score": 33.6,
+      "tags": [
+        "控场",
+        "属性压制",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4759,
+      "name": "赫蒂洛斯",
+      "attr": "火机械",
+      "tier": "T2",
+      "score": 33.6,
+      "tags": [
+        "清PP",
+        "消强",
+        "属性压制",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4782,
+      "name": "鞘盾龙鱼",
+      "attr": "水龙",
+      "tier": "T2",
+      "score": 33.6,
+      "tags": [
+        "吸血",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4882,
+      "name": "阿波波",
+      "attr": "战斗",
+      "tier": "T2",
+      "score": 33.6,
+      "tags": [
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4927,
+      "name": "超级噗纽",
+      "attr": "草机械",
+      "tier": "T2",
+      "score": 33.6,
+      "tags": [
+        "续航",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4371,
+      "name": "德拉莫斯",
+      "attr": "混沌龙",
+      "tier": "T2",
+      "score": 33.5,
+      "tags": [
+        "续航",
+        "吸血",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4438,
+      "name": "银椋·奥雷莫德",
+      "attr": "飞行电",
+      "tier": "T2",
+      "score": 33.5,
+      "tags": [
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 7
+    },
+    {
+      "id": 4577,
+      "name": "斯缇尔",
+      "attr": "光超能",
+      "tier": "T2",
+      "score": 33.5,
+      "tags": [
+        "消强",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4747,
+      "name": "圣颖",
+      "attr": "圣灵光",
+      "tier": "T2",
+      "score": 33.5,
+      "tags": [
+        "增伤"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4922,
+      "name": "墟婆",
+      "attr": "自然神秘",
+      "tier": "T2",
+      "score": 33.5,
+      "tags": [
+        "续航",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4405,
+      "name": "萨洛科",
+      "attr": "水战斗",
+      "tier": "T2",
+      "score": 33.4,
+      "tags": [
+        "免红",
+        "续航",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4417,
+      "name": "疾翼先锋",
+      "attr": "飞行神秘",
+      "tier": "T2",
+      "score": 33.4,
+      "tags": [
+        "先制",
+        "增伤",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4740,
+      "name": "幽阑·执冥",
+      "attr": "暗影",
+      "tier": "T2",
+      "score": 33.4,
+      "tags": [
+        "吸血",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4921,
+      "name": "天堂极龙兽",
+      "attr": "圣灵光",
+      "tier": "T2",
+      "score": 33.4,
+      "tags": [
+        "续航",
+        "清PP",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4932,
+      "name": "工程型TOH",
+      "attr": "机械",
+      "tier": "T2",
+      "score": 33.3,
+      "tags": [
+        "真伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4173,
+      "name": "虹雨·茜尔",
+      "attr": "光火",
+      "tier": "T2",
+      "score": 33.2,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4426,
+      "name": "异能元素·奥薇纳",
+      "attr": "冰火",
+      "tier": "T2",
+      "score": 33.2,
+      "tags": [
+        "续航",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4916,
+      "name": "若兰",
+      "attr": "冰飞行",
+      "tier": "T2",
+      "score": 33.2,
+      "tags": [
+        "先制"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4274,
+      "name": "泽尔塔",
+      "attr": "地面神秘",
+      "tier": "T2",
+      "score": 33.1,
+      "tags": [
+        "免红",
+        "弹固伤",
+        "清PP",
+        "驱逐",
+        "反伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4318,
+      "name": "布蕾里克",
+      "attr": "超能冰",
+      "tier": "T2",
+      "score": 33.1,
+      "tags": [
+        "续航",
+        "消强",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4430,
+      "name": "极光仙子",
+      "attr": "圣灵",
+      "tier": "T2",
+      "score": 33.1,
+      "tags": [
+        "续航",
+        "吸血",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4574,
+      "name": "寂娆",
+      "attr": "混沌龙",
+      "tier": "T2",
+      "score": 33.1,
+      "tags": [
+        "吸血",
+        "先制",
+        "增伤",
+        "清PP"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4756,
+      "name": "梦魇塔奇拉顿",
+      "attr": "地面暗影",
+      "tier": "T2",
+      "score": 33.1,
+      "tags": [
+        "免红",
+        "清PP"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4691,
+      "name": "墨韵",
+      "attr": "水龙",
+      "tier": "T2",
+      "score": 33.0,
+      "tags": [
+        "免红",
+        "续航",
+        "增伤",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4833,
+      "name": "蟑螂恶霸",
+      "attr": "战斗暗影",
+      "tier": "T2",
+      "score": 33.0,
+      "tags": [
+        "吸血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 3999,
+      "name": "飒雷孤影·喵佐",
+      "attr": "暗影电",
+      "tier": "T2",
+      "score": 32.9,
+      "tags": [
+        "续航",
+        "先制",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4258,
+      "name": "环·源",
+      "attr": "机械战斗",
+      "tier": "T2",
+      "score": 32.9,
+      "tags": [
+        "先制",
+        "清PP",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4675,
+      "name": "招财",
+      "attr": "地面暗影",
+      "tier": "T2",
+      "score": 32.9,
+      "tags": [
+        "续航",
+        "增伤",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4700,
+      "name": "米格罗斯",
+      "attr": "机械地面",
+      "tier": "T2",
+      "score": 32.9,
+      "tags": [
+        "续航",
+        "清PP",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4940,
+      "name": "王座守卫·古亚尼斯",
+      "attr": "圣灵电",
+      "tier": "T2",
+      "score": 32.9,
+      "tags": [
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 3940,
+      "name": "鬼神无双·吕布",
+      "attr": "次元",
+      "tier": "T2",
+      "score": 32.8,
+      "tags": [
+        "免控",
+        "续航",
+        "吸血",
+        "先制",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4385,
+      "name": "光灵巨像",
+      "attr": "光飞行",
+      "tier": "T2",
+      "score": 32.8,
+      "tags": [
+        "免红",
+        "先制",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4522,
+      "name": "东海龙王",
+      "attr": "水",
+      "tier": "T2",
+      "score": 32.8,
+      "tags": [
+        "增伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4689,
+      "name": "艾瑞吉",
+      "attr": "远古草",
+      "tier": "T2",
+      "score": 32.8,
+      "tags": [
+        "免控",
+        "免疫弱化",
+        "续航"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4690,
+      "name": "变异鳄兰",
+      "attr": "草暗影",
+      "tier": "T2",
+      "score": 32.8,
+      "tags": [
+        "续航",
+        "增伤"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4715,
+      "name": "希维娜",
+      "attr": "冰飞行",
+      "tier": "T2",
+      "score": 32.8,
+      "tags": [
+        "吸血",
+        "先制",
+        "护盾",
+        "命中/闪避",
+        "封属"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 1
+    },
+    {
+      "id": 4682,
+      "name": "空洄星徒",
+      "attr": "光神秘",
+      "tier": "T2",
+      "score": 32.7,
+      "tags": [
+        "增伤",
+        "清PP"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4736,
+      "name": "霆流·希拉",
+      "attr": "电",
+      "tier": "T2",
+      "score": 32.7,
+      "tags": [
+        "先制",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4897,
+      "name": "西蒙妮",
+      "attr": "电火",
+      "tier": "T2",
+      "score": 32.7,
+      "tags": [
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4250,
+      "name": "时钟试炼官·耀",
+      "attr": "光",
+      "tier": "T2",
+      "score": 32.6,
+      "tags": [
+        "先制",
+        "增伤",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4306,
+      "name": "异空战骑",
+      "attr": "次元战斗",
+      "tier": "T2",
+      "score": 32.6,
+      "tags": [
+        "续航",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 6
+    },
+    {
+      "id": 4549,
+      "name": "安姆耐特",
+      "attr": "水神秘",
+      "tier": "T2",
+      "score": 32.6,
+      "tags": [
+        "吸血",
+        "增伤",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4667,
+      "name": "龙灵战士",
+      "attr": "战斗龙",
+      "tier": "T2",
+      "score": 32.6,
+      "tags": [
+        "增伤",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4231,
+      "name": "克洛托",
+      "attr": "圣灵电",
+      "tier": "T2",
+      "score": 32.5,
+      "tags": [
+        "先制",
+        "控场",
+        "属性压制",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4433,
+      "name": "谧娜",
+      "attr": "神秘超能",
+      "tier": "T2",
+      "score": 32.5,
+      "tags": [
+        "先制",
+        "增伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4556,
+      "name": "尘息游龙",
+      "attr": "远古龙",
+      "tier": "T2",
+      "score": 32.5,
+      "tags": [
+        "吸血",
+        "增伤",
+        "清PP"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4666,
+      "name": "拟态绞索",
+      "attr": "机械龙",
+      "tier": "T2",
+      "score": 32.5,
+      "tags": [
+        "续航",
+        "先制"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4793,
+      "name": "厄孽提亚",
+      "attr": "草",
+      "tier": "T2",
+      "score": 32.5,
+      "tags": [
+        "吸血",
+        "清PP"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4479,
+      "name": "吉拉提斯",
+      "attr": "冰飞行",
+      "tier": "T2",
+      "score": 32.4,
+      "tags": [
+        "增伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4735,
+      "name": "紫幽",
+      "attr": "混沌超能",
+      "tier": "T2",
+      "score": 32.4,
+      "tags": [
+        "增伤",
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4763,
+      "name": "魇魔",
+      "attr": "暗影",
+      "tier": "T2",
+      "score": 32.4,
+      "tags": [
+        "清PP",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4752,
+      "name": "镇魂约凡撒",
+      "attr": "水",
+      "tier": "T2",
+      "score": 32.3,
+      "tags": [
+        "续航",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4343,
+      "name": "凛锋剑心",
+      "attr": "冰神秘",
+      "tier": "T2",
+      "score": 32.2,
+      "tags": [
+        "续航",
+        "清PP",
+        "封回血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4412,
+      "name": "沙娅",
+      "attr": "地面龙",
+      "tier": "T2",
+      "score": 32.2,
+      "tags": [
+        "吸血",
+        "先制",
+        "护盾",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4449,
+      "name": "禅老",
+      "attr": "神秘战斗",
+      "tier": "T2",
+      "score": 32.2,
+      "tags": [
+        "增伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4857,
+      "name": "戟决先锋",
+      "attr": "冰暗影",
+      "tier": "T2",
+      "score": 32.2,
+      "tags": [
+        "续航",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4227,
+      "name": "桑谷",
+      "attr": "远古战斗",
+      "tier": "T2",
+      "score": 32.1,
+      "tags": [
+        "增伤",
+        "斩杀",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4702,
+      "name": "霜寂锁灵",
+      "attr": "混沌冰",
+      "tier": "T2",
+      "score": 32.1,
+      "tags": [
+        "吸血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4755,
+      "name": "梦魇尼斯克",
+      "attr": "水暗影",
+      "tier": "T2",
+      "score": 32.1,
+      "tags": [
+        "续航",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4827,
+      "name": "蜘蛛侦探",
+      "attr": "地面超能",
+      "tier": "T2",
+      "score": 32.1,
+      "tags": [
+        "消强",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4337,
+      "name": "卡斯珀",
+      "attr": "光超能",
+      "tier": "T2",
+      "score": 32.0,
+      "tags": [
+        "续航",
+        "增伤",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4523,
+      "name": "科德布鲁",
+      "attr": "自然龙",
+      "tier": "T2",
+      "score": 32.0,
+      "tags": [
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4659,
+      "name": "芙拉尔",
+      "attr": "火飞行",
+      "tier": "T2",
+      "score": 32.0,
+      "tags": [
+        "免红",
+        "先制",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4839,
+      "name": "麦迪亚",
+      "attr": "地面",
+      "tier": "T2",
+      "score": 32.0,
+      "tags": [
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4152,
+      "name": "涵双",
+      "attr": "自然",
+      "tier": "T2",
+      "score": 31.9,
+      "tags": [
+        "免红",
+        "增伤",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 5
+    },
+    {
+      "id": 4561,
+      "name": "霆律",
+      "attr": "圣灵电",
+      "tier": "T2",
+      "score": 31.9,
+      "tags": [
+        "免控",
+        "吸血",
+        "命中/闪避"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4603,
+      "name": "贾斯",
+      "attr": "自然神秘",
+      "tier": "T2",
+      "score": 31.9,
+      "tags": [
+        "免红",
+        "清PP"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4809,
+      "name": "薇丝珀",
+      "attr": "远古草",
+      "tier": "T2",
+      "score": 31.9,
+      "tags": [
+        "吸血",
+        "先制",
+        "属性压制"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4004,
+      "name": "圣光格劳瑞",
+      "attr": "圣灵电",
+      "tier": "T2",
+      "score": 31.8,
+      "tags": [
+        "先制",
+        "增伤",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4696,
+      "name": "绮影罗心·织焰",
+      "attr": "火神秘",
+      "tier": "T2",
+      "score": 31.8,
+      "tags": [
+        "续航",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4810,
+      "name": "瓦伦汀",
+      "attr": "超能",
+      "tier": "T2",
+      "score": 31.8,
+      "tags": [
+        "续航"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4539,
+      "name": "文森特",
+      "attr": "光火",
+      "tier": "T2",
+      "score": 31.7,
+      "tags": [
+        "吸血",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4698,
+      "name": "希尔琳",
+      "attr": "自然神秘",
+      "tier": "T2",
+      "score": 31.7,
+      "tags": [
+        "免红",
+        "续航",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4826,
+      "name": "鲨鱼辣椒",
+      "attr": "神秘战斗",
+      "tier": "T2",
+      "score": 31.7,
+      "tags": [
+        "免控"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 3896,
+      "name": "伽玛星魂",
+      "attr": "机械次元",
+      "tier": "T2",
+      "score": 31.6,
+      "tags": [
+        "先制",
+        "控场",
+        "真伤"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4481,
+      "name": "薇菓儿",
+      "attr": "草超能",
+      "tier": "T2",
+      "score": 31.6,
+      "tags": [
+        "先制",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4669,
+      "name": "紫烬魔兽",
+      "attr": "远古火",
+      "tier": "T2",
+      "score": 31.6,
+      "tags": [
+        "增伤",
+        "消强"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 3724,
+      "name": "混沌·哈肯萨",
+      "attr": "混沌龙",
+      "tier": "T2",
+      "score": 31.5,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤",
+        "层数成长",
+        "命中/闪避"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4090,
+      "name": "阿佩普",
+      "attr": "火神秘",
+      "tier": "T2",
+      "score": 31.5,
+      "tags": [
+        "续航",
+        "先制",
+        "增伤",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4170,
+      "name": "埃格尔斯",
+      "attr": "飞行",
+      "tier": "T2",
+      "score": 31.5,
+      "tags": [
+        "续航",
+        "先制",
+        "命中/闪避",
+        "封回血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4224,
+      "name": "墨秋",
+      "attr": "水暗影",
+      "tier": "T2",
+      "score": 31.5,
+      "tags": [
+        "续航",
+        "清PP",
+        "护盾",
+        "属性压制"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4260,
+      "name": "媿灵",
+      "attr": "远古邪灵",
+      "tier": "T2",
+      "score": 31.5,
+      "tags": [
+        "免红",
+        "续航",
+        "先制",
+        "增伤"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4301,
+      "name": "风魔之骸",
+      "attr": "自然龙",
+      "tier": "T2",
+      "score": 31.5,
+      "tags": [
+        "免红",
+        "增伤",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4476,
+      "name": "残晓·星纹",
+      "attr": "远古神秘",
+      "tier": "T2",
+      "score": 31.5,
+      "tags": [
+        "续航",
+        "先制",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 4484,
+      "name": "卡莎",
+      "attr": "电火",
+      "tier": "T2",
+      "score": 31.5,
+      "tags": [
+        "增伤",
+        "命中/闪避"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 4
+    },
+    {
+      "id": 4868,
+      "name": "西塞萝",
+      "attr": "光火",
+      "tier": "T2",
+      "score": 31.5,
+      "tags": [
+        "控场",
+        "护盾"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4917,
+      "name": "影行者",
+      "attr": "战斗暗影",
+      "tier": "T2",
+      "score": 31.5,
+      "tags": [
+        "吸血"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    },
+    {
+      "id": 3820,
+      "name": "遨天魔煞",
+      "attr": "飞行暗影",
+      "tier": "T2",
+      "score": 31.4,
+      "tags": [
+        "免控",
+        "先制",
+        "控场",
+        "命中/闪避"
+      ],
+      "in_pending_research": true,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4284,
+      "name": "帕姵特",
+      "attr": "普通",
+      "tier": "T2",
+      "score": 31.4,
+      "tags": [
+        "免红",
+        "增伤",
+        "驱逐"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 3
+    },
+    {
+      "id": 4521,
+      "name": "涡锋",
+      "attr": "水战斗",
+      "tier": "T2",
+      "score": 31.4,
+      "tags": [
+        "增伤",
+        "控场"
+      ],
+      "in_pending_research": false,
+      "soul_clauses": 2
+    }
+  ]
+}

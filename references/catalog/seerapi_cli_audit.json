@@ -1,0 +1,73 @@
+{
+  "generated_at": "2026-11-06",
+  "channel": "seerapi CLI (bundled seerapi-cli skill, SeerAPI/seerapi)",
+  "cli_version": "seerapi, version 106.12.0",
+  "checks": [
+    {
+      "name": "官方池 ban 成员一致",
+      "ok": true,
+      "detail": "CLI 3 只 / 本地 3 只"
+    },
+    {
+      "name": "官方池 limit 成员一致",
+      "ok": true,
+      "detail": "CLI 12 只 / 本地 12 只"
+    },
+    {
+      "name": "官方池 semi_limit 成员一致",
+      "ok": true,
+      "detail": "CLI 25 只 / 本地 25 只"
+    },
+    {
+      "name": "官方池期次一致",
+      "ok": true,
+      "detail": "CLI 2026-10-16T10:00:00+08:00 / 本地 2026-10-16T10:00:00+08:00"
+    },
+    {
+      "name": "soulmark 410 归属 3056",
+      "ok": true,
+      "detail": "has_format=True（True=当前生效版）"
+    },
+    {
+      "name": "soulmark 1588 归属 4364",
+      "ok": true,
+      "detail": "has_format=True（True=当前生效版）"
+    },
+    {
+      "name": "soulmark 2080 归属 4364",
+      "ok": true,
+      "detail": "has_format=False（True=当前生效版）"
+    },
+    {
+      "name": "4364 当前版 = 1588（而非更长的 2080）",
+      "ok": true,
+      "detail": "1588 has_format=True / 2080 has_format=False"
+    },
+    {
+      "name": "3056 本地魂印含「真实伤害」",
+      "ok": true,
+      "detail": "CLI desc 头部: 自身于战斗阶段内受到致死伤害且死亡时，若自身的等级为100级，则附加等同于自身当回合所受技能伤害的真实伤害，然后若对手的体力为0则自身主动恢"
+    },
+    {
+      "name": "3056 本地魂印注明「100 级」触发条件",
+      "ok": true,
+      "detail": "CLI desc 明确「若自身的等级为100级」"
+    },
+    {
+      "name": "技能 17908 效果条数 = 3",
+      "ok": true,
+      "detail": "附加对手上次造成伤害数值的固定伤害 / 下2回合自身造成的攻击伤害翻倍 / 遇到天敌时先制+1"
+    },
+    {
+      "name": "圣光灵神 3311 持有 17908",
+      "ok": true,
+      "detail": "3311 技能表 31 条；learned_by_pet 反查为空是 API 索引缺口"
+    },
+    {
+      "name": "本地技能库已收录 17908",
+      "ok": true,
+      "detail": "当前技能库 133 只精灵 / 2168 条技能"
+    }
+  ],
+  "verdict": "pass"
+}

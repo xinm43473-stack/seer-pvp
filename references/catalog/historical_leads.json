@@ -1,0 +1,3357 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-15",
+  "purpose": "2026-11-05 起移出关联层的历史声明留痕。只说明「以前写过什么」，不构成任何关联、线索或推荐依据。",
+  "policy": "查询、配合前端、体系注册表与推荐一律不读取本文件。没有显式 chain_edges 的精灵对直接写「暂无已核实关联」。",
+  "stats": {
+    "archived_claims": 425,
+    "archived_pairs": 418,
+    "verified_claims_kept": 24
+  },
+  "items": [
+    {
+      "a": 2987,
+      "b": 3033,
+      "a_name": "重生之翼",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 2987,
+      "b": 4169,
+      "a_name": "重生之翼",
+      "b_name": "弑序神罗",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 2987,
+      "b": 4208,
+      "a_name": "重生之翼",
+      "b_name": "锢灵·舞",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3033,
+      "b": 2987,
+      "a_name": "帝天战佛",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3033,
+      "b": 3577,
+      "a_name": "帝天战佛",
+      "b_name": "光之惩戒·英卡洛斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3033,
+      "b": 4515,
+      "a_name": "帝天战佛",
+      "b_name": "霍光",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3033,
+      "b": 4765,
+      "a_name": "帝天战佛",
+      "b_name": "怒雷神裁·雷伊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3142,
+      "b": 3056,
+      "a_name": "王·雷伊",
+      "b_name": "圣甲·盖亚",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3142,
+      "b": 3237,
+      "a_name": "王·雷伊",
+      "b_name": "大威势明王",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3237,
+      "b": 3788,
+      "a_name": "大威势明王",
+      "b_name": "混元天尊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3237,
+      "b": 4387,
+      "a_name": "大威势明王",
+      "b_name": "坦普瑞",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3291,
+      "b": 2987,
+      "a_name": "瀚宇星皇",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3291,
+      "b": 3788,
+      "a_name": "瀚宇星皇",
+      "b_name": "混元天尊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3291,
+      "b": 3986,
+      "a_name": "瀚宇星皇",
+      "b_name": "启灵元神",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3291,
+      "b": 4208,
+      "a_name": "瀚宇星皇",
+      "b_name": "锢灵·舞",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3328,
+      "b": 3291,
+      "a_name": "圣王·萨格罗斯",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3378,
+      "b": 3033,
+      "a_name": "阿尔蒂克",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3378,
+      "b": 3291,
+      "a_name": "阿尔蒂克",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3396,
+      "b": 3033,
+      "a_name": "灾厄女神潘多拉",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3396,
+      "b": 3788,
+      "a_name": "灾厄女神潘多拉",
+      "b_name": "混元天尊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3414,
+      "b": 2987,
+      "a_name": "混沌魔君索伦森",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3414,
+      "b": 3056,
+      "a_name": "混沌魔君索伦森",
+      "b_name": "圣甲·盖亚",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3430,
+      "b": 4364,
+      "a_name": "星域之魂",
+      "b_name": "尤莉米特",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3430,
+      "b": 4861,
+      "a_name": "星域之魂",
+      "b_name": "涂蝶",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3430,
+      "b": 4925,
+      "a_name": "星域之魂",
+      "b_name": "米罗博士",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3467,
+      "b": 3033,
+      "a_name": "不灭·艾恩斯",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3467,
+      "b": 3291,
+      "a_name": "不灭·艾恩斯",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3488,
+      "b": 3033,
+      "a_name": "阴灵魂姬",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3488,
+      "b": 3414,
+      "a_name": "阴灵魂姬",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3507,
+      "b": 3033,
+      "a_name": "冥王·苍月影",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3507,
+      "b": 3414,
+      "a_name": "冥王·苍月影",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3516,
+      "b": 3033,
+      "a_name": "混沌地王莱茵哈特",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3516,
+      "b": 4126,
+      "a_name": "混沌地王莱茵哈特",
+      "b_name": "乌拉诺斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3516,
+      "b": 4219,
+      "a_name": "混沌地王莱茵哈特",
+      "b_name": "红莲之誓·安卡",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3524,
+      "b": 3740,
+      "a_name": "乔列尼德",
+      "b_name": "怒涛·沧岚",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3524,
+      "b": 4275,
+      "a_name": "乔列尼德",
+      "b_name": "命运之轮·莫伊莱",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3524,
+      "b": 4599,
+      "a_name": "乔列尼德",
+      "b_name": "灵巢之主·索杰德尔",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3529,
+      "b": 4189,
+      "a_name": "幻世·海瑟薇",
+      "b_name": "凌雪·樱",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3529,
+      "b": 4503,
+      "a_name": "幻世·海瑟薇",
+      "b_name": "库坦",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3539,
+      "b": 3033,
+      "a_name": "混沌布莱克",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3539,
+      "b": 3291,
+      "a_name": "混沌布莱克",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3550,
+      "b": 2987,
+      "a_name": "天启帝君",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3550,
+      "b": 3613,
+      "a_name": "天启帝君",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3550,
+      "b": 4500,
+      "a_name": "天启帝君",
+      "b_name": "武心婵",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3568,
+      "b": 3414,
+      "a_name": "圣地卡修斯",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3568,
+      "b": 3613,
+      "a_name": "圣地卡修斯",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3577,
+      "b": 2987,
+      "a_name": "光之惩戒·英卡洛斯",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3577,
+      "b": 3033,
+      "a_name": "光之惩戒·英卡洛斯",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3577,
+      "b": 3613,
+      "a_name": "光之惩戒·英卡洛斯",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3586,
+      "b": 3613,
+      "a_name": "战之狂热·英卡洛斯",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3586,
+      "b": 4000,
+      "a_name": "战之狂热·英卡洛斯",
+      "b_name": "薇尔诗",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3613,
+      "b": 3577,
+      "a_name": "芳馨·茉蕊儿",
+      "b_name": "光之惩戒·英卡洛斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3613,
+      "b": 4000,
+      "a_name": "芳馨·茉蕊儿",
+      "b_name": "薇尔诗",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3613,
+      "b": 4333,
+      "a_name": "芳馨·茉蕊儿",
+      "b_name": "哀·拉伯克",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3613,
+      "b": 4620,
+      "a_name": "芳馨·茉蕊儿",
+      "b_name": "孤烛灯使",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3613,
+      "b": 4765,
+      "a_name": "芳馨·茉蕊儿",
+      "b_name": "怒雷神裁·雷伊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3623,
+      "b": 3033,
+      "a_name": "鬼面幽蝶",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3623,
+      "b": 3291,
+      "a_name": "鬼面幽蝶",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3637,
+      "b": 3056,
+      "a_name": "不灭地威·萨瑞卡",
+      "b_name": "圣甲·盖亚",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3637,
+      "b": 3414,
+      "a_name": "不灭地威·萨瑞卡",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3665,
+      "b": 3414,
+      "a_name": "厉魇魔王·咤克斯",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3670,
+      "b": 3033,
+      "a_name": "圣耀之光·黄金天马",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3670,
+      "b": 3291,
+      "a_name": "圣耀之光·黄金天马",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3673,
+      "b": 2987,
+      "a_name": "艾夏拉",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3673,
+      "b": 3414,
+      "a_name": "艾夏拉",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3685,
+      "b": 2987,
+      "a_name": "孙权",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3685,
+      "b": 3613,
+      "a_name": "孙权",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3697,
+      "b": 2987,
+      "a_name": "擎空·凡尔斯",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3697,
+      "b": 3033,
+      "a_name": "擎空·凡尔斯",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3697,
+      "b": 3613,
+      "a_name": "擎空·凡尔斯",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3711,
+      "b": 3033,
+      "a_name": "圣光莫妮卡",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3711,
+      "b": 3613,
+      "a_name": "圣光莫妮卡",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3711,
+      "b": 4797,
+      "a_name": "圣光莫妮卡",
+      "b_name": "极渊DS-001",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3734,
+      "b": 3033,
+      "a_name": "混沌飞王凡尔斯",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3734,
+      "b": 3613,
+      "a_name": "混沌飞王凡尔斯",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3739,
+      "b": 3613,
+      "a_name": "玛洛迪斯",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3739,
+      "b": 4600,
+      "a_name": "玛洛迪斯",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3740,
+      "b": 3524,
+      "a_name": "怒涛·沧岚",
+      "b_name": "乔列尼德",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3740,
+      "b": 4503,
+      "a_name": "怒涛·沧岚",
+      "b_name": "库坦",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3740,
+      "b": 4600,
+      "a_name": "怒涛·沧岚",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3788,
+      "b": 2987,
+      "a_name": "混元天尊",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3788,
+      "b": 3237,
+      "a_name": "混元天尊",
+      "b_name": "大威势明王",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3788,
+      "b": 3291,
+      "a_name": "混元天尊",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3788,
+      "b": 3986,
+      "a_name": "混元天尊",
+      "b_name": "启灵元神",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3788,
+      "b": 4275,
+      "a_name": "混元天尊",
+      "b_name": "命运之轮·莫伊莱",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3788,
+      "b": 4288,
+      "a_name": "混元天尊",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3788,
+      "b": 4329,
+      "a_name": "混元天尊",
+      "b_name": "倪克斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3788,
+      "b": 4386,
+      "a_name": "混元天尊",
+      "b_name": "缔笙",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3788,
+      "b": 4510,
+      "a_name": "混元天尊",
+      "b_name": "卫岳",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3788,
+      "b": 4515,
+      "a_name": "混元天尊",
+      "b_name": "霍光",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3809,
+      "b": 3033,
+      "a_name": "龙神哈莫",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3809,
+      "b": 3291,
+      "a_name": "龙神哈莫",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3847,
+      "b": 3033,
+      "a_name": "魂帝·天循道",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3847,
+      "b": 3237,
+      "a_name": "魂帝·天循道",
+      "b_name": "大威势明王",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3847,
+      "b": 4627,
+      "a_name": "魂帝·天循道",
+      "b_name": "赫斯提亚",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3886,
+      "b": 3033,
+      "a_name": "冰魄·柯尔德",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3886,
+      "b": 3613,
+      "a_name": "冰魄·柯尔德",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3886,
+      "b": 4808,
+      "a_name": "冰魄·柯尔德",
+      "b_name": "讳迹·米修莉",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3924,
+      "b": 3033,
+      "a_name": "凛戾·寂灭魔神",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3924,
+      "b": 3291,
+      "a_name": "凛戾·寂灭魔神",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3941,
+      "b": 3033,
+      "a_name": "混沌暗王霍德尔",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3941,
+      "b": 4600,
+      "a_name": "混沌暗王霍德尔",
+      "b_name": "斯布林蒂",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3941,
+      "b": 4633,
+      "a_name": "混沌暗王霍德尔",
+      "b_name": "腐坏幽魔·克劳里菲",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3954,
+      "b": 3414,
+      "a_name": "枫眠",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3954,
+      "b": 3613,
+      "a_name": "枫眠",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3954,
+      "b": 4329,
+      "a_name": "枫眠",
+      "b_name": "倪克斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3986,
+      "b": 3033,
+      "a_name": "启灵元神",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3986,
+      "b": 3291,
+      "a_name": "启灵元神",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3986,
+      "b": 3613,
+      "a_name": "启灵元神",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 3986,
+      "b": 3788,
+      "a_name": "启灵元神",
+      "b_name": "混元天尊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4000,
+      "b": 3033,
+      "a_name": "薇尔诗",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4000,
+      "b": 3586,
+      "a_name": "薇尔诗",
+      "b_name": "战之狂热·英卡洛斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4000,
+      "b": 3613,
+      "a_name": "薇尔诗",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4001,
+      "b": 2987,
+      "a_name": "无上·万魔天尊",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4001,
+      "b": 3033,
+      "a_name": "无上·万魔天尊",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4002,
+      "b": 3033,
+      "a_name": "御象灵尊",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4002,
+      "b": 3613,
+      "a_name": "御象灵尊",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4024,
+      "b": 3033,
+      "a_name": "地葬界神",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4024,
+      "b": 3291,
+      "a_name": "地葬界神",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4032,
+      "b": 3613,
+      "a_name": "六界御神",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4032,
+      "b": 4800,
+      "a_name": "六界御神",
+      "b_name": "无极圣武",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4075,
+      "b": 3954,
+      "a_name": "混沌界神",
+      "b_name": "枫眠",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4075,
+      "b": 4661,
+      "a_name": "混沌界神",
+      "b_name": "无为觉者",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4125,
+      "b": 3033,
+      "a_name": "洪荒·列奥尼达",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4125,
+      "b": 3414,
+      "a_name": "洪荒·列奥尼达",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4125,
+      "b": 4800,
+      "a_name": "洪荒·列奥尼达",
+      "b_name": "无极圣武",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4125,
+      "b": 4861,
+      "a_name": "洪荒·列奥尼达",
+      "b_name": "涂蝶",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4126,
+      "b": 3516,
+      "a_name": "乌拉诺斯",
+      "b_name": "混沌地王莱茵哈特",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4126,
+      "b": 4219,
+      "a_name": "乌拉诺斯",
+      "b_name": "红莲之誓·安卡",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4126,
+      "b": 4288,
+      "a_name": "乌拉诺斯",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4126,
+      "b": 4604,
+      "a_name": "乌拉诺斯",
+      "b_name": "萨芙凯特",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4126,
+      "b": 4706,
+      "a_name": "乌拉诺斯",
+      "b_name": "奥菲利娅",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4126,
+      "b": 4712,
+      "a_name": "乌拉诺斯",
+      "b_name": "龙琰",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4126,
+      "b": 4717,
+      "a_name": "乌拉诺斯",
+      "b_name": "原始黑洞·尤纳斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4126,
+      "b": 4808,
+      "a_name": "乌拉诺斯",
+      "b_name": "讳迹·米修莉",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4163,
+      "b": 3414,
+      "a_name": "逆魂·佩特菲德",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4163,
+      "b": 4275,
+      "a_name": "逆魂·佩特菲德",
+      "b_name": "命运之轮·莫伊莱",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4169,
+      "b": 2987,
+      "a_name": "弑序神罗",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4169,
+      "b": 3291,
+      "a_name": "弑序神罗",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4169,
+      "b": 4184,
+      "a_name": "弑序神罗",
+      "b_name": "贝狄薇尔",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4169,
+      "b": 4586,
+      "a_name": "弑序神罗",
+      "b_name": "空元行者",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4169,
+      "b": 4605,
+      "a_name": "弑序神罗",
+      "b_name": "无限·欧根尼克",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4169,
+      "b": 4808,
+      "a_name": "弑序神罗",
+      "b_name": "讳迹·米修莉",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4184,
+      "b": 3954,
+      "a_name": "贝狄薇尔",
+      "b_name": "枫眠",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4184,
+      "b": 4169,
+      "a_name": "贝狄薇尔",
+      "b_name": "弑序神罗",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4184,
+      "b": 4661,
+      "a_name": "贝狄薇尔",
+      "b_name": "无为觉者",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4186,
+      "b": 2987,
+      "a_name": "镇世·乔特鲁德",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4186,
+      "b": 3033,
+      "a_name": "镇世·乔特鲁德",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4186,
+      "b": 3697,
+      "a_name": "镇世·乔特鲁德",
+      "b_name": "擎空·凡尔斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4189,
+      "b": 3033,
+      "a_name": "凌雪·樱",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4189,
+      "b": 3954,
+      "a_name": "凌雪·樱",
+      "b_name": "枫眠",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4208,
+      "b": 2987,
+      "a_name": "锢灵·舞",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4208,
+      "b": 3291,
+      "a_name": "锢灵·舞",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4219,
+      "b": 3516,
+      "a_name": "红莲之誓·安卡",
+      "b_name": "混沌地王莱茵哈特",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4219,
+      "b": 4126,
+      "a_name": "红莲之誓·安卡",
+      "b_name": "乌拉诺斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4219,
+      "b": 4600,
+      "a_name": "红莲之誓·安卡",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4270,
+      "b": 3291,
+      "a_name": "提西弗涅",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4275,
+      "b": 3033,
+      "a_name": "命运之轮·莫伊莱",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4275,
+      "b": 3788,
+      "a_name": "命运之轮·莫伊莱",
+      "b_name": "混元天尊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4275,
+      "b": 4163,
+      "a_name": "命运之轮·莫伊莱",
+      "b_name": "逆魂·佩特菲德",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4275,
+      "b": 4288,
+      "a_name": "命运之轮·莫伊莱",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4288,
+      "b": 3613,
+      "a_name": "龙仪·机械塔克林",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4288,
+      "b": 3788,
+      "a_name": "龙仪·机械塔克林",
+      "b_name": "混元天尊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4288,
+      "b": 4126,
+      "a_name": "龙仪·机械塔克林",
+      "b_name": "乌拉诺斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4288,
+      "b": 4275,
+      "a_name": "龙仪·机械塔克林",
+      "b_name": "命运之轮·莫伊莱",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4288,
+      "b": 4329,
+      "a_name": "龙仪·机械塔克林",
+      "b_name": "倪克斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4288,
+      "b": 4386,
+      "a_name": "龙仪·机械塔克林",
+      "b_name": "缔笙",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4288,
+      "b": 4517,
+      "a_name": "龙仪·机械塔克林",
+      "b_name": "铃熙",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4288,
+      "b": 4706,
+      "a_name": "龙仪·机械塔克林",
+      "b_name": "奥菲利娅",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4288,
+      "b": 4872,
+      "a_name": "龙仪·机械塔克林",
+      "b_name": "妙时天女",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4288,
+      "b": 4903,
+      "a_name": "龙仪·机械塔克林",
+      "b_name": "帝录天锋",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4321,
+      "b": 2987,
+      "a_name": "至序圣华",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4321,
+      "b": 3550,
+      "a_name": "至序圣华",
+      "b_name": "天启帝君",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4321,
+      "b": 3697,
+      "a_name": "至序圣华",
+      "b_name": "擎空·凡尔斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4321,
+      "b": 4169,
+      "a_name": "至序圣华",
+      "b_name": "弑序神罗",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4329,
+      "b": 3033,
+      "a_name": "倪克斯",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4329,
+      "b": 3788,
+      "a_name": "倪克斯",
+      "b_name": "混元天尊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4329,
+      "b": 3954,
+      "a_name": "倪克斯",
+      "b_name": "枫眠",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4329,
+      "b": 4288,
+      "a_name": "倪克斯",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4329,
+      "b": 4661,
+      "a_name": "倪克斯",
+      "b_name": "无为觉者",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4333,
+      "b": 3613,
+      "a_name": "哀·拉伯克",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4333,
+      "b": 4541,
+      "a_name": "哀·拉伯克",
+      "b_name": "莫塔里安",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4333,
+      "b": 4553,
+      "a_name": "哀·拉伯克",
+      "b_name": "万里春·北鸟",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4333,
+      "b": 4620,
+      "a_name": "哀·拉伯克",
+      "b_name": "孤烛灯使",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4333,
+      "b": 4620,
+      "a_name": "哀·拉伯克",
+      "b_name": "孤烛灯使",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4354,
+      "b": 3033,
+      "a_name": "狂沙之主·萨特",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4354,
+      "b": 3613,
+      "a_name": "狂沙之主·萨特",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4354,
+      "b": 4600,
+      "a_name": "狂沙之主·萨特",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4355,
+      "b": 3033,
+      "a_name": "终末大天使",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4355,
+      "b": 3237,
+      "a_name": "终末大天使",
+      "b_name": "大威势明王",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4355,
+      "b": 3613,
+      "a_name": "终末大天使",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4358,
+      "b": 3033,
+      "a_name": "杰特洛",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4358,
+      "b": 3613,
+      "a_name": "杰特洛",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4361,
+      "b": 4373,
+      "a_name": "洛基",
+      "b_name": "龙焉",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4361,
+      "b": 4712,
+      "a_name": "洛基",
+      "b_name": "龙琰",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4364,
+      "b": 3577,
+      "a_name": "尤莉米特",
+      "b_name": "光之惩戒·英卡洛斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4364,
+      "b": 4554,
+      "a_name": "尤莉米特",
+      "b_name": "圣谕邪魇",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4364,
+      "b": 4765,
+      "a_name": "尤莉米特",
+      "b_name": "怒雷神裁·雷伊",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4373,
+      "b": 3033,
+      "a_name": "龙焉",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4373,
+      "b": 3613,
+      "a_name": "龙焉",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4373,
+      "b": 4712,
+      "a_name": "龙焉",
+      "b_name": "龙琰",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4386,
+      "b": 3033,
+      "a_name": "缔笙",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4386,
+      "b": 3788,
+      "a_name": "缔笙",
+      "b_name": "混元天尊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4386,
+      "b": 4288,
+      "a_name": "缔笙",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4386,
+      "b": 4586,
+      "a_name": "缔笙",
+      "b_name": "空元行者",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4386,
+      "b": 4600,
+      "a_name": "缔笙",
+      "b_name": "斯布林蒂",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4386,
+      "b": 4903,
+      "a_name": "缔笙",
+      "b_name": "帝录天锋",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4387,
+      "b": 3033,
+      "a_name": "坦普瑞",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4387,
+      "b": 3291,
+      "a_name": "坦普瑞",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4400,
+      "b": 2987,
+      "a_name": "圣律剑灵",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4400,
+      "b": 3697,
+      "a_name": "圣律剑灵",
+      "b_name": "擎空·凡尔斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4400,
+      "b": 4321,
+      "a_name": "圣律剑灵",
+      "b_name": "至序圣华",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4421,
+      "b": 3033,
+      "a_name": "赤胆游龙·赵云",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4421,
+      "b": 3613,
+      "a_name": "赤胆游龙·赵云",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4445,
+      "b": 3414,
+      "a_name": "古温婆婆",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4445,
+      "b": 3954,
+      "a_name": "古温婆婆",
+      "b_name": "枫眠",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4450,
+      "b": 3033,
+      "a_name": "逐界苍星",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4450,
+      "b": 4600,
+      "a_name": "逐界苍星",
+      "b_name": "斯布林蒂",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4450,
+      "b": 4604,
+      "a_name": "逐界苍星",
+      "b_name": "萨芙凯特",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4454,
+      "b": 2987,
+      "a_name": "爵刻·黑沃德",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4454,
+      "b": 3430,
+      "a_name": "爵刻·黑沃德",
+      "b_name": "星域之魂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4454,
+      "b": 4925,
+      "a_name": "爵刻·黑沃德",
+      "b_name": "米罗博士",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4468,
+      "b": 3033,
+      "a_name": "始皇帝·嬴政",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4468,
+      "b": 3613,
+      "a_name": "始皇帝·嬴政",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4468,
+      "b": 4717,
+      "a_name": "始皇帝·嬴政",
+      "b_name": "原始黑洞·尤纳斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4468,
+      "b": 4797,
+      "a_name": "始皇帝·嬴政",
+      "b_name": "极渊DS-001",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4495,
+      "b": 3954,
+      "a_name": "彼尔德",
+      "b_name": "枫眠",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4495,
+      "b": 4075,
+      "a_name": "彼尔德",
+      "b_name": "混沌界神",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4496,
+      "b": 3033,
+      "a_name": "箫澈",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4496,
+      "b": 3414,
+      "a_name": "箫澈",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4500,
+      "b": 3033,
+      "a_name": "武心婵",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4500,
+      "b": 3550,
+      "a_name": "武心婵",
+      "b_name": "天启帝君",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4500,
+      "b": 3613,
+      "a_name": "武心婵",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4501,
+      "b": 3033,
+      "a_name": "普达戈尔",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4501,
+      "b": 3414,
+      "a_name": "普达戈尔",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4503,
+      "b": 3788,
+      "a_name": "库坦",
+      "b_name": "混元天尊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4503,
+      "b": 4126,
+      "a_name": "库坦",
+      "b_name": "乌拉诺斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4509,
+      "b": 3414,
+      "a_name": "梅林",
+      "b_name": "混沌魔君索伦森",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4509,
+      "b": 3613,
+      "a_name": "梅林",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4510,
+      "b": 3033,
+      "a_name": "卫岳",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4510,
+      "b": 3613,
+      "a_name": "卫岳",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4510,
+      "b": 3788,
+      "a_name": "卫岳",
+      "b_name": "混元天尊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4510,
+      "b": 4364,
+      "a_name": "卫岳",
+      "b_name": "尤莉米特",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4515,
+      "b": 3033,
+      "a_name": "霍光",
+      "b_name": "帝天战佛",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4515,
+      "b": 3788,
+      "a_name": "霍光",
+      "b_name": "混元天尊",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4515,
+      "b": 4288,
+      "a_name": "霍光",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4515,
+      "b": 4364,
+      "a_name": "霍光",
+      "b_name": "尤莉米特",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4517,
+      "b": 4288,
+      "a_name": "铃熙",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4517,
+      "b": 4553,
+      "a_name": "铃熙",
+      "b_name": "万里春·北鸟",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4517,
+      "b": 4600,
+      "a_name": "铃熙",
+      "b_name": "斯布林蒂",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4541,
+      "b": 3033,
+      "a_name": "莫塔里安",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4541,
+      "b": 3613,
+      "a_name": "莫塔里安",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4553,
+      "b": 3613,
+      "a_name": "万里春·北鸟",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4553,
+      "b": 4329,
+      "a_name": "万里春·北鸟",
+      "b_name": "倪克斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4554,
+      "b": 3613,
+      "a_name": "圣谕邪魇",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4554,
+      "b": 4364,
+      "a_name": "圣谕邪魇",
+      "b_name": "尤莉米特",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4586,
+      "b": 3033,
+      "a_name": "空元行者",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4586,
+      "b": 3613,
+      "a_name": "空元行者",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4586,
+      "b": 4169,
+      "a_name": "空元行者",
+      "b_name": "弑序神罗",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4586,
+      "b": 4386,
+      "a_name": "空元行者",
+      "b_name": "缔笙",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4586,
+      "b": 4853,
+      "a_name": "空元行者",
+      "b_name": "梅赫维特",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4594,
+      "b": 3237,
+      "a_name": "摆渡者·费雷",
+      "b_name": "大威势明王",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4594,
+      "b": 4600,
+      "a_name": "摆渡者·费雷",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4599,
+      "b": 3613,
+      "a_name": "灵巢之主·索杰德尔",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4599,
+      "b": 4329,
+      "a_name": "灵巢之主·索杰德尔",
+      "b_name": "倪克斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4599,
+      "b": 4808,
+      "a_name": "灵巢之主·索杰德尔",
+      "b_name": "讳迹·米修莉",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4600,
+      "b": 3941,
+      "a_name": "斯布林蒂",
+      "b_name": "混沌暗王霍德尔",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4600,
+      "b": 4386,
+      "a_name": "斯布林蒂",
+      "b_name": "缔笙",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4600,
+      "b": 4450,
+      "a_name": "斯布林蒂",
+      "b_name": "逐界苍星",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4600,
+      "b": 4517,
+      "a_name": "斯布林蒂",
+      "b_name": "铃熙",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4600,
+      "b": 4554,
+      "a_name": "斯布林蒂",
+      "b_name": "圣谕邪魇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4604,
+      "b": 3033,
+      "a_name": "萨芙凯特",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4604,
+      "b": 4126,
+      "a_name": "萨芙凯特",
+      "b_name": "乌拉诺斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4605,
+      "b": 3033,
+      "a_name": "无限·欧根尼克",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4605,
+      "b": 4503,
+      "a_name": "无限·欧根尼克",
+      "b_name": "库坦",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4605,
+      "b": 4600,
+      "a_name": "无限·欧根尼克",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4605,
+      "b": 4853,
+      "a_name": "无限·欧根尼克",
+      "b_name": "梅赫维特",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4618,
+      "b": 3033,
+      "a_name": "佩洛瑟斯",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4618,
+      "b": 4600,
+      "a_name": "佩洛瑟斯",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4620,
+      "b": 3613,
+      "a_name": "孤烛灯使",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4620,
+      "b": 4333,
+      "a_name": "孤烛灯使",
+      "b_name": "哀·拉伯克",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4620,
+      "b": 4333,
+      "a_name": "孤烛灯使",
+      "b_name": "哀·拉伯克",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4620,
+      "b": 4553,
+      "a_name": "孤烛灯使",
+      "b_name": "万里春·北鸟",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4620,
+      "b": 4875,
+      "a_name": "孤烛灯使",
+      "b_name": "永烬劫炎·上古炎兽",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4622,
+      "b": 3033,
+      "a_name": "希拓",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4622,
+      "b": 3613,
+      "a_name": "希拓",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4622,
+      "b": 4875,
+      "a_name": "希拓",
+      "b_name": "永烬劫炎·上古炎兽",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4627,
+      "b": 3577,
+      "a_name": "赫斯提亚",
+      "b_name": "光之惩戒·英卡洛斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4627,
+      "b": 4765,
+      "a_name": "赫斯提亚",
+      "b_name": "怒雷神裁·雷伊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4633,
+      "b": 3941,
+      "a_name": "腐坏幽魔·克劳里菲",
+      "b_name": "混沌暗王霍德尔",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4633,
+      "b": 4553,
+      "a_name": "腐坏幽魔·克劳里菲",
+      "b_name": "万里春·北鸟",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4633,
+      "b": 4600,
+      "a_name": "腐坏幽魔·克劳里菲",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4635,
+      "b": 3033,
+      "a_name": "枫落殇·西叶",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4635,
+      "b": 4288,
+      "a_name": "枫落殇·西叶",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4635,
+      "b": 4600,
+      "a_name": "枫落殇·西叶",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4643,
+      "b": 4600,
+      "a_name": "蓓丽安特",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4643,
+      "b": 4644,
+      "a_name": "蓓丽安特",
+      "b_name": "克雷弗德",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4644,
+      "b": 4600,
+      "a_name": "克雷弗德",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4644,
+      "b": 4627,
+      "a_name": "克雷弗德",
+      "b_name": "赫斯提亚",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4644,
+      "b": 4643,
+      "a_name": "克雷弗德",
+      "b_name": "蓓丽安特",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4647,
+      "b": 3613,
+      "a_name": "星光·丽莎布布",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4647,
+      "b": 4648,
+      "a_name": "星光·丽莎布布",
+      "b_name": "星光·鲁斯王",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4647,
+      "b": 4649,
+      "a_name": "星光·丽莎布布",
+      "b_name": "星光·魔焰猩猩",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4648,
+      "b": 3613,
+      "a_name": "星光·鲁斯王",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4648,
+      "b": 4600,
+      "a_name": "星光·鲁斯王",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4648,
+      "b": 4647,
+      "a_name": "星光·鲁斯王",
+      "b_name": "星光·丽莎布布",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4648,
+      "b": 4649,
+      "a_name": "星光·鲁斯王",
+      "b_name": "星光·魔焰猩猩",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4649,
+      "b": 3033,
+      "a_name": "星光·魔焰猩猩",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4649,
+      "b": 4647,
+      "a_name": "星光·魔焰猩猩",
+      "b_name": "星光·丽莎布布",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4649,
+      "b": 4648,
+      "a_name": "星光·魔焰猩猩",
+      "b_name": "星光·鲁斯王",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4661,
+      "b": 4468,
+      "a_name": "无为觉者",
+      "b_name": "始皇帝·嬴政",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4661,
+      "b": 4600,
+      "a_name": "无为觉者",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4676,
+      "b": 3986,
+      "a_name": "神觉·米斯蒂克",
+      "b_name": "启灵元神",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4676,
+      "b": 4765,
+      "a_name": "神觉·米斯蒂克",
+      "b_name": "怒雷神裁·雷伊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4677,
+      "b": 3613,
+      "a_name": "星辰万象·天启星魂",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4677,
+      "b": 4800,
+      "a_name": "星辰万象·天启星魂",
+      "b_name": "无极圣武",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4697,
+      "b": 3033,
+      "a_name": "华光之翼·杰洛恩",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4706,
+      "b": 3613,
+      "a_name": "奥菲利娅",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4706,
+      "b": 4000,
+      "a_name": "奥菲利娅",
+      "b_name": "薇尔诗",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4706,
+      "b": 4126,
+      "a_name": "奥菲利娅",
+      "b_name": "乌拉诺斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4706,
+      "b": 4288,
+      "a_name": "奥菲利娅",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4712,
+      "b": 4126,
+      "a_name": "龙琰",
+      "b_name": "乌拉诺斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4712,
+      "b": 4361,
+      "a_name": "龙琰",
+      "b_name": "洛基",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4712,
+      "b": 4373,
+      "a_name": "龙琰",
+      "b_name": "龙焉",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4716,
+      "b": 3033,
+      "a_name": "赫尔卡长老",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4716,
+      "b": 4364,
+      "a_name": "赫尔卡长老",
+      "b_name": "尤莉米特",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4717,
+      "b": 3033,
+      "a_name": "原始黑洞·尤纳斯",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4717,
+      "b": 4468,
+      "a_name": "原始黑洞·尤纳斯",
+      "b_name": "始皇帝·嬴政",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4717,
+      "b": 4510,
+      "a_name": "原始黑洞·尤纳斯",
+      "b_name": "卫岳",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4732,
+      "b": 3291,
+      "a_name": "闪光皮神",
+      "b_name": "瀚宇星皇",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4732,
+      "b": 3613,
+      "a_name": "闪光皮神",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4749,
+      "b": 3033,
+      "a_name": "对神兵器肯扎特",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4749,
+      "b": 3613,
+      "a_name": "对神兵器肯扎特",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4749,
+      "b": 4288,
+      "a_name": "对神兵器肯扎特",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4761,
+      "b": 3613,
+      "a_name": "琉梦",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4761,
+      "b": 4762,
+      "a_name": "琉梦",
+      "b_name": "湮灭之主·咤克斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4762,
+      "b": 3033,
+      "a_name": "湮灭之主·咤克斯",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4762,
+      "b": 3613,
+      "a_name": "湮灭之主·咤克斯",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4765,
+      "b": 3033,
+      "a_name": "怒雷神裁·雷伊",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4765,
+      "b": 3613,
+      "a_name": "怒雷神裁·雷伊",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4765,
+      "b": 4364,
+      "a_name": "怒雷神裁·雷伊",
+      "b_name": "尤莉米特",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4766,
+      "b": 3033,
+      "a_name": "灭战神决·盖亚",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4766,
+      "b": 3613,
+      "a_name": "灭战神决·盖亚",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4797,
+      "b": 3711,
+      "a_name": "极渊DS-001",
+      "b_name": "圣光莫妮卡",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4797,
+      "b": 4126,
+      "a_name": "极渊DS-001",
+      "b_name": "乌拉诺斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4797,
+      "b": 4468,
+      "a_name": "极渊DS-001",
+      "b_name": "始皇帝·嬴政",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4800,
+      "b": 4125,
+      "a_name": "无极圣武",
+      "b_name": "洪荒·列奥尼达",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4800,
+      "b": 4677,
+      "a_name": "无极圣武",
+      "b_name": "星辰万象·天启星魂",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4800,
+      "b": 4765,
+      "a_name": "无极圣武",
+      "b_name": "怒雷神裁·雷伊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4800,
+      "b": 4861,
+      "a_name": "无极圣武",
+      "b_name": "涂蝶",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4800,
+      "b": 4872,
+      "a_name": "无极圣武",
+      "b_name": "妙时天女",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4808,
+      "b": 3986,
+      "a_name": "讳迹·米修莉",
+      "b_name": "启灵元神",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4808,
+      "b": 4126,
+      "a_name": "讳迹·米修莉",
+      "b_name": "乌拉诺斯",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4808,
+      "b": 4599,
+      "a_name": "讳迹·米修莉",
+      "b_name": "灵巢之主·索杰德尔",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4808,
+      "b": 4861,
+      "a_name": "讳迹·米修莉",
+      "b_name": "涂蝶",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4816,
+      "b": 3033,
+      "a_name": "伊芙",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4816,
+      "b": 4600,
+      "a_name": "伊芙",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4853,
+      "b": 3033,
+      "a_name": "梅赫维特",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4853,
+      "b": 3613,
+      "a_name": "梅赫维特",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4853,
+      "b": 4586,
+      "a_name": "梅赫维特",
+      "b_name": "空元行者",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4853,
+      "b": 4605,
+      "a_name": "梅赫维特",
+      "b_name": "无限·欧根尼克",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4861,
+      "b": 3430,
+      "a_name": "涂蝶",
+      "b_name": "星域之魂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4861,
+      "b": 3986,
+      "a_name": "涂蝶",
+      "b_name": "启灵元神",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4861,
+      "b": 4125,
+      "a_name": "涂蝶",
+      "b_name": "洪荒·列奥尼达",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4861,
+      "b": 4126,
+      "a_name": "涂蝶",
+      "b_name": "乌拉诺斯",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4861,
+      "b": 4800,
+      "a_name": "涂蝶",
+      "b_name": "无极圣武",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4872,
+      "b": 3033,
+      "a_name": "妙时天女",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4872,
+      "b": 3613,
+      "a_name": "妙时天女",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4872,
+      "b": 4288,
+      "a_name": "妙时天女",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4872,
+      "b": 4288,
+      "a_name": "妙时天女",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4872,
+      "b": 4800,
+      "a_name": "妙时天女",
+      "b_name": "无极圣武",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4875,
+      "b": 3613,
+      "a_name": "永烬劫炎·上古炎兽",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4875,
+      "b": 3954,
+      "a_name": "永烬劫炎·上古炎兽",
+      "b_name": "枫眠",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4875,
+      "b": 4500,
+      "a_name": "永烬劫炎·上古炎兽",
+      "b_name": "武心婵",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4875,
+      "b": 4620,
+      "a_name": "永烬劫炎·上古炎兽",
+      "b_name": "孤烛灯使",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4875,
+      "b": 4622,
+      "a_name": "永烬劫炎·上古炎兽",
+      "b_name": "希拓",
+      "origin": "synergies",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4903,
+      "b": 3033,
+      "a_name": "帝录天锋",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4903,
+      "b": 3613,
+      "a_name": "帝录天锋",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4903,
+      "b": 4288,
+      "a_name": "帝录天锋",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4903,
+      "b": 4386,
+      "a_name": "帝录天锋",
+      "b_name": "缔笙",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4903,
+      "b": 4600,
+      "a_name": "帝录天锋",
+      "b_name": "斯布林蒂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4925,
+      "b": 2987,
+      "a_name": "米罗博士",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4925,
+      "b": 3430,
+      "a_name": "米罗博士",
+      "b_name": "星域之魂",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4946,
+      "b": 3033,
+      "a_name": "万霆神律·雷伊",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4946,
+      "b": 3613,
+      "a_name": "万霆神律·雷伊",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4946,
+      "b": 4947,
+      "a_name": "万霆神律·雷伊",
+      "b_name": "不灭战魂·盖亚",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4947,
+      "b": 3033,
+      "a_name": "不灭战魂·盖亚",
+      "b_name": "帝天战佛",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4947,
+      "b": 3613,
+      "a_name": "不灭战魂·盖亚",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4947,
+      "b": 4946,
+      "a_name": "不灭战魂·盖亚",
+      "b_name": "万霆神律·雷伊",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 5000,
+      "b": 2987,
+      "a_name": "圣灵谱尼",
+      "b_name": "重生之翼",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 5000,
+      "b": 3613,
+      "a_name": "圣灵谱尼",
+      "b_name": "芳馨·茉蕊儿",
+      "origin": "leads",
+      "reason": "历史声明未落在 systems.json 的显式 chain_edges 上，或缺少双向互证；不是同队配合，只是同一骨架／备选位或旧版单向声明"
+    },
+    {
+      "a": 4125,
+      "b": 4872,
+      "a_name": "洪荒·列奥尼达",
+      "b_name": "妙时天女",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4184,
+      "b": 4586,
+      "a_name": "贝狄薇尔",
+      "b_name": "空元行者",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4219,
+      "b": 4622,
+      "a_name": "红莲之誓·安卡",
+      "b_name": "希拓",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4219,
+      "b": 4875,
+      "a_name": "红莲之誓·安卡",
+      "b_name": "永烬劫炎·上古炎兽",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4288,
+      "b": 4661,
+      "a_name": "龙仪·机械塔克林",
+      "b_name": "无为觉者",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4387,
+      "b": 4599,
+      "a_name": "坦普瑞",
+      "b_name": "灵巢之主·索杰德尔",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4387,
+      "b": 4808,
+      "a_name": "坦普瑞",
+      "b_name": "讳迹·米修莉",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4510,
+      "b": 4515,
+      "a_name": "卫岳",
+      "b_name": "霍光",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4515,
+      "b": 4510,
+      "a_name": "霍光",
+      "b_name": "卫岳",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4517,
+      "b": 4622,
+      "a_name": "铃熙",
+      "b_name": "希拓",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4541,
+      "b": 4808,
+      "a_name": "莫塔里安",
+      "b_name": "讳迹·米修莉",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4586,
+      "b": 4184,
+      "a_name": "空元行者",
+      "b_name": "贝狄薇尔",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4599,
+      "b": 4387,
+      "a_name": "灵巢之主·索杰德尔",
+      "b_name": "坦普瑞",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4599,
+      "b": 4766,
+      "a_name": "灵巢之主·索杰德尔",
+      "b_name": "灭战神决·盖亚",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4600,
+      "b": 3739,
+      "a_name": "斯布林蒂",
+      "b_name": "玛洛迪斯",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4622,
+      "b": 4219,
+      "a_name": "希拓",
+      "b_name": "红莲之誓·安卡",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4622,
+      "b": 4517,
+      "a_name": "希拓",
+      "b_name": "铃熙",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4661,
+      "b": 4288,
+      "a_name": "无为觉者",
+      "b_name": "龙仪·机械塔克林",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4676,
+      "b": 4762,
+      "a_name": "神觉·米斯蒂克",
+      "b_name": "湮灭之主·咤克斯",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4762,
+      "b": 4676,
+      "a_name": "湮灭之主·咤克斯",
+      "b_name": "神觉·米斯蒂克",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4762,
+      "b": 4761,
+      "a_name": "湮灭之主·咤克斯",
+      "b_name": "琉梦",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4766,
+      "b": 4599,
+      "a_name": "灭战神决·盖亚",
+      "b_name": "灵巢之主·索杰德尔",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4808,
+      "b": 4169,
+      "a_name": "讳迹·米修莉",
+      "b_name": "弑序神罗",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4808,
+      "b": 4387,
+      "a_name": "讳迹·米修莉",
+      "b_name": "坦普瑞",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4808,
+      "b": 4541,
+      "a_name": "讳迹·米修莉",
+      "b_name": "莫塔里安",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4872,
+      "b": 4125,
+      "a_name": "妙时天女",
+      "b_name": "洪荒·列奥尼达",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    },
+    {
+      "a": 4875,
+      "b": 4219,
+      "a_name": "永烬劫炎·上古炎兽",
+      "b_name": "红莲之誓·安卡",
+      "origin": "synergies",
+      "reason": "所属体系已于 2026-11-15 退役，精灵级联动声明失去 systems.json chain_edges 依据；只作历史留痕，不构成关联或推荐"
+    }
+  ]
+}

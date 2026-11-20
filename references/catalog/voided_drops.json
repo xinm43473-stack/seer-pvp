@@ -1,0 +1,2889 @@
+{
+  "generated_at": "2026-11-04",
+  "policy": "「单条魂印」与「种族值过低」两类自动剔除理由作废；是否录入以两位 UP 主是否出过配置/攻略作品为准。标题提及（周测评/返场/皮肤/剧情/同人向）不作为依据，2026-11-04 已整体删除。此队列保证旧理由不再把精灵挡在可查列表之外，不等于推荐。",
+  "standard_source": "references/data/creator_index.json",
+  "total": 358,
+  "by_reason": {
+    "种族值过低": 210,
+    "单条魂印且无核心机制": 148
+  },
+  "by_state": {
+    "unlisted": 300,
+    "excluded_examples": 19,
+    "pending_research": 19,
+    "spirits": 20
+  },
+  "by_coverage": {
+    "未查到配置/攻略作品覆盖": 349,
+    "配置/攻略专题": 9
+  },
+  "next_action": "配置/攻略专题覆盖者必须落在 spirits 或 pending_research；未查到覆盖者保留可查记录，发现配置/攻略作品后立即入池。",
+  "items": [
+    {
+      "id": 2990,
+      "name": "斯洛斯",
+      "void_reason": "种族值过低(656)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 2991,
+      "name": "地葬界王",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 2992,
+      "name": "圣诞神使",
+      "void_reason": "种族值过低(656)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 2993,
+      "name": "海神·波塞冬",
+      "void_reason": "种族值过低(674)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 2995,
+      "name": "落樱飞雪",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 2999,
+      "name": "千夜死神",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3000,
+      "name": "圣逍剑影",
+      "void_reason": "种族值过低(629)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3001,
+      "name": "众神之首·宙斯",
+      "void_reason": "种族值过低(674)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3004,
+      "name": "真龙·塔西亚",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3005,
+      "name": "无常幽鬼",
+      "void_reason": "种族值过低(651)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3006,
+      "name": "混沌界王",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3007,
+      "name": "海拉瑞德",
+      "void_reason": "种族值过低(666)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3012,
+      "name": "狂刃血鬼",
+      "void_reason": "种族值过低(650)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3013,
+      "name": "时空界王",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3014,
+      "name": "神佑之翼·炽天使",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3015,
+      "name": "真龙·塞维尔",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3017,
+      "name": "真龙·塔克林",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3019,
+      "name": "伊维特",
+      "void_reason": "种族值过低(635)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3020,
+      "name": "百鬼夜王",
+      "void_reason": "种族值过低(661)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3021,
+      "name": "跃乾龙马",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3025,
+      "name": "炽风烈鬼",
+      "void_reason": "种族值过低(653)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3026,
+      "name": "幻境界王",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3030,
+      "name": "克拉德诺",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3031,
+      "name": "鬼神吕布",
+      "void_reason": "种族值过低(670)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3032,
+      "name": "神威灵兽",
+      "void_reason": "种族值过低(630)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3043,
+      "name": "焱武·圣尊",
+      "void_reason": "种族值过低(655)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3044,
+      "name": "库贝萨隆",
+      "void_reason": "种族值过低(670)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3045,
+      "name": "六界神王",
+      "void_reason": "种族值过低(671)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3048,
+      "name": "神机诸葛",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3049,
+      "name": "云天灵尊",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3050,
+      "name": "风玄灵尊",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3051,
+      "name": "闭月貂蝉",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3052,
+      "name": "威魄战车",
+      "void_reason": "种族值过低(630)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3053,
+      "name": "天刑厄神",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3055,
+      "name": "天弓黄忠",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3059,
+      "name": "悲鸣神护",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3060,
+      "name": "盖世张飞",
+      "void_reason": "种族值过低(662)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3061,
+      "name": "圣甲·卡修斯",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3064,
+      "name": "末日天卫",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3065,
+      "name": "卡迪沃德",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3066,
+      "name": "鬼焰神君陆逊",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3071,
+      "name": "漆黑僧正",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3073,
+      "name": "莉莲娜",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3074,
+      "name": "仁天之君·刘备",
+      "void_reason": "种族值过低(658)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3075,
+      "name": "圣甲·缪斯",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3077,
+      "name": "神鹿仙灵",
+      "void_reason": "种族值过低(630)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3086,
+      "name": "战·肯扎德",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3087,
+      "name": "圣武天尊·关羽",
+      "void_reason": "种族值过低(662)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3088,
+      "name": "寂天魔刹",
+      "void_reason": "种族值过低(674)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3090,
+      "name": "利斯塔",
+      "void_reason": "种族值过低(655)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3091,
+      "name": "炼神魔影",
+      "void_reason": "种族值过低(674)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3092,
+      "name": "锦马超",
+      "void_reason": "种族值过低(670)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3093,
+      "name": "罗德里特",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3094,
+      "name": "魔化瑞尔斯",
+      "void_reason": "种族值过低(650)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3096,
+      "name": "毁世魔屠",
+      "void_reason": "种族值过低(674)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3097,
+      "name": "雷暴·利斯塔",
+      "void_reason": "种族值过低(670)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3098,
+      "name": "皮特萨拉罗",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3099,
+      "name": "四九战王",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3100,
+      "name": "源力·劫",
+      "void_reason": "种族值过低(665)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3103,
+      "name": "青莲剑神",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3104,
+      "name": "龙翼战神",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3106,
+      "name": "四九圣尊",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3108,
+      "name": "邪厄魔狂",
+      "void_reason": "种族值过低(674)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3112,
+      "name": "天战·格拉特",
+      "void_reason": "种族值过低(659)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3113,
+      "name": "梦魔·狄修卡",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3115,
+      "name": "无上魔尊",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3116,
+      "name": "班纳尔克",
+      "void_reason": "种族值过低(659)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3117,
+      "name": "伽罗·八部天龙",
+      "void_reason": "种族值过低(665)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3118,
+      "name": "索比斯",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3120,
+      "name": "血魔·泰沃西",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3121,
+      "name": "夜香刀神",
+      "void_reason": "种族值过低(677)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3124,
+      "name": "郭嘉",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3126,
+      "name": "魔龙·加洛斯格",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3127,
+      "name": "夜翼",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3128,
+      "name": "太玄·九天圣龙",
+      "void_reason": "种族值过低(665)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3132,
+      "name": "寒域冰骑",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3133,
+      "name": "魔瞳·伊洛维奇",
+      "void_reason": "种族值过低(669)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3135,
+      "name": "幽冥邪龙",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3136,
+      "name": "维耶扎克",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3137,
+      "name": "八骏神驹",
+      "void_reason": "种族值过低(665)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3139,
+      "name": "陌羽飞月",
+      "void_reason": "种族值过低(659)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3140,
+      "name": "圣仁之瞳·天蛇太祖",
+      "void_reason": "种族值过低(665)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3141,
+      "name": "深渊狱神·哈迪斯",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3144,
+      "name": "克拉罗",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3146,
+      "name": "绯云",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3147,
+      "name": "神翼·波斯蒂加",
+      "void_reason": "种族值过低(665)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3151,
+      "name": "库拉里尔",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3152,
+      "name": "冥王·鬼夜斩",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3153,
+      "name": "千煞魔星",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3154,
+      "name": "斯塔奥",
+      "void_reason": "种族值过低(662)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3155,
+      "name": "骸烬箭灵",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3156,
+      "name": "路希菲尔德",
+      "void_reason": "种族值过低(650)",
+      "state": "pending_research",
+      "creator_coverage": "配置/攻略专题",
+      "example_work": "精灵推荐培养方案（觉醒篇）：路希菲尔德、冥王·苍月影、弑神猎皇、枫眠"
+    },
+    {
+      "id": 3157,
+      "name": "冥王·裂空破",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3161,
+      "name": "踏云乌骓",
+      "void_reason": "种族值过低(650)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3164,
+      "name": "霸王项羽",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3165,
+      "name": "贝希摩斯",
+      "void_reason": "种族值过低(650)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3167,
+      "name": "不死·烈羽",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3168,
+      "name": "冥王·灭天截",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3171,
+      "name": "银月狼王",
+      "void_reason": "种族值过低(660)",
+      "state": "pending_research",
+      "creator_coverage": "配置/攻略专题",
+      "example_work": "精灵推荐培养方案（觉醒篇）：银月狼王、昔兰尼加、怒涛·沧岚"
+    },
+    {
+      "id": 3175,
+      "name": "冥王·皎月牙",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3177,
+      "name": "撒丹尼兹",
+      "void_reason": "种族值过低(663)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3178,
+      "name": "虞姬",
+      "void_reason": "种族值过低(663)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3181,
+      "name": "金吉儿",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3184,
+      "name": "圣谕天骑",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3185,
+      "name": "魔化克雷尔",
+      "void_reason": "种族值过低(665)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3186,
+      "name": "莫戈尔",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3189,
+      "name": "水中灵",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3192,
+      "name": "天香小乔",
+      "void_reason": "种族值过低(663)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3193,
+      "name": "昊希莉娜",
+      "void_reason": "种族值过低(661)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3201,
+      "name": "凛锋剑豪",
+      "void_reason": "种族值过低(661)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3203,
+      "name": "霜焱主宰",
+      "void_reason": "种族值过低(663)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3204,
+      "name": "苏亚希斯",
+      "void_reason": "种族值过低(661)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3207,
+      "name": "达克赛德",
+      "void_reason": "种族值过低(661)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3208,
+      "name": "黑翼游侠",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3209,
+      "name": "金笔书圣",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3211,
+      "name": "海瑟薇",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3212,
+      "name": "霜焱",
+      "void_reason": "种族值过低(670)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3213,
+      "name": "弗雷萨姆",
+      "void_reason": "种族值过低(661)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3216,
+      "name": "萨夫特雷",
+      "void_reason": "种族值过低(665)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3218,
+      "name": "炙凤凯皇",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3219,
+      "name": "铸炼师",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3222,
+      "name": "炫羽",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3223,
+      "name": "阿尔斯兰",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3224,
+      "name": "暗武逆战·艾辛格斯",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3225,
+      "name": "弑焱天魂",
+      "void_reason": "种族值过低(674)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3235,
+      "name": "兰利斯特",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3236,
+      "name": "塞纳留斯",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3238,
+      "name": "炽骸剑魔",
+      "void_reason": "种族值过低(676)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3239,
+      "name": "神圣龙鹰",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3241,
+      "name": "裴罗",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3243,
+      "name": "妖王·阿米尔",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3244,
+      "name": "云羽天灵",
+      "void_reason": "种族值过低(676)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3245,
+      "name": "芬里尔",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3246,
+      "name": "妖王·斯内普",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3248,
+      "name": "黄金圣龙王",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3250,
+      "name": "达赫迪拉",
+      "void_reason": "种族值过低(670)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3251,
+      "name": "妖王·吉罗德",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3252,
+      "name": "阴摩罗",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3254,
+      "name": "炽刃·佐罗",
+      "void_reason": "种族值过低(650)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3257,
+      "name": "阿诺纳西斯",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3259,
+      "name": "诶西斯",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3260,
+      "name": "暮瑶",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3262,
+      "name": "邪冥龙帝",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3264,
+      "name": "迪博斯坦",
+      "void_reason": "种族值过低(665)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3265,
+      "name": "烈焰·瑞德尔",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3266,
+      "name": "莫迪西里尔",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3269,
+      "name": "寒凌",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3270,
+      "name": "阿瑞波利斯",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3271,
+      "name": "极地·沃德斯特",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3274,
+      "name": "赫尔墨兰迪",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3275,
+      "name": "飓风·布克鸟",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3277,
+      "name": "三叶",
+      "void_reason": "种族值过低(673)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3278,
+      "name": "淘灵灵",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3280,
+      "name": "德罗西尼",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3281,
+      "name": "冬寒梅隐",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3282,
+      "name": "弑魂·青龙",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3283,
+      "name": "戴斯威尔",
+      "void_reason": "种族值过低(672)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3284,
+      "name": "泰勒斯特",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3286,
+      "name": "大帝·凯尔凡",
+      "void_reason": "种族值过低(650)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3290,
+      "name": "征东将军·张辽",
+      "void_reason": "种族值过低(672)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3294,
+      "name": "圣诞雪姬",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3298,
+      "name": "圣虎光灵",
+      "void_reason": "种族值过低(650)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3299,
+      "name": "伊森德雷",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3303,
+      "name": "灵兽·萨尔蒙",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3313,
+      "name": "福兽天禄",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3314,
+      "name": "财多多",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3316,
+      "name": "瓦特艾沃",
+      "void_reason": "种族值过低(670)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3319,
+      "name": "莉亚德琳",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3324,
+      "name": "艾丽桑",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3330,
+      "name": "玄天神武",
+      "void_reason": "种族值过低(650)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3331,
+      "name": "奥斯里安",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3333,
+      "name": "格拉斯",
+      "void_reason": "种族值过低(653)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3334,
+      "name": "特拉维斯",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3335,
+      "name": "菲格利亚",
+      "void_reason": "种族值过低(650)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3337,
+      "name": "弗雷尔",
+      "void_reason": "种族值过低(653)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3342,
+      "name": "银角灵魔",
+      "void_reason": "种族值过低(656)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3344,
+      "name": "金角灵魔",
+      "void_reason": "种族值过低(656)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3350,
+      "name": "瀚海界皇",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3351,
+      "name": "科罗克娜",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3352,
+      "name": "灭世主",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3357,
+      "name": "伊基塔",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3359,
+      "name": "地葬界皇",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3367,
+      "name": "混沌界皇",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3369,
+      "name": "砂忍·越马",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3373,
+      "name": "神火炎刃",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3377,
+      "name": "卡曼",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3380,
+      "name": "莉尔",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3384,
+      "name": "爆破先锋",
+      "void_reason": "种族值过低(641)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3391,
+      "name": "黎凡特",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3399,
+      "name": "阿娅",
+      "void_reason": "种族值过低(670)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3401,
+      "name": "珂莱蒂尔",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3404,
+      "name": "帝皇之钺",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3405,
+      "name": "科穆宁",
+      "void_reason": "种族值过低(656)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3409,
+      "name": "三藏",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3413,
+      "name": "华尔琪",
+      "void_reason": "种族值过低(648)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3416,
+      "name": "辛西娅",
+      "void_reason": "种族值过低(657)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3418,
+      "name": "大乔",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3420,
+      "name": "梦·赫尔墨斯",
+      "void_reason": "种族值过低(666)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3424,
+      "name": "拉奥里特",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3428,
+      "name": "疾·阿洛纳斯",
+      "void_reason": "种族值过低(667)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3435,
+      "name": "伊丽莎白",
+      "void_reason": "种族值过低(648)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3439,
+      "name": "恐·阿瑞波斯",
+      "void_reason": "种族值过低(667)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3444,
+      "name": "伊芙莉",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3447,
+      "name": "克拉卡",
+      "void_reason": "种族值过低(660)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3451,
+      "name": "秘·莫迪西斯",
+      "void_reason": "种族值过低(666)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3453,
+      "name": "布姆",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3454,
+      "name": "关银屏",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3457,
+      "name": "亚尔娜",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3469,
+      "name": "拉特雷奇",
+      "void_reason": "种族值过低(649)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3478,
+      "name": "拉兹",
+      "void_reason": "种族值过低(648)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3479,
+      "name": "龙香",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3480,
+      "name": "普兰哈特",
+      "void_reason": "种族值过低(640)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3488,
+      "name": "阴灵魂姬",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3493,
+      "name": "摩洛克",
+      "void_reason": "种族值过低(670)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3496,
+      "name": "冥王·夜刃绝",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3500,
+      "name": "埃摩蒂",
+      "void_reason": "种族值过低(649)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3501,
+      "name": "艾拉",
+      "void_reason": "种族值过低(677)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3513,
+      "name": "哈恩特",
+      "void_reason": "种族值过低(650)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3521,
+      "name": "拜斯",
+      "void_reason": "种族值过低(649)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3526,
+      "name": "奥古罗尔",
+      "void_reason": "种族值过低(661)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3529,
+      "name": "幻世·海瑟薇",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3546,
+      "name": "艾尔瑞兹",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3569,
+      "name": "托尔希",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3585,
+      "name": "索兰莉安",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3608,
+      "name": "安妮尔",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3609,
+      "name": "德拉诺",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3615,
+      "name": "清灵儿",
+      "void_reason": "种族值过低(670)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3641,
+      "name": "篝火大使",
+      "void_reason": "种族值过低(670)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3651,
+      "name": "图加索",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3654,
+      "name": "奎因",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3658,
+      "name": "薇尔格",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3678,
+      "name": "暗灵法神",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3685,
+      "name": "孙权",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3704,
+      "name": "狂热之诚·吉罗德",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "配置/攻略专题",
+      "example_work": "精灵推荐培养方案（觉醒篇）：惊涛海皇·波塞冬、狂热之诚·吉罗德"
+    },
+    {
+      "id": 3707,
+      "name": "爱情机器人",
+      "void_reason": "种族值过低(666)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3712,
+      "name": "糖果儿",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3720,
+      "name": "魔琪",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3723,
+      "name": "板凳毛",
+      "void_reason": "种族值过低(666)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3726,
+      "name": "优等笙",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3732,
+      "name": "阿尔葎比",
+      "void_reason": "种族值过低(670)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3736,
+      "name": "夜语花",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3749,
+      "name": "伊特丽丝",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3753,
+      "name": "阿珂丽斯",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3761,
+      "name": "霹雳喵",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3768,
+      "name": "肯佩斯",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3771,
+      "name": "桃桃",
+      "void_reason": "种族值过低(664)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3775,
+      "name": "珀希丝",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3787,
+      "name": "瓦迪娅",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3791,
+      "name": "邪魂大祭司",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3798,
+      "name": "杰内",
+      "void_reason": "种族值过低(666)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3808,
+      "name": "镜瑶",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3810,
+      "name": "妮莎",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3812,
+      "name": "咲居儿",
+      "void_reason": "种族值过低(674)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3819,
+      "name": "跳跳狮",
+      "void_reason": "种族值过低(674)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3832,
+      "name": "时分公主",
+      "void_reason": "种族值过低(674)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3837,
+      "name": "恶魔男爵",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3841,
+      "name": "铭冶",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3846,
+      "name": "花清酒",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3847,
+      "name": "魂帝·天循道",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "配置/攻略专题",
+      "example_work": "精灵推荐培养方案（契约篇）：魂王·无烬梦、魂王·暗翼影、魂帝·天循道"
+    },
+    {
+      "id": 3852,
+      "name": "收割机",
+      "void_reason": "种族值过低(675)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3865,
+      "name": "希瓦",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3869,
+      "name": "牌灵·发",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3885,
+      "name": "摇滚兔",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3888,
+      "name": "凌波清芙",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3895,
+      "name": "艾斯德诺",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3900,
+      "name": "魍",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3904,
+      "name": "巡逻者T1",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3911,
+      "name": "追击者M3",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3913,
+      "name": "变形者C4",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3921,
+      "name": "埃妍纳",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3924,
+      "name": "凛戾·寂灭魔神",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3931,
+      "name": "狇伐",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3943,
+      "name": "沐沐",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3949,
+      "name": "余罪魔女",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3952,
+      "name": "冠绝冰龙",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3956,
+      "name": "冠绝岩龙",
+      "void_reason": "种族值过低(645)",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3988,
+      "name": "腊梅·花信",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3997,
+      "name": "咔莫莫",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 3998,
+      "name": "糯米米",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4005,
+      "name": "檀杏·花信",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4008,
+      "name": "甜蜜宵宵",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4015,
+      "name": "佰世桐",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4019,
+      "name": "余歆",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4021,
+      "name": "寒冰境使·凯瑟琳",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4024,
+      "name": "地葬界神",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4031,
+      "name": "芳馥·清酒",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4040,
+      "name": "伊西普",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4047,
+      "name": "德拉蒙德",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4070,
+      "name": "愿",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4073,
+      "name": "卡巴咔吧",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4075,
+      "name": "混沌界神",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4087,
+      "name": "葱葱子",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4114,
+      "name": "科罗丽娜",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4150,
+      "name": "拂晓兔",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4157,
+      "name": "鳗鳗军团",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4159,
+      "name": "柯鼠斯基",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4183,
+      "name": "阿哞",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4189,
+      "name": "凌雪·樱",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4195,
+      "name": "学神",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4199,
+      "name": "K·锁魂",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4203,
+      "name": "卞玉儿",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "配置/攻略专题",
+      "example_work": "精灵推荐培养方案（契约篇）：魏武帝·曹操、卞玉儿"
+    },
+    {
+      "id": 4229,
+      "name": "班克斯",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4233,
+      "name": "寒吟·龙裳",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4268,
+      "name": "古索迪尔",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4270,
+      "name": "提西弗涅",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4292,
+      "name": "切尔诺",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4303,
+      "name": "麻普啾啾",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4307,
+      "name": "艾弗纳",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4309,
+      "name": "清逸",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4311,
+      "name": "图托尔斯",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4317,
+      "name": "凯弗",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4321,
+      "name": "至序圣华",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4324,
+      "name": "卡托娜",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4348,
+      "name": "帕图",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4350,
+      "name": "哈洛兰特",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4356,
+      "name": "斯科尔",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4373,
+      "name": "龙焉",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4391,
+      "name": "西斯里",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4396,
+      "name": "苦痛龙魇",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4400,
+      "name": "圣律剑灵",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4408,
+      "name": "派利尔",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4410,
+      "name": "墨锋",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "excluded_examples",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4418,
+      "name": "特雷弗",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4424,
+      "name": "萨普戴伊",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4435,
+      "name": "蛮龙之戟·赫比德",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4450,
+      "name": "逐界苍星",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4452,
+      "name": "兔兔警探",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4454,
+      "name": "爵刻·黑沃德",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4459,
+      "name": "恶鬼·图伽",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4475,
+      "name": "阿谜",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4478,
+      "name": "小规",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4487,
+      "name": "希可洛",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4495,
+      "name": "彼尔德",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4509,
+      "name": "梅林",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "配置/攻略专题",
+      "example_work": "精灵培养方案（特别）：业凛、妤玫、凯丝、箫澈、梅林、铃熙、怜羽、霆律、山椿、寂娆"
+    },
+    {
+      "id": 4519,
+      "name": "里扎德",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4528,
+      "name": "古尔伽",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "pending_research",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4581,
+      "name": "梦貘",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4600,
+      "name": "斯布林蒂",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "配置/攻略专题",
+      "example_work": "精灵培养方案2024：灵巢之主·索杰德尔、斯布林蒂、萨芙凯特、无限·欧根尼克"
+    },
+    {
+      "id": 4602,
+      "name": "金瑞福龙",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4643,
+      "name": "蓓丽安特",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "配置/攻略专题",
+      "example_work": "精灵培养方案2024：蓓丽安特、克雷弗德"
+    },
+    {
+      "id": 4661,
+      "name": "无为觉者",
+      "void_reason": "种族值过低(0)",
+      "state": "spirits",
+      "creator_coverage": "配置/攻略专题",
+      "example_work": "精灵培养方案2024：仿生兽·库比、无为觉者"
+    },
+    {
+      "id": 4681,
+      "name": "伏奥诺",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4703,
+      "name": "波波鱼",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4705,
+      "name": "塔琳-MKII",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4754,
+      "name": "雷弧",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4788,
+      "name": "缇娅薇",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4815,
+      "name": "火箭骑士君",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4836,
+      "name": "观星派派",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4837,
+      "name": "保姆派派",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4838,
+      "name": "笛科特",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4867,
+      "name": "西格恩",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4872,
+      "name": "妙时天女",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "spirits",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4881,
+      "name": "阿拿拿",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4906,
+      "name": "阿西列维",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4918,
+      "name": "波比提尔",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4924,
+      "name": "瑟尼瑟斯",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4928,
+      "name": "维克佐斯",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    },
+    {
+      "id": 4945,
+      "name": "米蒂欧",
+      "void_reason": "单条魂印且无核心机制",
+      "state": "unlisted",
+      "creator_coverage": "未查到配置/攻略作品覆盖",
+      "example_work": ""
+    }
+  ],
+  "newly_enqueued": [],
+  "review_note": "2026-11-04 用户初次删除 23 只；2026-11-05 恢复 4761 琉梦，其余 22 只仍标记 excluded_examples，不自动入池"
+}

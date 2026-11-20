@@ -1,0 +1,7 @@
+{
+  "schema_version": 1.0,
+  "updated_at": "2026-11-10",
+  "source": "baseline",
+  "rule": "用户在相似定位区块点＋添加的同定位精灵与备注；build_synergy_view.py 内联 DATA.role_adds，只影响展示层，不改动 role_groups.json 的严格分组口径。",
+  "groups": {}
+}

@@ -1,0 +1,9 @@
+# 产物与重资源不进版本库（可由 rebuild_view / pack_skill 重建）
+dist/
+assets/
+references/spirit_synergy_view.html
+
+# 本地缓存
+__pycache__/
+*.pyc
+.workbuddy/

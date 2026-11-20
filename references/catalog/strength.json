@@ -1,0 +1,2738 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-10",
+  "purpose": "人工强度层：把「机制文本复杂度」与「PvP 强度」彻底分开，供总表、配合前端与查询使用。",
+  "policy": {
+    "authority_order": [
+      "具体月份竞技图鉴（须带月份与作者口径）",
+      "官方限制池／准限制池（只证明 BP 成本与环境地位）",
+      "实战复盘与用户明确判定（须带日期）",
+      "社区阵容口径（次级证据）",
+      "魂印机制推演（只作线索，须标「当月梯度待月榜复核」）"
+    ],
+    "auto_score_definition": "data/pool.json 的 tier/score = 种族值归一＋魂印分句数＋标签权重＋越新加权的百分位排名，衡量的是机制文本复杂度，不是强度。",
+    "rule": "禁止用 tier/score 作梯度、BP、推荐或上位替代结论；门户 SEO 文的胜率／使用率一律不引用。",
+    "unrated_default": "未评级（不推断）",
+    "snapshot": "强度是带日期的快照；引用时写明赛季／月份，不写成永久排名。"
+  },
+  "grades": {
+    "T0": "当季环境定义者（须有当月图鉴证据）",
+    "T1": "当季一线可用（须有当月图鉴、官方池或明确实战证据）",
+    "T2": "当季可用但有明确条件",
+    "T3": "功能性／条件位",
+    "T4": "娱乐或待核，不代表不可用",
+    "未评级": "尚无当季证据，禁止推断"
+  },
+  "ratings": [
+    {
+      "id": 3056,
+      "name": "圣甲·盖亚",
+      "grade": "T1（下限）",
+      "basis": "用户 2026-11-05 判定「机盖应该是至少 T1 水平」",
+      "evidence": [
+        "当前期官方池（2026-10-16 起）准限制池仍在列；旧 O202608 池同样在准限制池",
+        "SeerAPI soulmark:410（客户端版）：战斗阶段内死亡时附加等同该伤害数值的真实伤害＋造成致死伤害时恢复 1 点体力＋每回合回 1/3 最大体力；BWIKI 同号仍是旧版「扣除体力」，两源冲突已记录",
+        "tactics.md 联防阵常见组件；实战记录可处理圣耀天马、拦住曝压制链"
+      ],
+      "sources": [
+        "O20261016",
+        "O202608",
+        "W:3056",
+        "T202407"
+      ],
+      "season": "2026-10-16 官方竞技池（准限制池）",
+      "status": "已核；当月梯度仍待具体月份竞技图鉴落文",
+      "note": "本地旧自动评分 7.4 分 T4 是机制文本复杂度，不是强度；不得再用于梯度、BP 与推荐"
+    }
+  ],
+  "official_pools": [
+    {
+      "code": "O20261016",
+      "effective": "2026-10-16",
+      "expires": "2026-11-13",
+      "banned": [
+        4800,
+        4186,
+        4000
+      ],
+      "limited": [
+        5000,
+        4677,
+        4554,
+        4444,
+        4762,
+        3550,
+        3577,
+        3847,
+        4004,
+        4354,
+        4903,
+        3516
+      ],
+      "semi_limited": [
+        4258,
+        4921,
+        4125,
+        3739,
+        3683,
+        4622,
+        4468,
+        4644,
+        3711,
+        4717,
+        3524,
+        3541,
+        4797,
+        3056,
+        3491,
+        3741,
+        4586,
+        4808,
+        4766,
+        4661,
+        3896,
+        3983,
+        4163,
+        4697,
+        3986
+      ],
+      "note": "当前期官方竞技池（SeerAPI peak_pool）；只说明 BP 成本与制度性地位，不等于胜率，也不直接换算成梯度"
+    },
+    {
+      "code": "O202608",
+      "effective": "2026-08-29",
+      "banned": [
+        4554,
+        3550,
+        4677
+      ],
+      "limited": [
+        5000,
+        3577,
+        4622,
+        4515,
+        4732,
+        4468,
+        3291,
+        4500,
+        3788,
+        3637
+      ],
+      "semi_limited": [
+        2987,
+        3056,
+        3613,
+        3986
+      ],
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    }
+  ],
+  "official_pool_members": [
+    {
+      "id": 2987,
+      "name": "重生之翼",
+      "code": "历史",
+      "level": "history",
+      "history": [
+        {
+          "code": "O202608",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "core",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3056,
+      "name": "圣甲·盖亚",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        },
+        {
+          "code": "O202608",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T4",
+      "deep_status": "meta",
+      "human_strength": "T1（下限）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3291,
+      "name": "瀚宇星皇",
+      "code": "历史",
+      "level": "history",
+      "history": [
+        {
+          "code": "O202608",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3491,
+      "name": "梦天睡神·修普诺斯",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T4",
+      "deep_status": null,
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3516,
+      "name": "混沌地王莱茵哈特",
+      "code": "O20261016",
+      "level": "limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T3",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3524,
+      "name": "乔列尼德",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3541,
+      "name": "魔灵王·斯摩亚蒂",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T3",
+      "deep_status": null,
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3550,
+      "name": "天启帝君",
+      "code": "O20261016",
+      "level": "limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "limited"
+        },
+        {
+          "code": "O202608",
+          "level": "banned"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3577,
+      "name": "光之惩戒·英卡洛斯",
+      "code": "O20261016",
+      "level": "limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "limited"
+        },
+        {
+          "code": "O202608",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T0",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3613,
+      "name": "芳馨·茉蕊儿",
+      "code": "历史",
+      "level": "history",
+      "history": [
+        {
+          "code": "O202608",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T3",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3637,
+      "name": "不灭地威·萨瑞卡",
+      "code": "历史",
+      "level": "history",
+      "history": [
+        {
+          "code": "O202608",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T4",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3683,
+      "name": "混沌魔尊",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T4",
+      "deep_status": null,
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3711,
+      "name": "圣光莫妮卡",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T3",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3739,
+      "name": "玛洛迪斯",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T3",
+      "deep_status": "core",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3741,
+      "name": "上古魔尊·库贝萨",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T3",
+      "deep_status": null,
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3788,
+      "name": "混元天尊",
+      "code": "历史",
+      "level": "history",
+      "history": [
+        {
+          "code": "O202608",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3847,
+      "name": "魂帝·天循道",
+      "code": "O20261016",
+      "level": "limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T3",
+      "deep_status": "core",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3896,
+      "name": "伽玛星魂",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": null,
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3983,
+      "name": "灵·辰坤星魂",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": null,
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 3986,
+      "name": "启灵元神",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        },
+        {
+          "code": "O202608",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4000,
+      "name": "薇尔诗",
+      "code": "O20261016",
+      "level": "banned",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "banned"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4004,
+      "name": "圣光格劳瑞",
+      "code": "O20261016",
+      "level": "limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": null,
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4125,
+      "name": "洪荒·列奥尼达",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": "core",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4163,
+      "name": "逆魂·佩特菲德",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4186,
+      "name": "镇世·乔特鲁德",
+      "code": "O20261016",
+      "level": "banned",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "banned"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "core",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4258,
+      "name": "环·源",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": null,
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4354,
+      "name": "狂沙之主·萨特",
+      "code": "O20261016",
+      "level": "limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4444,
+      "name": "百罗鬼帝",
+      "code": "O20261016",
+      "level": "limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": null,
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4468,
+      "name": "始皇帝·嬴政",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        },
+        {
+          "code": "O202608",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4500,
+      "name": "武心婵",
+      "code": "历史",
+      "level": "history",
+      "history": [
+        {
+          "code": "O202608",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4515,
+      "name": "霍光",
+      "code": "历史",
+      "level": "history",
+      "history": [
+        {
+          "code": "O202608",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4554,
+      "name": "圣谕邪魇",
+      "code": "O20261016",
+      "level": "limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "limited"
+        },
+        {
+          "code": "O202608",
+          "level": "banned"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4586,
+      "name": "空元行者",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": "core",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4622,
+      "name": "希拓",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        },
+        {
+          "code": "O202608",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4644,
+      "name": "克雷弗德",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4661,
+      "name": "无为觉者",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T3",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4677,
+      "name": "星辰万象·天启星魂",
+      "code": "O20261016",
+      "level": "limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "limited"
+        },
+        {
+          "code": "O202608",
+          "level": "banned"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4697,
+      "name": "华光之翼·杰洛恩",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4717,
+      "name": "原始黑洞·尤纳斯",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4732,
+      "name": "闪光皮神",
+      "code": "历史",
+      "level": "history",
+      "history": [
+        {
+          "code": "O202608",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4762,
+      "name": "湮灭之主·咤克斯",
+      "code": "O20261016",
+      "level": "limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "core",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4766,
+      "name": "灭战神决·盖亚",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T0",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4797,
+      "name": "极渊DS-001",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4800,
+      "name": "无极圣武",
+      "code": "O20261016",
+      "level": "banned",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "banned"
+        }
+      ],
+      "complexity_tier": "T3",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4808,
+      "name": "讳迹·米修莉",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4903,
+      "name": "帝录天锋",
+      "code": "O20261016",
+      "level": "limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T1",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 4921,
+      "name": "天堂极龙兽",
+      "code": "O20261016",
+      "level": "semi_limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "semi_limited"
+        }
+      ],
+      "complexity_tier": "T2",
+      "deep_status": null,
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    },
+    {
+      "id": 5000,
+      "name": "圣灵谱尼",
+      "code": "O20261016",
+      "level": "limited",
+      "history": [
+        {
+          "code": "O20261016",
+          "level": "limited"
+        },
+        {
+          "code": "O202608",
+          "level": "limited"
+        }
+      ],
+      "complexity_tier": "T3",
+      "deep_status": "meta",
+      "human_strength": "未评级（限制池只证明 BP 成本与环境地位，不换算梯度）",
+      "note": "只说明当时的 BP 成本与制度性地位；不等于胜率，也不直接换算成具体梯度"
+    }
+  ],
+  "watchlist": [
+    {
+      "id": 3033,
+      "name": "帝天战佛",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3056,
+      "name": "圣甲·盖亚",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3467,
+      "name": "不灭·艾恩斯",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3491,
+      "name": "梦天睡神·修普诺斯",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3516,
+      "name": "混沌地王莱茵哈特",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3524,
+      "name": "乔列尼德",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3550,
+      "name": "天启帝君",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3577,
+      "name": "光之惩戒·英卡洛斯",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3586,
+      "name": "战之狂热·英卡洛斯",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3613,
+      "name": "芳馨·茉蕊儿",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3623,
+      "name": "鬼面幽蝶",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3711,
+      "name": "圣光莫妮卡",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3739,
+      "name": "玛洛迪斯",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3741,
+      "name": "上古魔尊·库贝萨",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3847,
+      "name": "魂帝·天循道",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3886,
+      "name": "冰魄·柯尔德",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3896,
+      "name": "伽玛星魂",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3954,
+      "name": "枫眠",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 3986,
+      "name": "启灵元神",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4000,
+      "name": "薇尔诗",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4125,
+      "name": "洪荒·列奥尼达",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4126,
+      "name": "乌拉诺斯",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4163,
+      "name": "逆魂·佩特菲德",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4169,
+      "name": "弑序神罗",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4184,
+      "name": "贝狄薇尔",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4186,
+      "name": "镇世·乔特鲁德",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4219,
+      "name": "红莲之誓·安卡",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4288,
+      "name": "龙仪·机械塔克林",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4354,
+      "name": "狂沙之主·萨特",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4361,
+      "name": "洛基",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4373,
+      "name": "龙焉",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4468,
+      "name": "始皇帝·嬴政",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4517,
+      "name": "铃熙",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4541,
+      "name": "莫塔里安",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4554,
+      "name": "圣谕邪魇",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4586,
+      "name": "空元行者",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4605,
+      "name": "无限·欧根尼克",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4620,
+      "name": "孤烛灯使",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4622,
+      "name": "希拓",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4627,
+      "name": "赫斯提亚",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4635,
+      "name": "枫落殇·西叶",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4643,
+      "name": "蓓丽安特",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4644,
+      "name": "克雷弗德",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4648,
+      "name": "星光·鲁斯王",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4661,
+      "name": "无为觉者",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4676,
+      "name": "神觉·米斯蒂克",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4677,
+      "name": "星辰万象·天启星魂",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4697,
+      "name": "华光之翼·杰洛恩",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4706,
+      "name": "奥菲利娅",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4712,
+      "name": "龙琰",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4717,
+      "name": "原始黑洞·尤纳斯",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4749,
+      "name": "对神兵器肯扎特",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4761,
+      "name": "琉梦",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4762,
+      "name": "湮灭之主·咤克斯",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4766,
+      "name": "灭战神决·盖亚",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4797,
+      "name": "极渊DS-001",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4800,
+      "name": "无极圣武",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4808,
+      "name": "讳迹·米修莉",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4861,
+      "name": "涂蝶",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4872,
+      "name": "妙时天女",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4875,
+      "name": "永烬劫炎·上古炎兽",
+      "reason": "具体月份竞技图鉴／社区阵容点名的体系成员",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 4903,
+      "name": "帝录天锋",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    },
+    {
+      "id": 5000,
+      "name": "圣灵谱尼",
+      "reason": "官方限制池成员 O20261016（BP 成本证据，非梯度）",
+      "status": "梯度未评级，禁止推算 T 级"
+    }
+  ],
+  "full_review": {
+    "file": "references/data/full_audit.json",
+    "scope": "227 只可选精灵逐只列出复杂度分档、深研状态、证据标记、冲突、当前人工强度与复核优先级",
+    "rule": "复核队列与观察名单都不是强度榜；只有 ratings 里的带日期条目可作强度结论"
+  },
+  "bias_review": {
+    "purpose": "自动评分系统性低估的功能位清单：这些精灵的强度靠结算规则与对位价值体现，复杂度分低或无分档不等于弱。",
+    "method": "全量复查：取活跃层与体系成员中 tier=T3/T4/无分档者，命中结算型机制、深研定位 core/meta、官方限制池或体系核心任一即入队；列表只标「强度未评级／需人工复核」，不推算梯度。",
+    "count": 56,
+    "active_low_complexity": 51,
+    "family_counts": {
+      "断回合／双消／控场": 31,
+      "清 PP／技能资源": 20,
+      "护盾／庇护／减伤": 18,
+      "复活／消逝／阵亡传承": 15,
+      "免控／免秒杀／锁切": 10,
+      "拦截／兑子／反伤": 6
+    },
+    "families": [
+      "拦截／兑子／反伤",
+      "清 PP／技能资源",
+      "复活／消逝／阵亡传承",
+      "免控／免秒杀／锁切",
+      "护盾／庇护／减伤",
+      "断回合／双消／控场"
+    ],
+    "items": [
+      {
+        "id": 3237,
+        "name": "大威势明王",
+        "complexity_tier": "T4",
+        "complexity_score": 8.5,
+        "tags": [
+          "减伤"
+        ],
+        "mechanism_families": [
+          "复活／消逝／阵亡传承",
+          "护盾／庇护／减伤"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3383,
+        "name": "无限自由",
+        "complexity_tier": "T4",
+        "complexity_score": 22.8,
+        "tags": [
+          "免控",
+          "续航",
+          "先制",
+          "清PP"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3396,
+        "name": "灾厄女神潘多拉",
+        "complexity_tier": "T4",
+        "complexity_score": 21.7,
+        "tags": [
+          "免疫弱化",
+          "续航",
+          "先制",
+          "属性压制"
+        ],
+        "mechanism_families": [
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3430,
+        "name": "星域之魂",
+        "complexity_tier": "T4",
+        "complexity_score": 19.3,
+        "tags": [
+          "减伤",
+          "斩杀",
+          "清PP"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源",
+          "复活／消逝／阵亡传承",
+          "护盾／庇护／减伤"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3488,
+        "name": "阴灵魂姬",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "吸血",
+          "控场",
+          "命中/闪避",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [],
+        "reasons": [
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3491,
+        "name": "梦天睡神·修普诺斯",
+        "complexity_tier": "T4",
+        "complexity_score": 16.8,
+        "tags": [
+          "免红",
+          "续航",
+          "控场"
+        ],
+        "mechanism_families": [],
+        "reasons": [
+          "官方限制池成员"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "官方限制池 O20261016"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3507,
+        "name": "冥王·苍月影",
+        "complexity_tier": "T4",
+        "complexity_score": 12.2,
+        "tags": [
+          "先制"
+        ],
+        "mechanism_families": [],
+        "reasons": [
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3516,
+        "name": "混沌地王莱茵哈特",
+        "complexity_tier": "T3",
+        "complexity_score": 24.6,
+        "tags": [
+          "续航",
+          "吸血",
+          "护盾"
+        ],
+        "mechanism_families": [
+          "复活／消逝／阵亡传承",
+          "护盾／庇护／减伤"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "官方限制池成员",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "官方限制池 O20261016",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3529,
+        "name": "幻世·海瑟薇",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "免红",
+          "吸血",
+          "先制",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "护盾／庇护／减伤",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3539,
+        "name": "混沌布莱克",
+        "complexity_tier": "T4",
+        "complexity_score": 23.6,
+        "tags": [
+          "免控",
+          "增伤",
+          "控场",
+          "命中/闪避"
+        ],
+        "mechanism_families": [
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3568,
+        "name": "圣地卡修斯",
+        "complexity_tier": "T3",
+        "complexity_score": 27.1,
+        "tags": [
+          "免控",
+          "先制",
+          "清PP",
+          "消强",
+          "护盾"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源",
+          "免控／免秒杀／锁切",
+          "护盾／庇护／减伤",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3580,
+        "name": "诅咒之神·狄修",
+        "complexity_tier": "T4",
+        "complexity_score": 22.0,
+        "tags": [
+          "先制",
+          "控场"
+        ],
+        "mechanism_families": [
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3613,
+        "name": "芳馨·茉蕊儿",
+        "complexity_tier": "T3",
+        "complexity_score": 28.5,
+        "tags": [
+          "免控",
+          "增伤",
+          "清PP",
+          "护盾",
+          "死亡收益"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源",
+          "复活／消逝／阵亡传承",
+          "护盾／庇护／减伤",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3623,
+        "name": "鬼面幽蝶",
+        "complexity_tier": "T4",
+        "complexity_score": 23.6,
+        "tags": [
+          "免红",
+          "先制",
+          "命中/闪避"
+        ],
+        "mechanism_families": [
+          "免控／免秒杀／锁切",
+          "护盾／庇护／减伤"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3631,
+        "name": "跃迁狂剑·兰斯洛特",
+        "complexity_tier": "T3",
+        "complexity_score": 28.0,
+        "tags": [
+          "续航",
+          "吸血",
+          "先制",
+          "真伤",
+          "反伤"
+        ],
+        "mechanism_families": [
+          "拦截／兑子／反伤"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3637,
+        "name": "不灭地威·萨瑞卡",
+        "complexity_tier": "T4",
+        "complexity_score": 18.8,
+        "tags": [
+          "续航",
+          "反伤"
+        ],
+        "mechanism_families": [
+          "拦截／兑子／反伤",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3665,
+        "name": "厉魇魔王·咤克斯",
+        "complexity_tier": "T3",
+        "complexity_score": 30.8,
+        "tags": [
+          "续航",
+          "先制",
+          "增伤",
+          "减伤",
+          "斩杀",
+          "命中/闪避"
+        ],
+        "mechanism_families": [],
+        "reasons": [
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3685,
+        "name": "孙权",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "吸血",
+          "先制",
+          "增伤",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3697,
+        "name": "擎空·凡尔斯",
+        "complexity_tier": "T3",
+        "complexity_score": 28.8,
+        "tags": [
+          "免控",
+          "先制",
+          "减伤",
+          "属性压制"
+        ],
+        "mechanism_families": [
+          "复活／消逝／阵亡传承",
+          "免控／免秒杀／锁切",
+          "护盾／庇护／减伤",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3711,
+        "name": "圣光莫妮卡",
+        "complexity_tier": "T3",
+        "complexity_score": 24.1,
+        "tags": [
+          "清PP",
+          "层数成长"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源",
+          "免控／免秒杀／锁切",
+          "护盾／庇护／减伤",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "官方限制池成员",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "官方限制池 O20261016",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3716,
+        "name": "该洛西斯",
+        "complexity_tier": "T3",
+        "complexity_score": 29.3,
+        "tags": [
+          "续航",
+          "增伤",
+          "控场",
+          "护盾",
+          "命中/闪避"
+        ],
+        "mechanism_families": [
+          "护盾／庇护／减伤",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3734,
+        "name": "混沌飞王凡尔斯",
+        "complexity_tier": "T4",
+        "complexity_score": 22.1,
+        "tags": [
+          "先制",
+          "控场"
+        ],
+        "mechanism_families": [
+          "复活／消逝／阵亡传承",
+          "护盾／庇护／减伤"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3739,
+        "name": "玛洛迪斯",
+        "complexity_tier": "T3",
+        "complexity_score": 23.8,
+        "tags": [
+          "消强",
+          "封属"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源",
+          "复活／消逝／阵亡传承",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "官方限制池成员",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "官方限制池 O20261016",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3741,
+        "name": "上古魔尊·库贝萨",
+        "complexity_tier": "T3",
+        "complexity_score": 25.7,
+        "tags": [
+          "免红",
+          "续航",
+          "增伤"
+        ],
+        "mechanism_families": [],
+        "reasons": [
+          "官方限制池成员"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "官方限制池 O20261016"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3783,
+        "name": "麒麟天女·波西利亚",
+        "complexity_tier": "T3",
+        "complexity_score": 27.5,
+        "tags": [
+          "免控",
+          "先制",
+          "增伤"
+        ],
+        "mechanism_families": [
+          "免控／免秒杀／锁切"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3802,
+        "name": "扫荡魔锋",
+        "complexity_tier": "T3",
+        "complexity_score": 25.7,
+        "tags": [
+          "续航",
+          "封回血"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3830,
+        "name": "魂王·无烬梦",
+        "complexity_tier": "T3",
+        "complexity_score": 28.2,
+        "tags": [
+          "免控",
+          "增伤",
+          "控场",
+          "命中/闪避"
+        ],
+        "mechanism_families": [
+          "免控／免秒杀／锁切",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3847,
+        "name": "魂帝·天循道",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "吸血",
+          "先制",
+          "增伤",
+          "控场",
+          "反伤",
+          "命中/闪避",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "拦截／兑子／反伤",
+          "复活／消逝／阵亡传承",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "官方限制池成员"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "官方限制池 O20261016"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3924,
+        "name": "凛戾·寂灭魔神",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "续航",
+          "吸血",
+          "先制",
+          "命中/闪避",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 3954,
+        "name": "枫眠",
+        "complexity_tier": "T3",
+        "complexity_score": 29.3,
+        "tags": [
+          "续航",
+          "清PP",
+          "消强",
+          "控场"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4024,
+        "name": "地葬界神",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "续航",
+          "吸血",
+          "护盾",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "护盾／庇护／减伤",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4075,
+        "name": "混沌界神",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "续航",
+          "吸血",
+          "清PP",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4189,
+        "name": "凌雪·樱",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "续航",
+          "吸血",
+          "先制",
+          "封回血",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4270,
+        "name": "提西弗涅",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "吸血",
+          "清PP",
+          "控场",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4290,
+        "name": "灵魂收割者·黛",
+        "complexity_tier": "T3",
+        "complexity_score": 28.9,
+        "tags": [
+          "控场",
+          "命中/闪避"
+        ],
+        "mechanism_families": [
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4321,
+        "name": "至序圣华",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "免控",
+          "复活",
+          "续航",
+          "先制",
+          "清PP",
+          "真伤",
+          "层数成长",
+          "封回血",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "拦截／兑子／反伤",
+          "清 PP／技能资源",
+          "复活／消逝／阵亡传承",
+          "免控／免秒杀／锁切"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4373,
+        "name": "龙焉",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "免控",
+          "续航",
+          "吸血",
+          "先制",
+          "增伤",
+          "清PP",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源",
+          "免控／免秒杀／锁切",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4400,
+        "name": "圣律剑灵",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "免控",
+          "免红",
+          "复活",
+          "先制",
+          "增伤",
+          "减伤",
+          "真伤",
+          "层数成长",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "复活／消逝／阵亡传承",
+          "免控／免秒杀／锁切",
+          "护盾／庇护／减伤"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4445,
+        "name": "古温婆婆",
+        "complexity_tier": "T3",
+        "complexity_score": 29.8,
+        "tags": [
+          "续航",
+          "控场"
+        ],
+        "mechanism_families": [
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4450,
+        "name": "逐界苍星",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "免控",
+          "续航",
+          "先制",
+          "清PP",
+          "消强",
+          "护盾",
+          "层数成长",
+          "命中/闪避",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "拦截／兑子／反伤",
+          "清 PP／技能资源",
+          "护盾／庇护／减伤"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4454,
+        "name": "爵刻·黑沃德",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "续航",
+          "吸血",
+          "先制",
+          "增伤",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源",
+          "复活／消逝／阵亡传承",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4495,
+        "name": "彼尔德",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "吸血",
+          "先制",
+          "控场",
+          "属性压制",
+          "命中/闪避",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "免控／免秒杀／锁切",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4503,
+        "name": "库坦",
+        "complexity_tier": "T3",
+        "complexity_score": 29.2,
+        "tags": [
+          "清PP"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4509,
+        "name": "梅林",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "吸血",
+          "属性压制",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4552,
+        "name": "怜羽",
+        "complexity_tier": "T3",
+        "complexity_score": 31.4,
+        "tags": [
+          "免红",
+          "续航",
+          "护盾"
+        ],
+        "mechanism_families": [
+          "护盾／庇护／减伤"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4566,
+        "name": "山椿",
+        "complexity_tier": "T3",
+        "complexity_score": 30.6,
+        "tags": [
+          "续航",
+          "吸血",
+          "清PP"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4594,
+        "name": "摆渡者·费雷",
+        "complexity_tier": "T3",
+        "complexity_score": 29.0,
+        "tags": [
+          "控场",
+          "命中/闪避"
+        ],
+        "mechanism_families": [
+          "复活／消逝／阵亡传承"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4600,
+        "name": "斯布林蒂",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "续航",
+          "清PP",
+          "层数成长",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4632,
+        "name": "卡威治",
+        "complexity_tier": "T3",
+        "complexity_score": 29.3,
+        "tags": [
+          "控场"
+        ],
+        "mechanism_families": [
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4643,
+        "name": "蓓丽安特",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "续航",
+          "真伤",
+          "层数成长",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "复活／消逝／阵亡传承"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4661,
+        "name": "无为觉者",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "免控",
+          "清PP",
+          "命中/闪避",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源",
+          "复活／消逝／阵亡传承",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "官方限制池成员",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "官方限制池 O20261016",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4672,
+        "name": "月光·阿尔莫尼",
+        "complexity_tier": "T3",
+        "complexity_score": 29.4,
+        "tags": [
+          "免控",
+          "吸血",
+          "增伤",
+          "护盾"
+        ],
+        "mechanism_families": [
+          "护盾／庇护／减伤"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4709,
+        "name": "原始预言·吉尼亚斯",
+        "complexity_tier": "T3",
+        "complexity_score": 29.8,
+        "tags": [
+          "控场"
+        ],
+        "mechanism_families": [
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4800,
+        "name": "无极圣武",
+        "complexity_tier": "T3",
+        "complexity_score": 30.3,
+        "tags": [
+          "增伤",
+          "护盾"
+        ],
+        "mechanism_families": [
+          "护盾／庇护／减伤"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "官方限制池成员",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "官方限制池 O20261016",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 4872,
+        "name": "妙时天女",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "拦截／兑子／反伤",
+          "清 PP／技能资源",
+          "复活／消逝／阵亡传承",
+          "护盾／庇护／减伤",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "体系核心位"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "体系注册表 core"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      },
+      {
+        "id": 5000,
+        "name": "圣灵谱尼",
+        "complexity_tier": "T3",
+        "complexity_score": 0.0,
+        "tags": [
+          "免控",
+          "续航",
+          "清PP",
+          "层数成长",
+          "人工深研回捞"
+        ],
+        "mechanism_families": [
+          "清 PP／技能资源",
+          "断回合／双消／控场"
+        ],
+        "reasons": [
+          "魂印／深研文本命中结算型功能机制",
+          "深研定位为环境／核心位",
+          "官方限制池成员"
+        ],
+        "evidence_from": [
+          "BWIKI 魂印全文／摘要",
+          "深研条目机制／战术说明",
+          "官方限制池 O20261016"
+        ],
+        "action": "强度未评级；按当季竞技图鉴／官方限制池人工复核，不使用机制复杂度分作强度依据"
+      }
+    ]
+  },
+  "display": {
+    "complexity_label": "机制复杂度（非强度）",
+    "strength_label": "人工强度",
+    "unrated_label": "未评级",
+    "example": "3056 圣甲·盖亚：机制复杂度 T4，人工强度 T1（下限）——两者不矛盾，前者不是强度。"
+  },
+  "related": [
+    "references/data/matchups.json",
+    "references/data/chain_audit.json",
+    "references/data/depth_audit.json",
+    "references/docs/sources.md"
+  ]
+}

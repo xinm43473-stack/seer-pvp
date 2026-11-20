@@ -1,0 +1,33 @@
+{
+  "schema_version": "2026-11-08",
+  "guarded_at": "2026-11-08",
+  "note": "数据层最终态：18 个特色机制位与 6 大类定位、29 条已核显式边（含 2026-11-07 关系层审核订正）、13 条社区线索、757 条带原因历史留痕、F20261104 收录口径均已落库。下列一次性历史脚本重跑会把它们覆盖回旧值。",
+  "verification": "2026-11-08 全量审计在隔离副本上逐个重跑 38 个脚本，发现 11 个会回退数据或让 check_roster.py 报错；本文件是 scripts/legacy_guard.py 的唯一开关。",
+  "usage": "被列出的脚本默认跳过（退出码 0，不写文件）；确需重建时运行 python scripts/<name> --force，并立即按 HANDOVER.md 第 4 节重建链恢复派生层。",
+  "superseded_scripts": [
+    "apply_community_leads.py",
+    "apply_creator_filter.py",
+    "apply_relation_completion.py",
+    "apply_seerapi_cli_fixes.py",
+    "apply_tree_sea_system.py",
+    "apply_edge_types.py",
+    "apply_mechanism_fixes.py",
+    "apply_edge_fix_20261107.py",
+    "build_dataset.py",
+    "build_overrides.py",
+    "restore_sanxie.py"
+  ],
+  "known_effects_if_forced": {
+    "apply_community_leads.py": "frameworks.community_teaching_2026.items 从 13 条砍回 7 条，并往 candidates.md 追加旧段",
+    "apply_creator_filter.py": "改口径文案/日期，voided_drops 统计 349↔350、9↔8 漂移",
+    "apply_relation_completion.py": "把 4 条 edge_meta 订正后的机制说明回退到「乌拉增益」「3711 中切回 PP」等旧错文案",
+    "apply_seerapi_cli_fixes.py": "把 4364 的 superseded_text 改回旧换行格式",
+    "apply_tree_sea_system.py": "回退 3739 定位到旧词表、重排体系顺序；check_roster.py 报 2 个错",
+    "apply_edge_types.py": "EDGE_META 常量只有旧边，遇到新增边会误报 untyped edges 并退出 1",
+    "apply_mechanism_fixes.py": "旧 schema 守卫已拦住；保留守卫避免误跑",
+    "apply_edge_fix_20261107.py": "已完成且幂等，但会覆盖用户在前端对这 5 个体系做的联动编辑",
+    "build_dataset.py": "全量重建 pool.json：dropped 757→408、elves 1203→1552；check_roster.py 报 7 个错",
+    "build_overrides.py": "把 21 只 manual_overrides 的 roles 改回旧词表",
+    "restore_sanxie.py": "回退伞邪体系 section/review_note、删 chain_review、改 version；check_roster.py 报 2 个错"
+  }
+}

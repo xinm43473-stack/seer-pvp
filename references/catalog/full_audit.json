@@ -1,0 +1,6657 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-15",
+  "purpose": "全量复查：227 只活跃精灵的强度依据、21 项体系正文、24 条已核联动声明逐条留痕。",
+  "policy": {
+    "strength": "强度只认 references/catalog/strength.json 的带日期人工评级；未评级不推断，机制复杂度分只是文本复杂度。",
+    "links": "同队配合只认 systems.json 的显式 chain_edges；历史声明已移出关联层，没关联就是没关联，不列骨架线索。",
+    "no_invention": "不编造胜率、使用率、月榜名次或 T 级；复核队列不等于强度榜。"
+  },
+  "stats": {
+    "spirits": 227,
+    "systems": 21,
+    "links": 24,
+    "rated": 1,
+    "official_pool_members": 48,
+    "conflicts": 226,
+    "conflict_counts": {
+      "深研说明为占位短句，不足以支撑强度结论": 80,
+      "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用": 41,
+      "有官方限制池地位证据，但人工强度仍未评级": 39,
+      "深研定位为环境／核心位，但机制复杂度分偏低或无分档": 35,
+      "参与已核顺序链，但本只尚未写完整逐回合链": 31
+    },
+    "priority_counts": {
+      "P3 无当季证据": 113,
+      "P2 深研说明不足": 44,
+      "P0 官方池核心，优先补当季证据": 37,
+      "P1 复杂度分与实战定位冲突": 25,
+      "P2 月榜／体系点名，待当季证据": 7,
+      "已评级": 1
+    },
+    "systems_with_reference_only": 6,
+    "systems_short_body": 20,
+    "systems_single_core": 5
+  },
+  "spirits": [
+    {
+      "id": 2987,
+      "name": "重生之翼",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 45.7,
+      "deep_status": "core",
+      "roles": [
+        "团队增益",
+        "续航壁垒"
+      ],
+      "play_chars": 33,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 semi_limited"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 3033,
+      "name": "帝天战佛",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": -6.2,
+      "deep_status": "core",
+      "roles": [
+        "兑子拦截"
+      ],
+      "play_chars": 272,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3056,
+      "name": "圣甲·盖亚",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 7.4,
+      "deep_status": "meta",
+      "roles": [
+        "弹伤反制"
+      ],
+      "play_chars": 543,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "官方限制池 O202608 semi_limited",
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "T1（下限）",
+      "rating_basis": "用户 2026-11-05 判定「机盖应该是至少 T1 水平」",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档"
+      ],
+      "review_priority": "已评级"
+    },
+    {
+      "id": 3142,
+      "name": "王·雷伊",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 12.1,
+      "deep_status": "niche",
+      "roles": [
+        "消强联防",
+        "续航壁垒"
+      ],
+      "play_chars": 37,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3156,
+      "name": "路希菲尔德",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P2 月榜／体系点名，待当季证据"
+    },
+    {
+      "id": 3171,
+      "name": "银月狼王",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3237,
+      "name": "大威势明王",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 8.5,
+      "deep_status": "meta",
+      "roles": [
+        "兑子拦截"
+      ],
+      "play_chars": 245,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3291,
+      "name": "瀚宇星皇",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 31.7,
+      "deep_status": "meta",
+      "roles": [
+        "团队增益",
+        "续航壁垒"
+      ],
+      "play_chars": 45,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 limited"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 3328,
+      "name": "圣王·萨格罗斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 22.2,
+      "deep_status": "legacy",
+      "roles": [
+        "续航壁垒"
+      ],
+      "play_chars": 38,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3351,
+      "name": "科罗克娜",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3355,
+      "name": "莫妮卡",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3359,
+      "name": "地葬界皇",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3378,
+      "name": "阿尔蒂克",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 14.7,
+      "deep_status": "niche",
+      "roles": [
+        "续航壁垒",
+        "反制对策"
+      ],
+      "play_chars": 34,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3380,
+      "name": "莉尔",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3388,
+      "name": "昔兰尼加",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 14.6,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3396,
+      "name": "灾厄女神潘多拉",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 21.7,
+      "deep_status": "core",
+      "roles": [
+        "高红压制",
+        "反制对策"
+      ],
+      "play_chars": 49,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3414,
+      "name": "混沌魔君索伦森",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 34.5,
+      "deep_status": "core",
+      "roles": [
+        "消强联防",
+        "封属干扰"
+      ],
+      "play_chars": 314,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "体系补位",
+        "已核顺序链成员",
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3421,
+      "name": "圣灵之魂迈尔斯",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 20.4,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3425,
+      "name": "圣灵守护奥斯卡",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 19.1,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3430,
+      "name": "星域之魂",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 19.3,
+      "deep_status": "core",
+      "roles": [
+        "高红压制",
+        "续航壁垒"
+      ],
+      "play_chars": 118,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3467,
+      "name": "不灭·艾恩斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 21.0,
+      "deep_status": "core",
+      "roles": [
+        "续航壁垒",
+        "异常挂载"
+      ],
+      "play_chars": 43,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3482,
+      "name": "圣战瑞尔斯",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 19.2,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3488,
+      "name": "阴灵魂姬",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "core",
+      "roles": [
+        "高红压制",
+        "控场"
+      ],
+      "play_chars": 171,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3491,
+      "name": "梦天睡神",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 16.8,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3496,
+      "name": "冥王·夜刃绝",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3506,
+      "name": "惊涛海皇·波塞冬",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 18.2,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3507,
+      "name": "冥王·苍月影",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 12.2,
+      "deep_status": "meta",
+      "roles": [
+        "控场"
+      ],
+      "play_chars": 36,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3514,
+      "name": "弑神猎皇",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 17.3,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3516,
+      "name": "混沌地王莱茵哈特",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 24.6,
+      "deep_status": "meta",
+      "roles": [
+        "续航壁垒",
+        "联攻核心"
+      ],
+      "play_chars": 43,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 limited"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 3524,
+      "name": "乔列尼德",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 33.0,
+      "deep_status": "meta",
+      "roles": [
+        "续航壁垒",
+        "反制对策"
+      ],
+      "play_chars": 57,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 3529,
+      "name": "幻世·海瑟薇",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "core",
+      "roles": [
+        "消强联防",
+        "高红压制"
+      ],
+      "play_chars": 156,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3539,
+      "name": "混沌布莱克",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 23.6,
+      "deep_status": "core",
+      "roles": [
+        "续航壁垒",
+        "控场"
+      ],
+      "play_chars": 32,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3550,
+      "name": "天启帝君",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 52.9,
+      "deep_status": "meta",
+      "roles": [
+        "续航壁垒"
+      ],
+      "play_chars": 38,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 banned"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 3568,
+      "name": "圣地卡修斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 27.1,
+      "deep_status": "core",
+      "roles": [
+        "消强联防",
+        "封属干扰"
+      ],
+      "play_chars": 39,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3577,
+      "name": "光之惩戒·英卡洛斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T0",
+      "complexity_score": 28.3,
+      "deep_status": "meta",
+      "roles": [
+        "高红压制",
+        "阵亡先制"
+      ],
+      "play_chars": 38,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 limited"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 3580,
+      "name": "诅咒之神·狄修",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 22.0,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3586,
+      "name": "战之狂热·英卡洛斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 37.2,
+      "deep_status": "meta",
+      "roles": [
+        "续航壁垒",
+        "高红压制"
+      ],
+      "play_chars": 42,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3613,
+      "name": "芳馨·茉蕊儿",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 28.5,
+      "deep_status": "meta",
+      "roles": [
+        "团队增益",
+        "消强联防"
+      ],
+      "play_chars": 85,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 semi_limited",
+        "配置／攻略专题作品",
+        "体系核心位",
+        "体系补位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 3623,
+      "name": "鬼面幽蝶",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 23.6,
+      "deep_status": "niche",
+      "roles": [
+        "续航壁垒",
+        "控场"
+      ],
+      "play_chars": 38,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3631,
+      "name": "跃迁狂剑·兰斯洛特",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 28.0,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3637,
+      "name": "不灭地威·萨瑞卡",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 18.8,
+      "deep_status": "meta",
+      "roles": [
+        "消强联防",
+        "续航壁垒"
+      ],
+      "play_chars": 34,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 limited"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 3665,
+      "name": "厉魇魔王·咤克斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 30.8,
+      "deep_status": "meta",
+      "roles": [
+        "控场",
+        "高红压制"
+      ],
+      "play_chars": 42,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3670,
+      "name": "圣耀之光·黄金天马",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 31.7,
+      "deep_status": "meta",
+      "roles": [
+        "消强联防",
+        "续航壁垒"
+      ],
+      "play_chars": 41,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3673,
+      "name": "艾夏拉",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 37.8,
+      "deep_status": "core",
+      "roles": [
+        "消强联防",
+        "控场"
+      ],
+      "play_chars": 34,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "体系核心位"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3685,
+      "name": "孙权",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "core",
+      "roles": [
+        "续航壁垒"
+      ],
+      "play_chars": 139,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3697,
+      "name": "擎空·凡尔斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 28.8,
+      "deep_status": "core",
+      "roles": [
+        "阵亡先制"
+      ],
+      "play_chars": 123,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3704,
+      "name": "狂热之诚·吉罗德",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3705,
+      "name": "守护者·艾里克",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 33.7,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3711,
+      "name": "圣光莫妮卡",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 24.1,
+      "deep_status": "meta",
+      "roles": [
+        "消强联防",
+        "团队增益"
+      ],
+      "play_chars": 48,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited",
+        "体系补位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 3716,
+      "name": "该洛西斯",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 29.3,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3724,
+      "name": "混沌·哈肯萨",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 31.5,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3734,
+      "name": "混沌飞王凡尔斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 22.1,
+      "deep_status": "core",
+      "roles": [
+        "阵亡先制"
+      ],
+      "play_chars": 138,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3739,
+      "name": "玛洛迪斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 23.8,
+      "deep_status": "core",
+      "roles": [
+        "反制对策"
+      ],
+      "play_chars": 469,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited",
+        "体系核心位",
+        "已核顺序链成员",
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "有官方限制池地位证据，但人工强度仍未评级"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 3740,
+      "name": "怒涛·沧岚",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 32.8,
+      "deep_status": "meta",
+      "roles": [
+        "续航壁垒",
+        "高红压制"
+      ],
+      "play_chars": 45,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3763,
+      "name": "乌瑞娅",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 34.8,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3783,
+      "name": "麒麟天女·波西利亚",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 27.5,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3788,
+      "name": "混元天尊",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 34.9,
+      "deep_status": "meta",
+      "roles": [
+        "兑子拦截",
+        "续航壁垒"
+      ],
+      "play_chars": 379,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "官方限制池 O202608 limited",
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 3802,
+      "name": "扫荡魔锋",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 25.7,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3806,
+      "name": "葬生魔莲",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 30.3,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3809,
+      "name": "龙神哈莫",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 40.6,
+      "deep_status": "core",
+      "roles": [
+        "续航壁垒",
+        "反制对策"
+      ],
+      "play_chars": 39,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3816,
+      "name": "噬梦魔灵",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 23.5,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3820,
+      "name": "遨天魔煞",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 31.4,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3830,
+      "name": "魂王·无烬梦",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 28.2,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3833,
+      "name": "魂王·暗翼影",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T4",
+      "complexity_score": 22.9,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3847,
+      "name": "魂帝·天循道",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "core",
+      "roles": [
+        "兑子拦截",
+        "高红压制"
+      ],
+      "play_chars": 44,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 limited",
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用",
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 3865,
+      "name": "希瓦",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3886,
+      "name": "冰魄·柯尔德",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 33.9,
+      "deep_status": "meta",
+      "roles": [
+        "控场",
+        "反制对策"
+      ],
+      "play_chars": 53,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3888,
+      "name": "凌波清芙",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3896,
+      "name": "伽玛星魂",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 31.6,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited",
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3924,
+      "name": "凛戾·寂灭魔神",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "niche",
+      "roles": [
+        "高红压制",
+        "续航壁垒"
+      ],
+      "play_chars": 37,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3941,
+      "name": "混沌暗王霍德尔",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 41.5,
+      "deep_status": "core",
+      "roles": [
+        "控场",
+        "反制对策"
+      ],
+      "play_chars": 50,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 3949,
+      "name": "余罪魔女",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3954,
+      "name": "枫眠",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 29.3,
+      "deep_status": "meta",
+      "roles": [
+        "消强联防",
+        "异常挂载"
+      ],
+      "play_chars": 71,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 3964,
+      "name": "辛",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 27.2,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 3986,
+      "name": "启灵元神",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 47.0,
+      "deep_status": "meta",
+      "roles": [
+        "高红压制"
+      ],
+      "play_chars": 41,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 semi_limited",
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4000,
+      "name": "薇尔诗",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 58.1,
+      "deep_status": "meta",
+      "roles": [
+        "联攻核心",
+        "高红压制"
+      ],
+      "play_chars": 47,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 banned"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4001,
+      "name": "无上·万魔天尊",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 49.0,
+      "deep_status": "core",
+      "roles": [
+        "续航壁垒",
+        "控场"
+      ],
+      "play_chars": 179,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4002,
+      "name": "御象灵尊",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 41.5,
+      "deep_status": "meta",
+      "roles": [
+        "高红压制"
+      ],
+      "play_chars": 37,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4024,
+      "name": "地葬界神",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "core",
+      "roles": [
+        "续航壁垒",
+        "高红压制"
+      ],
+      "play_chars": 173,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 4032,
+      "name": "六界御神",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 42.4,
+      "deep_status": "core",
+      "roles": [
+        "高红压制",
+        "阵亡先制"
+      ],
+      "play_chars": 180,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4040,
+      "name": "伊西普",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4058,
+      "name": "魏武帝·曹操",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 34.2,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4075,
+      "name": "混沌界神",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "niche",
+      "roles": [
+        "消强联防",
+        "清PP压制"
+      ],
+      "play_chars": 159,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4114,
+      "name": "科罗丽娜",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4125,
+      "name": "洪荒·列奥尼达",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 34.6,
+      "deep_status": "core",
+      "roles": [
+        "异常挂载"
+      ],
+      "play_chars": 136,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4126,
+      "name": "乌拉诺斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 47.6,
+      "deep_status": "meta",
+      "roles": [
+        "团队增益",
+        "联攻核心"
+      ],
+      "play_chars": 43,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "体系补位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4163,
+      "name": "逆魂·佩特菲德",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 32.6,
+      "deep_status": "meta",
+      "roles": [
+        "反制对策",
+        "控场"
+      ],
+      "play_chars": 34,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited",
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4169,
+      "name": "弑序神罗",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 62.6,
+      "deep_status": "meta",
+      "roles": [
+        "联攻核心",
+        "高红压制"
+      ],
+      "play_chars": 472,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "体系核心位",
+        "已核顺序链成员",
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P2 月榜／体系点名，待当季证据"
+    },
+    {
+      "id": 4184,
+      "name": "贝狄薇尔",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 42.2,
+      "deep_status": "core",
+      "roles": [
+        "清PP压制",
+        "护盾联防"
+      ],
+      "play_chars": 188,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4186,
+      "name": "镇世·乔特鲁德",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 52.9,
+      "deep_status": "core",
+      "roles": [
+        "联攻核心",
+        "续航壁垒"
+      ],
+      "play_chars": 201,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 banned"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4189,
+      "name": "凌雪·樱",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "core",
+      "roles": [
+        "控场",
+        "续航壁垒"
+      ],
+      "play_chars": 174,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 4208,
+      "name": "锢灵·舞",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 27.6,
+      "deep_status": "legacy",
+      "roles": [
+        "兑子拦截",
+        "团队增益"
+      ],
+      "play_chars": 43,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4219,
+      "name": "红莲之誓·安卡",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 42.1,
+      "deep_status": "core",
+      "roles": [
+        "异常挂载",
+        "清PP压制"
+      ],
+      "play_chars": 214,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4233,
+      "name": "寒吟·龙裳",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4238,
+      "name": "鬼面阎罗",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 31.3,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4239,
+      "name": "浩渺之源·努恩",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 38.7,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4270,
+      "name": "提西弗涅",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "legacy",
+      "roles": [
+        "控场",
+        "续航壁垒"
+      ],
+      "play_chars": 41,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4275,
+      "name": "命运之轮·莫伊莱",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 44.3,
+      "deep_status": "core",
+      "roles": [
+        "续航壁垒",
+        "反制对策"
+      ],
+      "play_chars": 46,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系补位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4288,
+      "name": "龙仪·机械塔克林",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 40.5,
+      "deep_status": "meta",
+      "roles": [
+        "消强联防",
+        "团队增益"
+      ],
+      "play_chars": 398,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4290,
+      "name": "灵魂收割者·黛",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 28.9,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4318,
+      "name": "布蕾里克",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 33.1,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4321,
+      "name": "至序圣华",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "core",
+      "roles": [
+        "印记体系轴",
+        "高红压制"
+      ],
+      "play_chars": 213,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 4327,
+      "name": "极战·阿尔斯兰",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 39.4,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4329,
+      "name": "倪克斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 43.2,
+      "deep_status": "core",
+      "roles": [
+        "消强联防",
+        "控场"
+      ],
+      "play_chars": 249,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4332,
+      "name": "鲍尔斯",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 34.2,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4333,
+      "name": "哀·拉伯克",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 37.2,
+      "deep_status": "core",
+      "roles": [
+        "清PP压制"
+      ],
+      "play_chars": 115,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系补位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4347,
+      "name": "裁罪魔剪·塞泽丝",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 35.6,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4350,
+      "name": "哈洛兰特",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4354,
+      "name": "狂沙之主·萨特",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 35.3,
+      "deep_status": "meta",
+      "roles": [
+        "高红压制",
+        "续航壁垒"
+      ],
+      "play_chars": 50,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 limited"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4355,
+      "name": "终末大天使",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 43.5,
+      "deep_status": "meta",
+      "roles": [
+        "闪避联防",
+        "消强联防"
+      ],
+      "play_chars": 130,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4358,
+      "name": "杰特洛",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 37.9,
+      "deep_status": "core",
+      "roles": [
+        "反制对策"
+      ],
+      "play_chars": 52,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4361,
+      "name": "洛基",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 40.5,
+      "deep_status": "core",
+      "roles": [
+        "消强联防",
+        "联攻核心"
+      ],
+      "play_chars": 397,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4364,
+      "name": "尤莉米特",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 37.5,
+      "deep_status": "core",
+      "roles": [
+        "印记体系轴",
+        "续航壁垒"
+      ],
+      "play_chars": 260,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P2 月榜／体系点名，待当季证据"
+    },
+    {
+      "id": 4373,
+      "name": "龙焉",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "core",
+      "roles": [
+        "续航壁垒"
+      ],
+      "play_chars": 180,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 4376,
+      "name": "圣谕之风·岚",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 34.2,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4386,
+      "name": "缔笙",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 56.9,
+      "deep_status": "core",
+      "roles": [
+        "印记体系轴",
+        "续航壁垒"
+      ],
+      "play_chars": 47,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4387,
+      "name": "坦普瑞",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 32.6,
+      "deep_status": "meta",
+      "roles": [
+        "清PP压制",
+        "控场"
+      ],
+      "play_chars": 34,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4396,
+      "name": "苦痛龙魇",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4400,
+      "name": "圣律剑灵",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "core",
+      "roles": [
+        "印记体系轴",
+        "封属干扰"
+      ],
+      "play_chars": 203,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 4421,
+      "name": "赤胆游龙·赵云",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 42.3,
+      "deep_status": "core",
+      "roles": [
+        "续航壁垒",
+        "阵亡先制"
+      ],
+      "play_chars": 123,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4445,
+      "name": "古温婆婆",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 29.8,
+      "deep_status": "niche",
+      "roles": [
+        "异常挂载"
+      ],
+      "play_chars": 167,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P2 月榜／体系点名，待当季证据"
+    },
+    {
+      "id": 4450,
+      "name": "逐界苍星",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "core",
+      "roles": [
+        "印记体系轴",
+        "高红压制"
+      ],
+      "play_chars": 59,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 4454,
+      "name": "爵刻·黑沃德",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "core",
+      "roles": [
+        "印记体系轴",
+        "阵亡先制"
+      ],
+      "play_chars": 169,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 4458,
+      "name": "业凛",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 28.7,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4459,
+      "name": "恶鬼·图伽",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4468,
+      "name": "始皇帝·嬴政",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 48.7,
+      "deep_status": "meta",
+      "roles": [
+        "高红压制"
+      ],
+      "play_chars": 40,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 limited",
+        "体系补位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4474,
+      "name": "妤玫",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 30.4,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4486,
+      "name": "秘尔威缇",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 26.9,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4487,
+      "name": "希可洛",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4489,
+      "name": "普鲁修托",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 41.9,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4490,
+      "name": "凯丝",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 30.8,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4495,
+      "name": "彼尔德",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "niche",
+      "roles": [
+        "封属干扰"
+      ],
+      "play_chars": 166,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4496,
+      "name": "箫澈",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 35.8,
+      "deep_status": "niche",
+      "roles": [
+        "续航壁垒",
+        "反制对策"
+      ],
+      "play_chars": 45,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4499,
+      "name": "德布比特",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 45.5,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4500,
+      "name": "武心婵",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 50.0,
+      "deep_status": "meta",
+      "roles": [
+        "控场",
+        "反制对策"
+      ],
+      "play_chars": 47,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 limited",
+        "体系补位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4501,
+      "name": "普达戈尔",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 32.4,
+      "deep_status": "niche",
+      "roles": [
+        "封属干扰"
+      ],
+      "play_chars": 52,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4503,
+      "name": "库坦",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 29.2,
+      "deep_status": "core",
+      "roles": [
+        "高红压制",
+        "控场"
+      ],
+      "play_chars": 102,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 4509,
+      "name": "梅林",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "core",
+      "roles": [
+        "反制对策",
+        "消强联防"
+      ],
+      "play_chars": 36,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 4510,
+      "name": "卫岳",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 45.8,
+      "deep_status": "meta",
+      "roles": [
+        "团队增益"
+      ],
+      "play_chars": 427,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系补位",
+        "已核顺序链成员",
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4511,
+      "name": "不破帝·南霜",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 38.0,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4515,
+      "name": "霍光",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 40.6,
+      "deep_status": "meta",
+      "roles": [
+        "高红压制",
+        "阵亡先制"
+      ],
+      "play_chars": 359,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "官方限制池 O202608 limited",
+        "配置／攻略专题作品",
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4517,
+      "name": "铃熙",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 38.0,
+      "deep_status": "niche",
+      "roles": [
+        "清PP压制"
+      ],
+      "play_chars": 51,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系核心位"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4519,
+      "name": "里扎德",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4528,
+      "name": "古尔伽",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4532,
+      "name": "堕息·迹",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 45.6,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4541,
+      "name": "莫塔里安",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 34.8,
+      "deep_status": "core",
+      "roles": [
+        "护盾联防",
+        "控场"
+      ],
+      "play_chars": 330,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4552,
+      "name": "怜羽",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 31.4,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4553,
+      "name": "万里春·北鸟",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 46.2,
+      "deep_status": "core",
+      "roles": [
+        "反制对策",
+        "消强联防"
+      ],
+      "play_chars": 38,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "体系核心位",
+        "体系补位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4554,
+      "name": "圣谕邪魇",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 63.2,
+      "deep_status": "meta",
+      "roles": [
+        "续航壁垒",
+        "高红压制"
+      ],
+      "play_chars": 137,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 banned",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4561,
+      "name": "霆律",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 31.9,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4566,
+      "name": "山椿",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 30.6,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4569,
+      "name": "霆终陨灭·罗库",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 34.3,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4574,
+      "name": "寂娆",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 33.1,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4586,
+      "name": "空元行者",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 60.2,
+      "deep_status": "core",
+      "roles": [
+        "阵亡先制",
+        "兑子拦截"
+      ],
+      "play_chars": 47,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited",
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4588,
+      "name": "茵茵",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 34.9,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4589,
+      "name": "曜焰万象·文森特",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 38.1,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4593,
+      "name": "血刎剑姬",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 39.5,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4594,
+      "name": "摆渡者·费雷",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 29.0,
+      "deep_status": "niche",
+      "roles": [
+        "高红压制",
+        "反制对策"
+      ],
+      "play_chars": 176,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4599,
+      "name": "灵巢之主·索杰德尔",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 48.3,
+      "deep_status": "meta",
+      "roles": [
+        "消强联防",
+        "反制对策"
+      ],
+      "play_chars": 45,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系核心位"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4600,
+      "name": "斯布林蒂",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "meta",
+      "roles": [
+        "印记体系轴",
+        "团队增益"
+      ],
+      "play_chars": 77,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用",
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 4603,
+      "name": "贾斯",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 31.9,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4604,
+      "name": "萨芙凯特",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 50.9,
+      "deep_status": "meta",
+      "roles": [
+        "高红压制"
+      ],
+      "play_chars": 45,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4605,
+      "name": "无限·欧根尼克",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 32.4,
+      "deep_status": "core",
+      "roles": [
+        "高红压制",
+        "续航壁垒"
+      ],
+      "play_chars": 352,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4618,
+      "name": "佩洛瑟斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 36.2,
+      "deep_status": "core",
+      "roles": [
+        "控场",
+        "反制对策"
+      ],
+      "play_chars": 51,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4620,
+      "name": "孤烛灯使",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 44.3,
+      "deep_status": "meta",
+      "roles": [
+        "印记体系轴",
+        "清PP压制"
+      ],
+      "play_chars": 118,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P2 月榜／体系点名，待当季证据"
+    },
+    {
+      "id": 4622,
+      "name": "希拓",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 46.1,
+      "deep_status": "meta",
+      "roles": [
+        "高红压制",
+        "反制对策"
+      ],
+      "play_chars": 322,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "官方限制池 O202608 limited",
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员",
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4623,
+      "name": "裂岩·艾克特希",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 36.5,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4625,
+      "name": "伏尔格安",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 39.9,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4627,
+      "name": "赫斯提亚",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 42.6,
+      "deep_status": "meta",
+      "roles": [
+        "兑子拦截"
+      ],
+      "play_chars": 39,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4629,
+      "name": "蒙鲁特",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 40.2,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4631,
+      "name": "塞弥丝珂",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 37.7,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4632,
+      "name": "卡威治",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 29.3,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4633,
+      "name": "腐坏幽魔·克劳里菲",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 38.0,
+      "deep_status": "core",
+      "roles": [
+        "阵亡先制",
+        "续航壁垒"
+      ],
+      "play_chars": 53,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4635,
+      "name": "枫落殇·西叶",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 38.7,
+      "deep_status": "core",
+      "roles": [
+        "消强联防",
+        "异常挂载"
+      ],
+      "play_chars": 54,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4643,
+      "name": "蓓丽安特",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "meta",
+      "roles": [
+        "团队增益",
+        "续航壁垒"
+      ],
+      "play_chars": 52,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用",
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 4644,
+      "name": "克雷弗德",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 50.7,
+      "deep_status": "meta",
+      "roles": [
+        "高红压制",
+        "控场"
+      ],
+      "play_chars": 48,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited",
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4646,
+      "name": "时钟试炼官·极",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 38.9,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4647,
+      "name": "星光·丽莎布布",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 40.3,
+      "deep_status": "core",
+      "roles": [
+        "高红压制",
+        "续航壁垒"
+      ],
+      "play_chars": 42,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4648,
+      "name": "星光·鲁斯王",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 46.0,
+      "deep_status": "core",
+      "roles": [
+        "高红压制",
+        "反制对策"
+      ],
+      "play_chars": 42,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4649,
+      "name": "星光·魔焰猩猩",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 36.4,
+      "deep_status": "core",
+      "roles": [
+        "高红压制"
+      ],
+      "play_chars": 35,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4650,
+      "name": "风暴龙灵",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 36.8,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4654,
+      "name": "鲸沫",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 37.2,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4658,
+      "name": "仿生兽·库比",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 35.7,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4661,
+      "name": "无为觉者",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "meta",
+      "roles": [
+        "消强联防",
+        "阵亡先制"
+      ],
+      "play_chars": 60,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited",
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用",
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4663,
+      "name": "凌虎·关银屏",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 37.3,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4671,
+      "name": "噬夜疾袭·库拉塔克",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 37.1,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4672,
+      "name": "月光·阿尔莫尼",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 29.4,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4676,
+      "name": "神觉·米斯蒂克",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 40.7,
+      "deep_status": "core",
+      "roles": [
+        "封属干扰"
+      ],
+      "play_chars": 43,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系核心位"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4677,
+      "name": "星辰万象·天启星魂",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 45.8,
+      "deep_status": "meta",
+      "roles": [
+        "续航壁垒"
+      ],
+      "play_chars": 50,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 banned",
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4678,
+      "name": "迪迦奥特曼",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 38.3,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4679,
+      "name": "赛罗奥特曼",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 47.7,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4680,
+      "name": "贝利亚奥特曼",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 41.9,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4685,
+      "name": "云盈",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 40.4,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4690,
+      "name": "变异鳄兰",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 32.8,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4693,
+      "name": "星光·蘑菇怪",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 35.0,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4697,
+      "name": "华光之翼·杰洛恩",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 39.8,
+      "deep_status": "meta",
+      "roles": [
+        "反制对策",
+        "续航壁垒"
+      ],
+      "play_chars": 43,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited",
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4706,
+      "name": "奥菲利娅",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 48.7,
+      "deep_status": "core",
+      "roles": [
+        "团队增益",
+        "续航壁垒"
+      ],
+      "play_chars": 240,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4709,
+      "name": "原始预言·吉尼亚斯",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 29.8,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（功能位待复核）",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4712,
+      "name": "龙琰",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 40.4,
+      "deep_status": "core",
+      "roles": [
+        "联攻核心",
+        "高红压制"
+      ],
+      "play_chars": 36,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4714,
+      "name": "古代巨型机器人",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 38.0,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4716,
+      "name": "赫尔卡长老",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 46.8,
+      "deep_status": "niche",
+      "roles": [
+        "续航壁垒"
+      ],
+      "play_chars": 42,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4717,
+      "name": "原始黑洞·尤纳斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 34.0,
+      "deep_status": "meta",
+      "roles": [
+        "团队增益",
+        "反制对策"
+      ],
+      "play_chars": 49,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited",
+        "配置／攻略专题作品",
+        "体系补位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4732,
+      "name": "闪光皮神",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 36.1,
+      "deep_status": "meta",
+      "roles": [
+        "团队增益",
+        "续航壁垒"
+      ],
+      "play_chars": 48,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 limited",
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4743,
+      "name": "星光·纳多雷",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 46.8,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4745,
+      "name": "阿尔忒弥斯",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 44.5,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P2 月榜／体系点名，待当季证据"
+    },
+    {
+      "id": 4747,
+      "name": "圣颖",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 33.5,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4749,
+      "name": "对神兵器肯扎特",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 49.4,
+      "deep_status": "meta",
+      "roles": [
+        "反制对策",
+        "续航壁垒"
+      ],
+      "play_chars": 72,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4750,
+      "name": "云境归真·始祖灵兽",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 38.5,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P2 月榜／体系点名，待当季证据"
+    },
+    {
+      "id": 4752,
+      "name": "镇魂·约凡撒",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 32.3,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4753,
+      "name": "命运·玛酷索",
+      "main_layer": "候选池",
+      "layers": [
+        "候选池"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 40.8,
+      "deep_status": null,
+      "roles": [],
+      "play_chars": 0,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4761,
+      "name": "琉梦",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 53.1,
+      "deep_status": "core",
+      "roles": [
+        "团队增益",
+        "控场"
+      ],
+      "play_chars": 50,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4762,
+      "name": "湮灭之主·咤克斯",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "配置/攻略专题"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 45.2,
+      "deep_status": "core",
+      "roles": [
+        "续航壁垒",
+        "高红压制"
+      ],
+      "play_chars": 42,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 limited",
+        "配置／攻略专题作品"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4765,
+      "name": "怒雷神裁·雷伊",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T0",
+      "complexity_score": 50.9,
+      "deep_status": "core",
+      "roles": [
+        "阵亡先制",
+        "控场"
+      ],
+      "play_chars": 46,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4766,
+      "name": "灭战神决·盖亚",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T0",
+      "complexity_score": 46.0,
+      "deep_status": "meta",
+      "roles": [
+        "弹伤反制",
+        "高红压制"
+      ],
+      "play_chars": 45,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4797,
+      "name": "极渊DS-001",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 36.7,
+      "deep_status": "meta",
+      "roles": [
+        "清PP压制"
+      ],
+      "play_chars": 48,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited",
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4800,
+      "name": "无极圣武",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T3",
+      "complexity_score": 30.3,
+      "deep_status": "meta",
+      "roles": [
+        "联攻核心",
+        "高红压制"
+      ],
+      "play_chars": 137,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 banned",
+        "体系补位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4808,
+      "name": "讳迹·米修莉",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 44.7,
+      "deep_status": "meta",
+      "roles": [
+        "高红压制",
+        "反制对策"
+      ],
+      "play_chars": 428,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "官方限制池 O20261016 semi_limited",
+        "体系核心位",
+        "已核顺序链成员",
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4816,
+      "name": "伊芙",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 35.3,
+      "deep_status": "core",
+      "roles": [
+        "反制对策"
+      ],
+      "play_chars": 57,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4853,
+      "name": "梅赫维特",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 60.8,
+      "deep_status": "meta",
+      "roles": [
+        "团队增益",
+        "续航壁垒"
+      ],
+      "play_chars": 562,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4861,
+      "name": "涂蝶",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T2",
+      "complexity_score": 36.4,
+      "deep_status": "meta",
+      "roles": [
+        "印记体系轴",
+        "反制对策"
+      ],
+      "play_chars": 124,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "体系补位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4872,
+      "name": "妙时天女",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "meta",
+      "roles": [
+        "阵亡传承"
+      ],
+      "play_chars": 549,
+      "has_full_chain": true,
+      "evidence_flags": [
+        "已写完整六要素战术链"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用"
+      ],
+      "review_priority": "P1 复杂度分与实战定位冲突"
+    },
+    {
+      "id": 4875,
+      "name": "永烬劫炎·上古炎兽",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 43.5,
+      "deep_status": "meta",
+      "roles": [
+        "异常挂载"
+      ],
+      "play_chars": 69,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "体系核心位",
+        "已核顺序链成员"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论",
+        "参与已核顺序链，但本只尚未写完整逐回合链"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4903,
+      "name": "帝录天锋",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 44.7,
+      "deep_status": "meta",
+      "roles": [
+        "高红压制",
+        "控场"
+      ],
+      "play_chars": 80,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O20261016 limited"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "有官方限制池地位证据，但人工强度仍未评级"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    },
+    {
+      "id": 4925,
+      "name": "米罗博士",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 44.3,
+      "deep_status": "core",
+      "roles": [
+        "消强联防",
+        "控场"
+      ],
+      "play_chars": 152,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [],
+      "review_priority": "P3 无当季证据"
+    },
+    {
+      "id": 4946,
+      "name": "万霆神律·雷伊",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 56.8,
+      "deep_status": "core",
+      "roles": [
+        "控场",
+        "续航壁垒"
+      ],
+      "play_chars": 52,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 4947,
+      "name": "不灭战魂·盖亚",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层"
+      ],
+      "complexity_tier": "T1",
+      "complexity_score": 52.6,
+      "deep_status": "core",
+      "roles": [
+        "续航壁垒",
+        "反制对策"
+      ],
+      "play_chars": 53,
+      "has_full_chain": false,
+      "evidence_flags": [],
+      "human_strength": "未评级",
+      "rating_basis": "",
+      "conflicts": [
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P2 深研说明不足"
+    },
+    {
+      "id": 5000,
+      "name": "圣灵谱尼",
+      "main_layer": "深研层",
+      "layers": [
+        "深研层",
+        "人工回捞"
+      ],
+      "complexity_tier": "—",
+      "complexity_score": null,
+      "deep_status": "meta",
+      "roles": [
+        "续航壁垒"
+      ],
+      "play_chars": 46,
+      "has_full_chain": false,
+      "evidence_flags": [
+        "官方限制池 O202608 limited"
+      ],
+      "human_strength": "未评级（月榜观察名单）",
+      "rating_basis": "",
+      "conflicts": [
+        "深研定位为环境／核心位，但机制复杂度分偏低或无分档",
+        "无机制复杂度分档（人工回捞或资料层精灵），复杂度分不可用",
+        "有官方限制池地位证据，但人工强度仍未评级",
+        "深研说明为占位短句，不足以支撑强度结论"
+      ],
+      "review_priority": "P0 官方池核心，优先补当季证据"
+    }
+  ],
+  "systems": [
+    {
+      "key": "伞邪体系",
+      "name": "伞邪体系",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "伞邪体系（2026-11-13 用户口径录入）",
+      "body_chars": 125,
+      "body_elements": [
+        "逐回合顺序",
+        "失效点"
+      ],
+      "body_short": true,
+      "core_count": 2,
+      "single_core": false,
+      "core": [
+        4364,
+        4554
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "鸟铃常联防",
+      "name": "鸟铃常联防",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "仅成员清单（无顺序正文）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "鸟铃常联防（2026-11-13 用户口径录入）",
+      "body_chars": 100,
+      "body_elements": [
+        "资源"
+      ],
+      "body_short": true,
+      "core_count": 3,
+      "single_core": false,
+      "core": [
+        4553,
+        4517,
+        3673
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "弱化流",
+      "name": "弱化流",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "弱化流（2026-11-13 用户口径录入）",
+      "body_chars": 162,
+      "body_elements": [
+        "逐回合顺序",
+        "失效点"
+      ],
+      "body_short": true,
+      "core_count": 3,
+      "single_core": false,
+      "core": [
+        4553,
+        3156,
+        4505
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [
+        4505
+      ],
+      "unknown_members": [
+        3156
+      ],
+      "flags": [
+        "体系成员含资料层精灵，仅作正文参照，不进可选列表",
+        "体系成员 ID 未在任何资料层找到",
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "大姐猪公式",
+      "name": "大姐猪公式",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "大姐猪公式（2026-11-13 用户口径录入）",
+      "body_chars": 121,
+      "body_elements": [
+        "逐回合顺序",
+        "资源"
+      ],
+      "body_short": true,
+      "core_count": 2,
+      "single_core": false,
+      "core": [
+        4600,
+        4503
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "希拓烧伤体系",
+      "name": "希拓烧伤体系",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "希拓烧伤体系（2026-11-13 用户口径录入）",
+      "body_chars": 141,
+      "body_elements": [
+        "逐回合顺序"
+      ],
+      "body_short": true,
+      "core_count": 3,
+      "single_core": false,
+      "core": [
+        4622,
+        3954,
+        4875
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "草团公式",
+      "name": "草团公式",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "草团公式（2026-11-13 用户口径录入）",
+      "body_chars": 96,
+      "body_elements": [
+        "逐回合顺序"
+      ],
+      "body_short": true,
+      "core_count": 2,
+      "single_core": false,
+      "core": [
+        3613,
+        4163
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "灯使pp流",
+      "name": "灯使pp流",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "灯使pp流（2026-11-13 用户口径录入）",
+      "body_chars": 245,
+      "body_elements": [
+        "逐回合顺序",
+        "资源"
+      ],
+      "body_short": true,
+      "core_count": 1,
+      "single_core": true,
+      "core": [
+        4620
+      ],
+      "support": [
+        4553,
+        4333,
+        3613,
+        4275
+      ],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核",
+        "单核体系，顺序链只来自补位指向主核"
+      ]
+    },
+    {
+      "key": "蓓空罗公式",
+      "name": "蓓空罗公式",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "蓓空罗公式（2026-11-13 用户口径录入）",
+      "body_chars": 147,
+      "body_elements": [
+        "逐回合顺序"
+      ],
+      "body_short": true,
+      "core_count": 3,
+      "single_core": false,
+      "core": [
+        4643,
+        4169,
+        4586
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "蓓鲁公式",
+      "name": "蓓鲁公式",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "蓓鲁公式（2026-11-13 用户口径录入）",
+      "body_chars": 107,
+      "body_elements": [
+        "逐回合顺序",
+        "资源"
+      ],
+      "body_short": true,
+      "core_count": 2,
+      "single_core": false,
+      "core": [
+        4648,
+        4643
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "秘巢联防",
+      "name": "秘巢联防",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "仅成员清单（无顺序正文）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "秘巢联防（2026-11-13 用户口径录入）",
+      "body_chars": 112,
+      "body_elements": [],
+      "body_short": true,
+      "core_count": 2,
+      "single_core": false,
+      "core": [
+        4676,
+        4599
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "闪光皮神体系",
+      "name": "闪光皮神体系",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "闪光皮神体系（2026-11-13 用户口径录入）",
+      "body_chars": 203,
+      "body_elements": [
+        "逐回合顺序",
+        "资源"
+      ],
+      "body_short": true,
+      "core_count": 1,
+      "single_core": true,
+      "core": [
+        4732
+      ],
+      "support": [
+        3414,
+        3613,
+        4717
+      ],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核",
+        "单核体系，顺序链只来自补位指向主核"
+      ]
+    },
+    {
+      "key": "华猎体系",
+      "name": "华猎体系",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "华猎体系（2026-11-13 用户口径录入）",
+      "body_chars": 116,
+      "body_elements": [
+        "逐回合顺序",
+        "资源"
+      ],
+      "body_short": true,
+      "core_count": 2,
+      "single_core": false,
+      "core": [
+        4321,
+        4745
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "草马中毒神印体系",
+      "name": "草马中毒神印体系",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "草马中毒神印体系（2026-11-13 用户口径录入）",
+      "body_chars": 162,
+      "body_elements": [
+        "逐回合顺序"
+      ],
+      "body_short": true,
+      "core_count": 3,
+      "single_core": false,
+      "core": [
+        4750,
+        3986,
+        4445
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "嬴荡公式",
+      "name": "嬴荡公式",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "嬴荡公式（2026-11-13 用户口径录入）",
+      "body_chars": 154,
+      "body_elements": [
+        "逐回合顺序"
+      ],
+      "body_short": true,
+      "core_count": 1,
+      "single_core": true,
+      "core": [
+        4797
+      ],
+      "support": [
+        4468,
+        3711
+      ],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核",
+        "单核体系，顺序链只来自补位指向主核"
+      ]
+    },
+    {
+      "key": "001帝皇侠公式",
+      "name": "001帝皇侠公式",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "仅成员清单（无顺序正文）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "001帝皇侠公式（2026-11-13 用户口径录入）",
+      "body_chars": 124,
+      "body_elements": [
+        "逐回合顺序",
+        "资源"
+      ],
+      "body_short": true,
+      "core_count": 2,
+      "single_core": false,
+      "core": [
+        4797,
+        4930
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [
+        4930
+      ],
+      "unknown_members": [],
+      "flags": [
+        "体系成员含资料层精灵，仅作正文参照，不进可选列表",
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "空铭公式",
+      "name": "空铭公式",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "仅成员清单（无顺序正文）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "空铭公式（2026-11-13 用户口径录入）",
+      "body_chars": 96,
+      "body_elements": [
+        "逐回合顺序",
+        "资源"
+      ],
+      "body_short": true,
+      "core_count": 2,
+      "single_core": false,
+      "core": [
+        4586,
+        4785
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [
+        4785
+      ],
+      "unknown_members": [],
+      "flags": [
+        "体系成员含资料层精灵，仅作正文参照，不进可选列表",
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "卫岳猫乌拉猫公式",
+      "name": "卫岳猫乌拉猫公式",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "卫岳猫乌拉猫公式（2026-11-13 用户口径录入）",
+      "body_chars": 183,
+      "body_elements": [
+        "逐回合顺序",
+        "资源"
+      ],
+      "body_short": true,
+      "core_count": 1,
+      "single_core": true,
+      "core": [
+        4808
+      ],
+      "support": [
+        4510,
+        4126
+      ],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核",
+        "单核体系，顺序链只来自补位指向主核"
+      ]
+    },
+    {
+      "key": "涂蝶体系",
+      "name": "涂蝶体系",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "涂蝶体系（2026-11-13 用户口径录入）",
+      "body_chars": 255,
+      "body_elements": [
+        "逐回合顺序"
+      ],
+      "body_short": false,
+      "core_count": 2,
+      "single_core": false,
+      "core": [
+        3741,
+        3983
+      ],
+      "support": [
+        4861,
+        4800
+      ],
+      "counter": [],
+      "reference_only_members": [
+        3741,
+        3983
+      ],
+      "unknown_members": [],
+      "flags": [
+        "体系成员含资料层精灵，仅作正文参照，不进可选列表"
+      ]
+    },
+    {
+      "key": "古王体系",
+      "name": "古王体系",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "古王体系（2026-11-13 用户口径录入）",
+      "body_chars": 186,
+      "body_elements": [
+        "逐回合顺序",
+        "失效点"
+      ],
+      "body_short": true,
+      "core_count": 1,
+      "single_core": true,
+      "core": [
+        4125
+      ],
+      "support": [
+        4861,
+        4800
+      ],
+      "counter": [],
+      "reference_only_members": [],
+      "unknown_members": [],
+      "flags": [
+        "正文较短，操作链信息密度低，须复核",
+        "单核体系，顺序链只来自补位指向主核"
+      ]
+    },
+    {
+      "key": "树海体系",
+      "name": "树海体系",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "树海体系（2026-11-13 用户口径录入）",
+      "body_chars": 223,
+      "body_elements": [
+        "逐回合顺序",
+        "资源"
+      ],
+      "body_short": true,
+      "core_count": 2,
+      "single_core": false,
+      "core": [
+        3739,
+        3613
+      ],
+      "support": [
+        4500,
+        4814
+      ],
+      "counter": [],
+      "reference_only_members": [
+        4814
+      ],
+      "unknown_members": [],
+      "flags": [
+        "体系成员含资料层精灵，仅作正文参照，不进可选列表",
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    },
+    {
+      "key": "无限诅咒",
+      "name": "无限诅咒",
+      "kind": "同队联动",
+      "evidence_grade": "社区／攻略",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_raw": "2026-11-13 用户清单；机制按原文，未标赛季",
+      "section": "无限诅咒（2026-11-13 用户口径录入）",
+      "body_chars": 188,
+      "body_elements": [
+        "逐回合顺序"
+      ],
+      "body_short": true,
+      "core_count": 4,
+      "single_core": false,
+      "core": [
+        3683,
+        4444,
+        4187,
+        3372
+      ],
+      "support": [],
+      "counter": [],
+      "reference_only_members": [
+        3683,
+        4187,
+        4444
+      ],
+      "unknown_members": [
+        3372
+      ],
+      "flags": [
+        "体系成员含资料层精灵，仅作正文参照，不进可选列表",
+        "体系成员 ID 未在任何资料层找到",
+        "正文较短，操作链信息密度低，须复核"
+      ]
+    }
+  ],
+  "links": [
+    {
+      "a": 3613,
+      "b": 3739,
+      "a_name": "芳馨·茉蕊儿",
+      "b_name": "玛洛迪斯",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "树海体系"
+      ]
+    },
+    {
+      "a": 3613,
+      "b": 4620,
+      "a_name": "芳馨·茉蕊儿",
+      "b_name": "孤烛灯使",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "灯使pp流"
+      ]
+    },
+    {
+      "a": 3711,
+      "b": 4797,
+      "a_name": "圣光莫妮卡",
+      "b_name": "极渊DS-001",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "嬴荡公式"
+      ]
+    },
+    {
+      "a": 3739,
+      "b": 3613,
+      "a_name": "玛洛迪斯",
+      "b_name": "芳馨·茉蕊儿",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "树海体系"
+      ]
+    },
+    {
+      "a": 3739,
+      "b": 4500,
+      "a_name": "玛洛迪斯",
+      "b_name": "武心婵",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "树海体系"
+      ]
+    },
+    {
+      "a": 3954,
+      "b": 4875,
+      "a_name": "枫眠",
+      "b_name": "永烬劫炎·上古炎兽",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "希拓烧伤体系"
+      ]
+    },
+    {
+      "a": 4169,
+      "b": 4586,
+      "a_name": "弑序神罗",
+      "b_name": "空元行者",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "蓓空罗公式"
+      ]
+    },
+    {
+      "a": 4333,
+      "b": 4620,
+      "a_name": "哀·拉伯克",
+      "b_name": "孤烛灯使",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "灯使pp流"
+      ]
+    },
+    {
+      "a": 4364,
+      "b": 4554,
+      "a_name": "尤莉米特",
+      "b_name": "圣谕邪魇",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "伞邪体系"
+      ]
+    },
+    {
+      "a": 4468,
+      "b": 4797,
+      "a_name": "始皇帝·嬴政",
+      "b_name": "极渊DS-001",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "嬴荡公式"
+      ]
+    },
+    {
+      "a": 4500,
+      "b": 3739,
+      "a_name": "武心婵",
+      "b_name": "玛洛迪斯",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "树海体系"
+      ]
+    },
+    {
+      "a": 4503,
+      "b": 4600,
+      "a_name": "库坦",
+      "b_name": "斯布林蒂",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "大姐猪公式"
+      ]
+    },
+    {
+      "a": 4554,
+      "b": 4364,
+      "a_name": "圣谕邪魇",
+      "b_name": "尤莉米特",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "伞邪体系"
+      ]
+    },
+    {
+      "a": 4586,
+      "b": 4169,
+      "a_name": "空元行者",
+      "b_name": "弑序神罗",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "蓓空罗公式"
+      ]
+    },
+    {
+      "a": 4600,
+      "b": 4503,
+      "a_name": "斯布林蒂",
+      "b_name": "库坦",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "大姐猪公式"
+      ]
+    },
+    {
+      "a": 4620,
+      "b": 3613,
+      "a_name": "孤烛灯使",
+      "b_name": "芳馨·茉蕊儿",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "灯使pp流"
+      ]
+    },
+    {
+      "a": 4620,
+      "b": 4333,
+      "a_name": "孤烛灯使",
+      "b_name": "哀·拉伯克",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "灯使pp流"
+      ]
+    },
+    {
+      "a": 4622,
+      "b": 4875,
+      "a_name": "希拓",
+      "b_name": "永烬劫炎·上古炎兽",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "希拓烧伤体系"
+      ]
+    },
+    {
+      "a": 4643,
+      "b": 4648,
+      "a_name": "蓓丽安特",
+      "b_name": "星光·鲁斯王",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "蓓鲁公式"
+      ]
+    },
+    {
+      "a": 4648,
+      "b": 4643,
+      "a_name": "星光·鲁斯王",
+      "b_name": "蓓丽安特",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "蓓鲁公式"
+      ]
+    },
+    {
+      "a": 4797,
+      "b": 3711,
+      "a_name": "极渊DS-001",
+      "b_name": "圣光莫妮卡",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "嬴荡公式"
+      ]
+    },
+    {
+      "a": 4797,
+      "b": 4468,
+      "a_name": "极渊DS-001",
+      "b_name": "始皇帝·嬴政",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "嬴荡公式"
+      ]
+    },
+    {
+      "a": 4875,
+      "b": 3954,
+      "a_name": "永烬劫炎·上古炎兽",
+      "b_name": "枫眠",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "希拓烧伤体系"
+      ]
+    },
+    {
+      "a": 4875,
+      "b": 4622,
+      "a_name": "永烬劫炎·上古炎兽",
+      "b_name": "希拓",
+      "grade": "显式边同队联动",
+      "group": "同队",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "希拓烧伤体系"
+      ]
+    }
+  ],
+  "findings": [
+    {
+      "key": "strength_coverage",
+      "finding": "只有带日期与可核来源的强度才能写评级；其余一律未评级，不按机制复杂度推算 T 级。",
+      "action": "已生成 227 只逐只评级依据审计与复核优先级；官方限制池成员逐只登记在 official_pool_members。",
+      "status": "已处理"
+    },
+    {
+      "key": "auto_score_conflict",
+      "finding": "深研定位 core/meta 但复杂度分 T3/T4/无分档者，属于自动评分系统性低估的功能位。",
+      "action": "逐只写入 conflicts 与 P1 复核队列；bias_review 已扩大到全部低分档功能位。",
+      "status": "已处理"
+    },
+    {
+      "key": "unsupported_synergy_declarations",
+      "finding": "无正文依据的单向声明与同体系备选位声明不应留在 synergies 字段里当作联动。",
+      "action": "已从 synergies 迁到 leads（线索字段），chain_audit 继续逐条留痕并标 source_field。",
+      "status": "已处理"
+    },
+    {
+      "key": "unverified_system_in_verified_link",
+      "finding": "已核顺序链声明的 systems/note 会混入未核体系名，容易被读成该体系也已核。",
+      "action": "systems 只列已核体系，未核体系移入 also_systems。",
+      "status": "已处理"
+    },
+    {
+      "key": "one_way_verified_link",
+      "finding": "verified_pairs 双向展开，使单向 synergies 声明也被判为已核同队顺序链。",
+      "action": "单向声明改判「顺序链支持（单向，待互证）」并归入关联线索。",
+      "status": "已处理"
+    },
+    {
+      "key": "reference_only_members",
+      "finding": "少数体系成员只存在于资料层，不进总表与可选列表。",
+      "action": "逐项登记 reference_only_members，前端继续只作正文参照。",
+      "status": "已处理"
+    }
+  ],
+  "related": [
+    "references/catalog/strength.json",
+    "references/catalog/chain_audit.json",
+    "references/catalog/systems.json",
+    "references/catalog/roster.json",
+    "references/spirit_synergy_view.html"
+  ]
+}

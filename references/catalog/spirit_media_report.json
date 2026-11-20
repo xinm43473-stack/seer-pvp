@@ -1,0 +1,27 @@
+{
+  "schema_version": 1.0,
+  "generated_at": "2026-11-10",
+  "source": {
+    "api": "https://api.seerapi.com/v1",
+    "api_cli": "seerapi (GitHub SeerAPI/seerapi, seerapi-cli skill)",
+    "asset_repo": "https://github.com/SeerAPI/seer-unity-assets",
+    "raw_cache": "data/seerapi_media/raw/<resource>/<id>.json",
+    "fetched_at": "2026-11-09"
+  },
+  "target_count": 234,
+  "stats": {
+    "spirits": 234,
+    "with_soulmark": 234,
+    "with_portrait": 234,
+    "with_avatar": 234,
+    "soulmark_versions": 294,
+    "skills": 4572,
+    "images": 642
+  },
+  "fetch_failures": [],
+  "missing_pets": [],
+  "missing_soulmark": [],
+  "missing_portrait": [],
+  "image_format": "pet_head/pet_body 转 WebP 缩略图（Pillow，最长边 {'pet_head': 560, 'pet_body': 420} / 质量 82），图标保留 PNG",
+  "policy": "资料层只做机制与图像展示，不参与收录判断、强度分级或同队联动推导。"
+}

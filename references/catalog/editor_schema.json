@@ -1,0 +1,452 @@
+{
+  "schema_version": 3.2,
+  "updated_at": "2026-11-18",
+  "purpose": "前端可编辑信息的唯一注册表。新增可编辑字段只改本文件（必要时再改 editor_schema.py 的通用校验），不要在模板、落库脚本、校验脚本里各写一份字段名与限制值。",
+  "design": "schema 驱动：build_synergy_view.py 把本文件精简后内联进 DATA.editor.schema，前端按 fields 动态渲染表单并通用校验；apply_view_edits.py / check_roster.py 复用 editor_schema.py 的同一份实现。所有前端节点均可编辑。",
+  "spirit_scope": {
+    "mode": "all_front_end_nodes",
+    "description": "全部录入精灵（总表 227 只，2026-11-09 起全部有正式序号）＋ 资料层参照精灵 ＋ 用户从隐藏精灵库添加的序号；数量以 spirit_master_list、systems/role_groups 与 view_library_adds 为准，不在本文件写死",
+    "resolver": "scripts/editor_schema.py#editable_ids / #editable_keys"
+  },
+  "registries": {
+    "_rule": "以下注册表默认只读：前端只能以 select / checkbox 选择已登记项，禁止新增、删除、改名；唯一例外是 systems：允许通过 system_state 新增（creatable=true），但仍不可删除、不可改名，落库必须同步 tactics.md 与 SKILL.md。落库脚本必须拒绝未知 key、名称不一致或试图下发注册表定义的补丁。",
+    "systems": {
+      "source": "references/data/systems.json#systems[].key",
+      "label_field": "name",
+      "select_only": true,
+      "creatable": true,
+      "deletable": false,
+      "rename": false,
+      "note": "「所属体系」与联动边的体系只能选已登记项；2026-11-08 起允许前端通过 system_state 新增体系（自动补 tactics.md 章节与 SKILL.md 速查行），但既有体系不可删除、不可改名。"
+    },
+    "classes": {
+      "source": "references/data/core_roles.json#role_classes",
+      "select_only": true
+    },
+    "roles": {
+      "source": "references/data/core_roles.json#core_roles",
+      "select_only": true
+    },
+    "statuses": {
+      "source": "inline#statuses",
+      "select_only": true
+    },
+    "edge_types": {
+      "source": "inline#edge_types",
+      "select_only": true
+    },
+    "layers": {
+      "source": "inline#layers",
+      "select_only": true
+    }
+  },
+  "forbidden_patch_keys": [
+    "systems",
+    "registries",
+    "core_roles",
+    "role_classes",
+    "edge_types",
+    "statuses",
+    "layers",
+    "source_markers",
+    "system_names"
+  ],
+  "term_sources": {
+    "classes": "references/data/core_roles.json#role_classes",
+    "roles": "references/data/core_roles.json#role_classes（定位分类）+ 用户自定义「特色」文本",
+    "systems": "references/data/systems.json#systems",
+    "system_kinds": "references/data/systems.json#kinds",
+    "statuses": "inline",
+    "edge_types": "inline"
+  },
+  "statuses": [
+    "meta",
+    "core",
+    "niche",
+    "legacy"
+  ],
+  "status_labels": {
+    "meta": "环境常用",
+    "core": "主力核心",
+    "niche": "冷门位",
+    "legacy": "历史位"
+  },
+  "layers": [
+    "深研层",
+    "候选池",
+    "配置/攻略专题",
+    "人工回捞"
+  ],
+  "relationship_priority": [
+    "相似定位",
+    "对位",
+    "互斥",
+    "对策"
+  ],
+  "deep_labels": {
+    "conditions": "成立条件",
+    "sequence": "逐回合顺序",
+    "resources": "资源（PP/血线/阵亡顺序）",
+    "bp_cost": "BP 成本",
+    "failure_points": "失效点",
+    "replacement_check": "上位替代结论"
+  },
+  "edge_types": {
+    "resource": "资源交接：一方把体力／PP／增益／传承／临时上限交给另一方",
+    "pressure": "顺序兑现：先压资源或逼出拦截，后一棒在窗口内兑现",
+    "cover": "保护位：登场保护、锁场下状态、封属等为队友创造条件",
+    "state": "状态依赖：一方挂载状态，另一方按该状态结算",
+    "shared_event": "共享事件：两者响应同一事件源，互不改变对方结算"
+  },
+  "limits": {
+    "edge_note_min": 0,
+    "edge_note_max": 800,
+    "list_item_max": 300,
+    "alias_item_max": 40,
+    "role_max": 5,
+    "role_custom_max": 2,
+    "role_custom_len": 20,
+    "note_max": 4000,
+    "role_class_max": 3
+  },
+  "system_edit": {
+    "enabled": true,
+    "create_key": "system_state",
+    "edit_key": "system_edits",
+    "name_editable": false,
+    "delete_enabled": false,
+    "core_scope": "all",
+    "defaults": {
+      "kind": "同队联动",
+      "chain_status": "顺序链待核（证据不足）",
+      "evidence_grade": "机制推演／待核",
+      "status": "前端新建体系；正文与当季证据待补"
+    },
+    "limits": {
+      "name_min": 1,
+      "name_max": 60,
+      "evidence_min": 0,
+      "evidence_max": 600,
+      "status_max": 200,
+      "carrier_max": 200,
+      "review_max": 600,
+      "article_max": 2000,
+      "aliases_max": 8,
+      "alias_item_max": 20,
+      "sources_max": 8,
+      "source_item_max": 40,
+      "core_max": 6,
+      "support_max": 8,
+      "counter_max": 8
+    },
+    "canvas": {
+      "nodes_max": 24,
+      "notes_max": 24,
+      "skills_max": 24,
+      "skill_links_max": 48,
+      "note_links_max": 48,
+      "edge_colors_max": 96,
+      "coord_min": 0,
+      "coord_max": 4000,
+      "coord_decimals": 1,
+      "note_text_max": 300,
+      "note_id_max": 40,
+      "skill_key_max": 80,
+      "skill_name_max": 40,
+      "link_type_max": 20,
+      "link_note_max": 800
+    },
+    "workflow": [
+      "前端「体系管理」新建体系 → 本机 localStorage → 导出补丁带 system_state",
+      "python scripts/apply_view_edits.py 补丁.json：先校验并写 references/view_system_edits.json，再落 systems.json",
+      "落库脚本自动补 tactics.md 章节、SKILL.md 速查行与体系计数；原有体系不改名、不删除",
+      "链路边仍走「关系联动」编辑器；新体系默认 chain_status=顺序链待核，补足当季证据后才进同队组"
+    ]
+  },
+  "system_fields": [
+    {
+      "key": "name",
+      "label": "体系名称",
+      "type": "text",
+      "max": 60,
+      "hint": "名称随意，不必以「体系」结尾，也不设字数下限；创建后不可改名"
+    },
+    {
+      "key": "kind",
+      "label": "体系类型",
+      "type": "enum",
+      "terms": "system_kinds",
+      "default": "同队联动",
+      "hint": "同队联动才允许登记 chain_edges；待核／对策／互斥只作信息层"
+    },
+    {
+      "key": "core",
+      "label": "核心（多选）",
+      "type": "multi_id",
+      "scope": "all",
+      "min": 1,
+      "max": 6,
+      "hint": "骨架必选位；总表全部精灵都可选，不限层级，支持搜索名称／序号／属性"
+    },
+    {
+      "key": "support",
+      "label": "补位（可选）",
+      "type": "multi_id",
+      "scope": "all",
+      "min": 0,
+      "max": 8,
+      "hint": "按对局补位，不是同队配合边"
+    },
+    {
+      "key": "counter",
+      "label": "反向对位（可选）",
+      "type": "multi_id",
+      "scope": "all",
+      "min": 0,
+      "max": 8,
+      "hint": "用来打该体系／精灵的对手侧对象，不是队友"
+    },
+    {
+      "key": "carrier",
+      "label": "载体／一句话定位",
+      "type": "text",
+      "max": 200,
+      "hint": "例：靠 4387 的 PP 循环把比赛拖进残局"
+    },
+    {
+      "key": "evidence",
+      "label": "证据说明",
+      "type": "textarea",
+      "min": 8,
+      "max": 600,
+      "hint": "写清来源、赛季或实战记录；没有证据就写「机制推演，待月榜复核」"
+    },
+    {
+      "key": "sources",
+      "label": "来源标记（每行一个）",
+      "type": "lines",
+      "max_items": 8,
+      "item_max": 40,
+      "hint": "默认 W:<核心序号>；也可用 SA:/SK:/G: 或 source_markers.json 已登记标记"
+    },
+    {
+      "key": "status",
+      "label": "状态文案",
+      "type": "text",
+      "max": 200,
+      "hint": "例：社区线索，当月梯度待月榜复核"
+    },
+    {
+      "key": "review_note",
+      "label": "复核备注",
+      "type": "textarea",
+      "max": 600,
+      "hint": "写清还缺什么证据、哪些分支未核"
+    },
+    {
+      "key": "aliases",
+      "label": "别名（每行一个）",
+      "type": "lines",
+      "max_items": 8,
+      "item_max": 20,
+      "hint": "社区缩写或俗称，用于检索"
+    },
+    {
+      "key": "section_note",
+      "label": "正文补充（写入 tactics.md）",
+      "type": "textarea",
+      "max": 2000,
+      "hint": "写成立条件、逐回合顺序、资源与失效点；留空则写入通用占位正文"
+    }
+  ],
+  "fields": [
+    {
+      "key": "roles",
+      "label": "定位",
+      "type": "roles",
+      "terms": "classes",
+      "custom_label": "特色",
+      "min": 0,
+      "max": 5,
+      "custom_max": 2,
+      "custom_len": 20,
+      "hint": "分类最多 3 个、特色最多 2 条，合计最多 5 条；分类来自 core_roles.json#role_classes，「特色」可自己写",
+      "min_deep": 1,
+      "class_max": 3
+    },
+    {
+      "key": "classes",
+      "label": "定位分类（随「定位」一起编辑，不单独显示）",
+      "type": "multi_enum",
+      "terms": "classes",
+      "min": 0,
+      "max": 3,
+      "hidden": true,
+      "hint": "由「定位」里的分类标签自动拆分写入，编辑面板不单独渲染；保留它是为了让落库补丁不丢分类"
+    },
+    {
+      "key": "system_keys",
+      "label": "所属体系（由体系成员自动判定，只读）",
+      "type": "multi_enum",
+      "terms": "systems",
+      "min": 0,
+      "max_from_terms": true,
+      "hint": "按 systems.json 的 core/support/counter 成员名单自动判定；编辑面板只读展示，不能手工勾选或新增",
+      "display_only_hint": "所属体系随体系注册表与成员名单自动变化，无需改代码",
+      "option_label": "terms_label"
+    },
+    {
+      "key": "note",
+      "label": "备注",
+      "type": "textarea",
+      "max": 4000,
+      "tall": true,
+      "hint": "实战备注与核心机制合并写在这里：每行一条机制或一条实战要点（限制池、怕什么、常见用法）"
+    },
+    {
+      "key": "play",
+      "label": "战术说明",
+      "type": "textarea",
+      "max": 4000,
+      "hint": "逐回合顺序、成立条件与失效点"
+    },
+    {
+      "key": "aliases",
+      "label": "别名／俗称（每行一个）",
+      "type": "lines",
+      "max_items": 12,
+      "item_max": 40,
+      "hint": "用于前端搜索，不改动 aliases.md 数据层"
+    },
+    {
+      "key": "status",
+      "label": "收录状态（只读词表）",
+      "type": "enum",
+      "terms": "statuses",
+      "optional": true,
+      "hint": "仅影响前端展示，不改动 roster.json 的 status"
+    },
+    {
+      "key": "rating",
+      "label": "评级（右栏显示，默认 T0）",
+      "type": "text",
+      "max": 8,
+      "hint": "自己维护的强度标签，先全部 T0；与机制复杂度无关，也不改 strength.json"
+    },
+    {
+      "key": "soul_mark",
+      "label": "魂印全文（SeerAPI 资料位）",
+      "type": "textarea",
+      "max": 8000,
+      "group": "spirit_info",
+      "hint": "已导入：SeerAPI soulmark 当前生效版（analyze_desc 优先，去富文本标签不改写措辞）。完整各版本文本与来源见 data/spirit_media.json；短魂印须查 soul_expansions.json 与技能页"
+    },
+    {
+      "key": "portrait",
+      "label": "立绘（本地图像路径）",
+      "type": "text",
+      "max": 500,
+      "group": "spirit_info",
+      "hint": "已导入：assets/seerapi 下的本地 WebP/PNG 相对路径（相对 references/*.html）。本地加载失败会自动回退 SeerAPI 静态资源仓库 URL"
+    },
+    {
+      "key": "skills",
+      "label": "技能（每行一条）",
+      "type": "lines",
+      "max_items": 30,
+      "item_max": 200,
+      "group": "spirit_info",
+      "hint": "已导入：SeerAPI skill 结构化数据整理成「技能名｜效果」，第五／神谕／特训优先，最多 30 条；完整技能表（含威力/PP/先制/逐条效果）见前端「SeerAPI 资料」面板与 data/spirit_media.json"
+    },
+    {
+      "key": "key_skills",
+      "label": "重点技能（选中前置并浅蓝高亮）",
+      "type": "lines",
+      "uitype": "skills",
+      "max_items": 12,
+      "item_max": 40,
+      "hint": "从这只精灵的技能表里勾选；选中项在详情技能表前置并浅蓝标注，其余白底排后"
+    },
+    {
+      "key": "custom_fields",
+      "label": "扩展位（键: 值，每行一条）",
+      "type": "kv",
+      "max_items": 24,
+      "group": "extension",
+      "hint": "给未来新机制／新属性／新资料留的位置：先写「键: 值」，确认稳定后再升级为正式字段或词表项，不用改代码"
+    }
+  ],
+  "edge": {
+    "system_kind": "同队联动",
+    "allow_any_system": true,
+    "require_member": false,
+    "endpoint_scope": "editable_ids",
+    "unique_unordered_pair": true,
+    "system_name_editable": false,
+    "description": "可在任意「同队联动」体系内新增边，两端可以是任意有整数序号的可编辑精灵；不要求精灵已属该体系。体系只能从注册表选择，名称不可编辑",
+    "fields": [
+      {
+        "key": "type",
+        "label": "边类型",
+        "type": "enum",
+        "terms": "edge_types"
+      },
+      {
+        "key": "note",
+        "label": "机制说明",
+        "type": "textarea",
+        "min_key": "edge_note_min",
+        "max_key": "edge_note_max"
+      }
+    ]
+  },
+  "storage": {
+    "key": "seer_peak_view_edits_v3",
+    "legacy_keys": [
+      "seer_peak_view_edits_v2",
+      "seer_peak_view_edits_v1"
+    ],
+    "export_name": "spirit_view_edits.json",
+    "draft_note": "改动先存浏览器 localStorage；导出补丁后运行 scripts/apply_view_edits.py 才会落库"
+  },
+  "deep_layer": {
+    "key": "main",
+    "values": [
+      "深研层"
+    ],
+    "description": "这些层级的精灵必须满足字段的 min_deep（与 check_roster.py 的「每只 1-2 个特色定位」口径一致）"
+  },
+  "media_import": {
+    "status": "ready",
+    "note": "已通过 SeerAPI 官方 API 与 SeerAPI 组织的 seer-unity-assets 仓库导入魂印／技能／立绘／头像／魂印图标／属性图标；原始文件在 data/seerapi_media/raw 与 assets/seerapi，结构化资料在 data/spirit_media.json。资料层只作展示，不参与收录、强度与联动判断。",
+    "source_file": "data/spirit_info.json",
+    "structured_file": "data/spirit_media.json",
+    "overlay_file": "references/data/spirit_info_overlay.json",
+    "asset_root": "../assets/seerapi",
+    "fetch_script": "scripts/fetch_seerapi_media.py",
+    "build_script": "scripts/build_spirit_media.py",
+    "import_script": "scripts/import_spirit_info.py",
+    "target_fields": [
+      "soul_mark",
+      "portrait",
+      "skills"
+    ],
+    "workflow": [
+      "1. python scripts/fetch_seerapi_media.py 抓取 SeerAPI API 原始响应与静态图像（增量，失败写 manifest.failures）",
+      "2. python scripts/build_spirit_media.py 离线整理出 data/spirit_media.json 与 data/spirit_info.json（status=ready）",
+      "3. python scripts/import_spirit_info.py 生成 references/data/spirit_info_overlay.json",
+      "4. 按 HANDOVER 重建链重跑 build_spirit_index.py → build_synergy_view.py → check_roster.py",
+      "5. 用户前端编辑覆盖层优先级高于导入层，不会被覆盖；结构化只读面板从 DATA.media 渲染"
+    ]
+  },
+  "extension_slots": {
+    "_rule": "游戏持续更新：新体系／新精灵／新机制／新来源出现时，按下表落位，不需要改程序逻辑。",
+    "new_system": "前端「体系管理」新建（system_state）→ apply_view_edits.py → apply_system_view_edits.py 写 systems.json、tactics.md 章节、SKILL.md 速查行；既有体系不改名、不删除。也可由维护者手工写入 systems.json 并同步文档",
+    "new_spirit": "在 roster.json 的 pending_research 增加条目 → 跑 build_spirit_index.py 重生成总表 → editable_ids() / editable_keys() 自动纳入，无需改 schema",
+    "new_mechanism": "先用 custom_fields 扩展位记录；确认稳定后写进 core_roles.json 词表并跑 apply_core_roles.py，或在本文件 fields 增加正式字段",
+    "new_field": "在本文件 fields 增加一项；现有类型 multi_enum / enum / textarea / lines / text / kv 直接可用",
+    "new_field_type": "在 editor_schema.py 的 _FIELD_VALIDATORS 加一个分支，并在 FIELD_TYPES 登记",
+    "new_source": "在 references/data/source_markers.json 增加标记，并在 sources.md 写 **CODE** 条目",
+    "new_media": "按 media_import.workflow：先 fetch_seerapi_media.py 抓原始文件，再 build_spirit_media.py 整理，最后 import_spirit_info.py 生成覆盖层"
+  }
+}

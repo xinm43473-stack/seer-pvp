@@ -1,0 +1,823 @@
+{
+  "schema_version": "1.0",
+  "generated_at": "2026-11-15",
+  "purpose": "逐条审计同队联动声明；只认 systems.json 的显式 chain_edges，杜绝把「同一骨架备选位」写成直接配合。无依据的历史声明已归档，不再进入关联层。",
+  "rule": "同队可配合只认 systems.json 的 chain_edges 显式有向边（正文写出资源交接／先后顺序／机制互相放大）；chain_status=顺序链已核 只表示还能给出逐回合顺序，不影响显式边本身成立。core/support/counter 只是成员名单，禁止按位置或笛卡尔积推断。alternatives 中的并列／二选一／按对局补位只是同一骨架的择一组件，不是同队配合，也不等于 role_groups.json 的相似定位组（后者只由共享同一特色机制构成）；roster.synergies 只保留双向互证且落在显式边上的声明，历史无依据声明一律移出关联层并归档到 historical_leads.json。counter 与 matchups.json 只进反向对位。没有显式边就是没有关联，直接写「暂无已核实关联」。",
+  "stats": {
+    "systems": 21,
+    "systems_by_grade": {
+      "机制推演／待核": 21
+    },
+    "systems_by_chain_status": {
+      "顺序链待核（证据不足）": 18,
+      "仅成员清单（无顺序正文）": 3
+    },
+    "explicit_chain_edges": 34,
+    "verified_chain_edges": 34,
+    "pending_chain_edges": 0,
+    "systems_without_edges": 4,
+    "verified_ordered_pairs": 68,
+    "weak_member_pairs": 62,
+    "archived_historical_leads": 425,
+    "declared_links": 24,
+    "mutual_declarations": 24,
+    "one_way_declarations": 0,
+    "by_grade": {
+      "显式边同队联动": 24
+    },
+    "by_source_field": {
+      "synergies": 24
+    },
+    "suppressed_one_way_verified": 0,
+    "rated_by_humans": 1
+  },
+  "verified_pairs": [
+    [
+      3156,
+      4553
+    ],
+    [
+      3414,
+      4732
+    ],
+    [
+      3613,
+      3739
+    ],
+    [
+      3613,
+      4163
+    ],
+    [
+      3613,
+      4620
+    ],
+    [
+      3613,
+      4732
+    ],
+    [
+      3683,
+      4444
+    ],
+    [
+      3711,
+      4797
+    ],
+    [
+      3739,
+      3613
+    ],
+    [
+      3739,
+      4500
+    ],
+    [
+      3739,
+      4814
+    ],
+    [
+      3741,
+      4800
+    ],
+    [
+      3741,
+      4861
+    ],
+    [
+      3954,
+      4875
+    ],
+    [
+      3983,
+      4800
+    ],
+    [
+      3983,
+      4861
+    ],
+    [
+      3986,
+      4445
+    ],
+    [
+      4125,
+      4800
+    ],
+    [
+      4125,
+      4861
+    ],
+    [
+      4126,
+      4808
+    ],
+    [
+      4163,
+      3613
+    ],
+    [
+      4169,
+      4586
+    ],
+    [
+      4187,
+      4444
+    ],
+    [
+      4275,
+      4620
+    ],
+    [
+      4321,
+      4745
+    ],
+    [
+      4333,
+      4620
+    ],
+    [
+      4364,
+      4554
+    ],
+    [
+      4444,
+      3683
+    ],
+    [
+      4444,
+      4187
+    ],
+    [
+      4445,
+      3986
+    ],
+    [
+      4445,
+      4750
+    ],
+    [
+      4468,
+      4797
+    ],
+    [
+      4500,
+      3739
+    ],
+    [
+      4503,
+      4600
+    ],
+    [
+      4505,
+      4553
+    ],
+    [
+      4510,
+      4808
+    ],
+    [
+      4553,
+      3156
+    ],
+    [
+      4553,
+      4505
+    ],
+    [
+      4554,
+      4364
+    ],
+    [
+      4586,
+      4169
+    ],
+    [
+      4586,
+      4643
+    ],
+    [
+      4600,
+      4503
+    ],
+    [
+      4620,
+      3613
+    ],
+    [
+      4620,
+      4275
+    ],
+    [
+      4620,
+      4333
+    ],
+    [
+      4622,
+      4875
+    ],
+    [
+      4643,
+      4586
+    ],
+    [
+      4643,
+      4648
+    ],
+    [
+      4648,
+      4643
+    ],
+    [
+      4717,
+      4732
+    ],
+    [
+      4732,
+      3414
+    ],
+    [
+      4732,
+      3613
+    ],
+    [
+      4732,
+      4717
+    ],
+    [
+      4745,
+      4321
+    ],
+    [
+      4750,
+      4445
+    ],
+    [
+      4797,
+      3711
+    ],
+    [
+      4797,
+      4468
+    ],
+    [
+      4800,
+      3741
+    ],
+    [
+      4800,
+      3983
+    ],
+    [
+      4800,
+      4125
+    ],
+    [
+      4808,
+      4126
+    ],
+    [
+      4808,
+      4510
+    ],
+    [
+      4814,
+      3739
+    ],
+    [
+      4861,
+      3741
+    ],
+    [
+      4861,
+      3983
+    ],
+    [
+      4861,
+      4125
+    ],
+    [
+      4875,
+      3954
+    ],
+    [
+      4875,
+      4622
+    ]
+  ],
+  "verified_directional_pairs": [
+    [
+      3613,
+      3739
+    ],
+    [
+      3613,
+      4163
+    ],
+    [
+      3613,
+      4620
+    ],
+    [
+      3683,
+      4444
+    ],
+    [
+      3954,
+      4875
+    ],
+    [
+      3986,
+      4445
+    ],
+    [
+      4126,
+      4808
+    ],
+    [
+      4169,
+      4586
+    ],
+    [
+      4187,
+      4444
+    ],
+    [
+      4275,
+      4620
+    ],
+    [
+      4321,
+      4745
+    ],
+    [
+      4333,
+      4620
+    ],
+    [
+      4364,
+      4554
+    ],
+    [
+      4500,
+      3739
+    ],
+    [
+      4510,
+      4808
+    ],
+    [
+      4553,
+      3156
+    ],
+    [
+      4553,
+      4505
+    ],
+    [
+      4600,
+      4503
+    ],
+    [
+      4622,
+      4875
+    ],
+    [
+      4643,
+      4586
+    ],
+    [
+      4643,
+      4648
+    ],
+    [
+      4732,
+      3414
+    ],
+    [
+      4732,
+      3613
+    ],
+    [
+      4732,
+      4717
+    ],
+    [
+      4750,
+      4445
+    ],
+    [
+      4797,
+      3711
+    ],
+    [
+      4797,
+      4468
+    ],
+    [
+      4800,
+      3741
+    ],
+    [
+      4800,
+      3983
+    ],
+    [
+      4800,
+      4125
+    ],
+    [
+      4814,
+      3739
+    ],
+    [
+      4861,
+      3741
+    ],
+    [
+      4861,
+      3983
+    ],
+    [
+      4861,
+      4125
+    ]
+  ],
+  "matchup_pairs": [
+    [
+      3056,
+      3670
+    ],
+    [
+      3056,
+      4853
+    ],
+    [
+      3056,
+      4706
+    ]
+  ],
+  "items": [
+    {
+      "a": 3613,
+      "b": 3739,
+      "a_name": "芳馨·茉蕊儿",
+      "b_name": "玛洛迪斯",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "树海体系"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 3613,
+      "b": 4620,
+      "a_name": "芳馨·茉蕊儿",
+      "b_name": "孤烛灯使",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "灯使pp流"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 3711,
+      "b": 4797,
+      "a_name": "圣光莫妮卡",
+      "b_name": "极渊DS-001",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "嬴荡公式"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 3739,
+      "b": 3613,
+      "a_name": "玛洛迪斯",
+      "b_name": "芳馨·茉蕊儿",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "树海体系"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 3739,
+      "b": 4500,
+      "a_name": "玛洛迪斯",
+      "b_name": "武心婵",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "树海体系"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 3954,
+      "b": 4875,
+      "a_name": "枫眠",
+      "b_name": "永烬劫炎·上古炎兽",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "希拓烧伤体系"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4169,
+      "b": 4586,
+      "a_name": "弑序神罗",
+      "b_name": "空元行者",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "蓓空罗公式"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4333,
+      "b": 4620,
+      "a_name": "哀·拉伯克",
+      "b_name": "孤烛灯使",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "灯使pp流"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4364,
+      "b": 4554,
+      "a_name": "尤莉米特",
+      "b_name": "圣谕邪魇",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "伞邪体系"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4468,
+      "b": 4797,
+      "a_name": "始皇帝·嬴政",
+      "b_name": "极渊DS-001",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "嬴荡公式"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4500,
+      "b": 3739,
+      "a_name": "武心婵",
+      "b_name": "玛洛迪斯",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "树海体系"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4503,
+      "b": 4600,
+      "a_name": "库坦",
+      "b_name": "斯布林蒂",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "大姐猪公式"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4554,
+      "b": 4364,
+      "a_name": "圣谕邪魇",
+      "b_name": "尤莉米特",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "伞邪体系"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4586,
+      "b": 4169,
+      "a_name": "空元行者",
+      "b_name": "弑序神罗",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "蓓空罗公式"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4600,
+      "b": 4503,
+      "a_name": "斯布林蒂",
+      "b_name": "库坦",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "大姐猪公式"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4620,
+      "b": 3613,
+      "a_name": "孤烛灯使",
+      "b_name": "芳馨·茉蕊儿",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "灯使pp流"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4620,
+      "b": 4333,
+      "a_name": "孤烛灯使",
+      "b_name": "哀·拉伯克",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "灯使pp流"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4622,
+      "b": 4875,
+      "a_name": "希拓",
+      "b_name": "永烬劫炎·上古炎兽",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "希拓烧伤体系"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4643,
+      "b": 4648,
+      "a_name": "蓓丽安特",
+      "b_name": "星光·鲁斯王",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "蓓鲁公式"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4648,
+      "b": 4643,
+      "a_name": "星光·鲁斯王",
+      "b_name": "蓓丽安特",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "蓓鲁公式"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4797,
+      "b": 3711,
+      "a_name": "极渊DS-001",
+      "b_name": "圣光莫妮卡",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "嬴荡公式"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4797,
+      "b": 4468,
+      "a_name": "极渊DS-001",
+      "b_name": "始皇帝·嬴政",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "嬴荡公式"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4875,
+      "b": 3954,
+      "a_name": "永烬劫炎·上古炎兽",
+      "b_name": "枫眠",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "希拓烧伤体系"
+      ],
+      "note": "",
+      "group": "同队"
+    },
+    {
+      "a": 4875,
+      "b": 4622,
+      "a_name": "永烬劫炎·上古炎兽",
+      "b_name": "希拓",
+      "grade": "显式边同队联动",
+      "mutual": true,
+      "source_field": "synergies",
+      "systems": [],
+      "also_systems": [
+        "希拓烧伤体系"
+      ],
+      "note": "",
+      "group": "同队"
+    }
+  ],
+  "policy": "改动 roster.json / systems.json / tactics.md / matchups.json 后必须重跑本脚本，再重建配合前端。没有显式 chain_edges 的精灵对就是没有关联，页面必须直接写「暂无已核实关联」，不得用骨架备选位或历史线索凑数。"
+}
