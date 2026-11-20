@@ -349,18 +349,25 @@ def sync_systems(payload: dict, only_existing: bool = False) -> dict:
 
 def main() -> int:
     ap = argparse.ArgumentParser(description="用模板重建单文件前端（保留内联 DATA）")
-    ap.add_argument("--backup-dir", default=None, help="备份目录，默认系统临时目录")
+    ap.add_argument("--backup-dir", default=None,
+                    help="备份目录，默认 dist/backups（带时间戳，保留最近 20 份）")
     ap.add_argument("--no-sync-systems", action="store_true",
                     help="不从 references/systems/ 同步体系（默认会全量同步）")
     ap.add_argument("--only-existing-systems", action="store_true",
                     help="只替换同名体系，不把单文件里多出来的体系补进前端（旧口径）")
     args = ap.parse_args()
 
-    backup_dir = Path(args.backup_dir or tempfile.gettempdir())
+    # 2026-11-20：备份改到 dist/backups 并按时间戳命名。
+    # 原来写系统临时目录 + 固定文件名：①每次覆盖成「上一次的产物」，回滚根本拿不到旧版；
+    # ②temp 会被系统清理（当晚就没了，想要 11-19 的版本已经找不到）。现在每次重建都留一份。
+    backup_dir = Path(args.backup_dir or (ROOT / "dist" / "backups"))
     backup_dir.mkdir(parents=True, exist_ok=True)
-    bak = backup_dir / "backup_spirit_synergy_view.html"
+    bak = backup_dir / time.strftime("backup-%Y%m%d-%H%M%S.html")
     shutil.copyfile(HTML, bak)
-    print("backup ->", bak)
+    keep = sorted(backup_dir.glob("backup-*.html"))[-20:]
+    for old_bak in sorted(backup_dir.glob("backup-*.html"))[:-20]:
+        old_bak.unlink(missing_ok=True)
+    print("backup ->", bak, "| 保留", len(keep), "份")
 
     payload = viewdata.read(HTML)
     print("nodes", len(payload.get("nodes", [])), "systems", len(payload.get("systems", [])))
