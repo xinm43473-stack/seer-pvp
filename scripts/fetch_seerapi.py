@@ -147,9 +147,10 @@ def main():
         return
 
     with_skills = "--with-skills" in sys.argv
-    refresh = "--refresh" in sys.argv
-    skip_existing = "--skip-existing" in sys.argv
-    if skip_existing and not refresh:
+    # 默认全量重抓；--skip-existing 才回到旧的增量行为。
+    # --refresh 是历史开关，现已与默认行为一致，仅用于兼容旧命令（可与 --skip-existing 同时出现以强制全量）。
+    skip_existing = "--skip-existing" in sys.argv and "--refresh" not in sys.argv
+    if skip_existing:
         # 旧行为：只补「没有魂印／缺 has_format」的。会漏掉游戏后来追加的魂印，慎用。
         todo = [i for i in targets
                 if str(i) not in store["pets"]
@@ -160,7 +161,7 @@ def main():
         # 默认全量重抓：本地永远跟上 SeerAPI 的最新结算文本与最新魂印条数。
         todo = list(targets)
     print("fetching %d/%d pets (skills=%s, mode=%s)"
-          % (len(todo), len(targets), with_skills, "skip-existing" if skip_existing and not refresh else "refresh"))
+          % (len(todo), len(targets), with_skills, "skip-existing" if skip_existing else "refresh"))
     for n, pid in enumerate(todo, 1):
         prev = store["pets"].get(str(pid)) or {}
         old_ids = [int(m["id"]) for m in (prev.get("soulmarks") or []) if m.get("id") is not None]
@@ -175,6 +176,8 @@ def main():
             print("  [%d/%d] %s FAILED: %s" % (n, len(todo), pid, exc))
         time.sleep(0.2)
 
+    # 时间戳标记的是「这份快照何时更新」，每次真正抓取都要刷新，而不是只在新建时写一次。
+    store["generated_at"] = time.strftime("%Y-%m-%d")
     path.write_text(json.dumps(store, ensure_ascii=False, indent=1) + "\n",
                     encoding="utf-8")
     print("saved %d pets -> %s" % (len(store["pets"]), path))

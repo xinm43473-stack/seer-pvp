@@ -1512,14 +1512,17 @@ function soulHtml(t, mode){
   const plain = soulClean(t);
   if(!plain) return `<span class="muted">未取回魂印文本</span>`;
   const html = esc(plain);
-  const src = TERM_MODE_RE[mode || renderMode];
+  // 以入参 mode 为准；只有调用方没指定时才回落到当前页面的渲染档，
+  // 这样同一段魂印可以按不同档位渲染而互不串档。
+  const m = mode || renderMode;
+  const src = TERM_MODE_RE[m];
   if(!src) return html;
   // 同一段魂印里只给首次出现加说明，避免整段被划线。
   const seen = new Set();
-  return html.replace(new RegExp(src.source, "g"), m => {
-    if(seen.has(m)) return m;
-    seen.add(m);
-    return `<em class="tm tm-${renderMode}" data-t="${esc(m)}" tabindex="0">${m}</em>`;
+  return html.replace(new RegExp(src.source, "g"), hit => {
+    if(seen.has(hit)) return hit;
+    seen.add(hit);
+    return `<em class="tm tm-${m}" data-t="${esc(hit)}" tabindex="0">${hit}</em>`;
   });
 }
 /* 未手动选过档时，若默认档在本只魂印里一个词都没有，就自动落到有内容的档（否则整段无标注）。 */
@@ -1914,12 +1917,15 @@ function renderList(){
   if(state.cursor >= state.visible.length) state.cursor = 0;
   $("count").textContent = "共 " + state.visible.length + " 只" +
     (tagOnly ? "（仅同标签：" + tagOnly + "）" : "");
-  const body = state.visible.length ? state.visible.map(n =>
-    `<li data-k="${esc(n.k)}" class="${n.k===state.sel?"on":""}">
-      <span class="av">${avatarOf(n).src?`<img src="${esc(avatarOf(n).src)}" data-fb="${esc(avatarOf(n).fb)}" data-name="${esc(n.name)}" onerror="imgFallback(this)">`:`<i>${esc(n.name.slice(0,1))}</i>`}</span>
+  const body = state.visible.length ? state.visible.map(n => {
+    const av = avatarOf(n);   // 每只只算一次，避免 map 里重复取同一份头像信息
+    const on = n.k === state.sel ? "on" : "";
+    return `<li data-k="${esc(n.k)}" class="${on}">
+      <span class="av">${av.src?`<img src="${esc(av.src)}" data-fb="${esc(av.fb)}" data-name="${esc(n.name)}" onerror="imgFallback(this)">`:`<i>${esc(n.name.slice(0,1))}</i>`}</span>
       <span class="idn">${n.id==null?"":"#"+esc(n.id)}</span>
       <span class="nm">${esc(n.name)}</span>
-      <span class="rt">${esc(ratingOf(effective(n.k)||n))}</span></li>`).join("")
+      <span class="rt">${esc(ratingOf(effective(n.k)||n))}</span></li>`;
+  }).join("")
     : `<li class="empty">${(DATA.nodes||[]).length ? "没有匹配" : "暂无精灵，点下方 ＋ 从精灵库添加"}</li>`;
   $("list").innerHTML = body
     + `<li class="addrow" id="addSpirit" title="从精灵库添加新精灵">＋</li>`;
@@ -3455,6 +3461,24 @@ function deleteSystem(){
 
 /* ---------- export / import ---------- */
 /* ---------- 一键拉取：SeerAPI 分页接口（CORS 全开），全量只入库不入列表 ---------- */
+/* 拉取参数集中在这一个对象里：分页大小、并发、收录下限、重试与图片尺寸。
+   以后要接新的图鉴区间或调速率，只改这里，不要把数字散回各个函数。 */
+const PULL_CFG = {
+  pageSize: 200,        // pet / soulmark 分页接口的单页条数
+  metaPageSize: 200,    // 属性组合表单页条数
+  catPageSize: 50,      // 技能分类单页条数
+  maxPages: 400,        // 分页守卫：防御 next 死循环
+  idMin: 2987,          // 项目收录下限（1–2986 为远古精灵）
+  retries: 2,           // apiJSON 失败重试次数（不含首次）
+  retryDelayMs: 320,    // 第 n 次重试等待 n × 该值
+  pageDelayMs: 90,      // 分页之间的礼貌间隔
+  catDelayMs: 60,       // 技能分类逐条回退时的间隔
+  skillWorkers: 4,      // hydrateSkills 每批并发请求数
+  skillDelayMs: 60,     // hydrateSkills 每批之间的间隔
+  imgWorkers: 4,        // 图像下载并发
+  headMax: 200, bodyMax: 340,      // 头像／立绘缩放后最长边
+  headQuality: 0.8, bodyQuality: 0.78,  // WebP 质量
+};
 const PULL_KEY = EDIT_KEY + "_pulled";
 const SEER_API = "https://api.seerapi.com/v1";
 const SEER_H5 = "https://seerh5.61.com/resource/assets/";
@@ -3513,10 +3537,10 @@ function imgDBOpen(){
     req.onerror = () => res(null);
   });
 }
-function imgCachePut(key, blob){
-  return new Promise(async res => {
-    if(!imgDB) imgDB = await imgDBOpen();
-    if(!imgDB) return res(false);
+async function imgCachePut(key, blob){
+  if(!imgDB) imgDB = await imgDBOpen();
+  if(!imgDB) return false;
+  return new Promise(res => {
     try{
       const t = imgDB.transaction(IMG_STORE, "readwrite");
       t.objectStore(IMG_STORE).put(blob, key);
@@ -3533,23 +3557,27 @@ function imgCachePut(key, blob){
 async function imgCacheLoad(){
   imgDB = await imgDBOpen();
   if(!imgDB) return;
-  const keys = await new Promise(res => {
+  // 单事务游标遍历：原来每个 key 开一次事务，几千张图要排几千次队。
+  const pairs = await new Promise(res => {
+    const out = [];
     try{
       const t = imgDB.transaction(IMG_STORE, "readonly");
-      const q = t.objectStore(IMG_STORE).getAllKeys();
-      q.onsuccess = () => res(q.result || []); q.onerror = () => res([]);
-    }catch(e){ res([]); }
+      const q = t.objectStore(IMG_STORE).openCursor();
+      q.onsuccess = () => {
+        const c = q.result;
+        if(!c) return res(out);
+        out.push([String(c.key), c.value]);
+        c.continue();
+      };
+      q.onerror = () => res(out);
+    }catch(e){ res(out); }
   });
-  if(!keys.length) return;
-  for(const k of keys){
-    const blob = await new Promise(res => {
-      try{
-        const t = imgDB.transaction(IMG_STORE, "readonly");
-        const q = t.objectStore(IMG_STORE).get(k);
-        q.onsuccess = () => res(q.result || null); q.onerror = () => res(null);
-      }catch(e){ res(null); }
-    });
-    if(blob) IMG_URLS.set(String(k), URL.createObjectURL(blob));
+  if(!pairs.length) return;
+  for(const pair of pairs){
+    if(!pair[1]) continue;
+    const old = IMG_URLS.get(pair[0]);
+    if(old){ try{ URL.revokeObjectURL(old); }catch(e){} }
+    IMG_URLS.set(pair[0], URL.createObjectURL(pair[1]));
   }
   renderAll();
 }
@@ -3577,7 +3605,9 @@ function pullPetImage(kind, id){
         if(!r.ok) continue;
         const blob = await r.blob();
         if(!blob || !blob.size) continue;
-        const small = await shrinkImage(blob, kind === "head" ? 200 : 340, kind === "head" ? 0.8 : 0.78);
+        const small = await shrinkImage(blob,
+          kind === "head" ? PULL_CFG.headMax : PULL_CFG.bodyMax,
+          kind === "head" ? PULL_CFG.headQuality : PULL_CFG.bodyQuality);
         await imgCachePut(key, small || blob);
         if(String(state.sel) === String(id)) renderHero();
         return true;
@@ -3606,18 +3636,27 @@ async function pullImages(ids, btn, label){
       if(a || b) ok++;
     }
   };
-  await Promise.all(Array.from({length: Math.min(4, need.length)}, worker));
+  await Promise.all(Array.from({length: Math.min(PULL_CFG.imgWorkers, need.length)}, worker));
   if($("libModal").classList.contains("on")) renderLibraryResults();
   return ok;
 }
-async function apiJSON(url, tries = 2){
+async function apiJSON(url, tries = PULL_CFG.retries){
   let last;
   for(let i = 0; i <= tries; i++){
     try{
       const r = await fetch(url, {headers: {"Accept": "application/json"}});
-      if(!r.ok) throw new Error("HTTP " + r.status);
+      if(!r.ok){
+        const err = new Error("HTTP " + r.status);
+        // 4xx 是请求本身的问题（404／403），重试无意义，直接交给调用方。
+        if(r.status >= 400 && r.status < 500) err.noRetry = true;
+        throw err;
+      }
       return await r.json();
-    }catch(e){ last = e; await sleep(320 * (i + 1)); }
+    }catch(e){
+      last = e;
+      if(e && e.noRetry) throw e;
+      await sleep(PULL_CFG.retryDelayMs * (i + 1));
+    }
   }
   throw last;
 }
@@ -3626,7 +3665,7 @@ async function seerPages(path, onProgress){
   let url = path.startsWith("http") ? path : SEER_API + "/" + path;
   const out = [];
   let guard = 0;
-  while(url && guard++ < 400){
+  while(url && guard++ < PULL_CFG.maxPages){
     const d = await apiJSON(url);
     if(Array.isArray(d)){ out.push(...d); break; }
     const rows = d.results || d.data || d.items;
@@ -3636,8 +3675,11 @@ async function seerPages(path, onProgress){
     }
     out.push(...rows);
     onProgress && onProgress(out.length, Number(d.count) || out.length, guard);
-    url = d.next || null;
-    if(url) await sleep(90);
+    // next 一般是绝对 URL；兼容相对路径，避免拼到 file:// 上。
+    let next = null;
+    if(d.next){ try{ next = new URL(d.next, url).href; }catch(e){ next = d.next; } }
+    url = next;
+    if(url) await sleep(PULL_CFG.pageDelayMs);
   }
   return out;
 }
@@ -3672,18 +3714,18 @@ function normalizeSkill(sk, ref){
 async function loadPullMeta(btn){
   if(!TYPE_MAP.size){
     // 列表默认只有 {id,url}，必须 expand=true 才带属性名。
-    const rows = await seerPages("element_type_combination?limit=200&expand=true");
+    const rows = await seerPages("element_type_combination?limit=" + PULL_CFG.metaPageSize + "&expand=true");
     rows.forEach(x => TYPE_MAP.set(Number(x.id), String(x.name || "").replace(/\s+/g, "")));
   }
   if(!TYPE_CAT.size){
-    const rows = await seerPages("skill_category?limit=50");
+    const rows = await seerPages("skill_category?limit=" + PULL_CFG.catPageSize);
     for(const x of rows){
       if(x.name){ TYPE_CAT.set(Number(x.id), String(x.name)); continue; }
       try{
         const d = await apiJSON(`${SEER_API}/skill_category/${x.id}`);
         TYPE_CAT.set(Number(x.id), String(d.name || ""));
       }catch(e){}
-      await sleep(60);
+      await sleep(PULL_CFG.catDelayMs);
     }
   }
 }
@@ -3692,8 +3734,8 @@ async function loadPullMeta(btn){
 async function loadPullSouls(btn, force){
   if(SOUL_MAP.size && !force) return;
   if(force) SOUL_MAP.clear();
-  const rows = await seerPages("soulmark?limit=200&expand=true",
-    (n, total, page) => pullBtn(btn, `魂印 ${page}/${Math.ceil(total / 200)}`, true));
+  const rows = await seerPages("soulmark?limit=" + PULL_CFG.pageSize + "&expand=true",
+    (n, total, page) => pullBtn(btn, `魂印 ${page}/${Math.ceil(total / PULL_CFG.pageSize)}`, true));
   // desc 是纯文本；desc_formatting_adjustment／analyze_desc 带 [sprite]/[color] 标记，
   // 只在没有 desc 时兜底，避免清洗后分条结构丢失。
   rows.forEach(x => SOUL_MAP.set(Number(x.id),
@@ -3770,10 +3812,10 @@ async function pullAll(){
   try{
     await loadPullMeta(btn);
     await loadPullSouls(btn, true);      // 每次拉取都重建魂印索引，不吃上次会话的缓存
-    const pets = await seerPages("pet?limit=200&expand=true",
-      (n, total, page) => pullBtn(btn, `精灵 ${page}/${Math.ceil(total / 200)}`, true));
+    const pets = await seerPages("pet?limit=" + PULL_CFG.pageSize + "&expand=true",
+      (n, total, page) => pullBtn(btn, `精灵 ${page}/${Math.ceil(total / PULL_CFG.pageSize)}`, true));
     // 只收项目范围（ID ≥ 2987）的精灵，避免把 1–2986 的远古精灵塞进库。
-    const rows = pets.map(petRow).filter(x => x.id >= 2987 && x.name);
+    const rows = pets.map(petRow).filter(x => x.id >= PULL_CFG.idMin && x.name);
     const added = mergePulled(rows);
     persistPulled(rows);
     // 数据层已有精灵（左侧列表）不吃 mergePulled，走覆盖层写进 soul_mark 再重建节点。
@@ -3801,12 +3843,12 @@ async function hydrateSkills(id){
       .filter(x => x.sid);
     const skills = [];
     // 4 路并发，23 个技能约 5 秒；失败的单条跳过，不影响整只。
-    for(let i = 0; i < items.length; i += 4){
-      const batch = items.slice(i, i + 4);
+    for(let i = 0; i < items.length; i += PULL_CFG.skillWorkers){
+      const batch = items.slice(i, i + PULL_CFG.skillWorkers);
       const rows = await Promise.all(batch.map(x =>
         apiJSON(`${SEER_API}/skill/${x.sid}`).catch(() => null)));
       rows.forEach((sk, j) => { if(sk) skills.push(normalizeSkill(sk, batch[j].ref)); });
-      await sleep(60);
+      await sleep(PULL_CFG.skillDelayMs);
     }
     if(skills.length){
       row.skills = skills;

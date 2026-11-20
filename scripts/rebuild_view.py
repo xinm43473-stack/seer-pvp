@@ -256,9 +256,9 @@ def soul_tags_by_library(payload: dict) -> dict:
 def sync_systems(payload: dict, only_existing: bool = False) -> dict:
     """把 references/systems/ 的单体系文件同步进内联 DATA。
 
-    全量模式（默认）：DATA.systems 与数据层对齐（62 项），并重算 edges 与统计，
-    否则「体系管理」只看到前端内联的 21 项，比文件夹少 41 个。
-    只覆盖模式（--only-existing-systems）：保留旧的 21 项口径，仅替换同名内容。
+    全量模式（默认）：DATA.systems 与 references/systems/ 目录严格对齐（项数以目录为准），
+    并重算 edges 与统计，否则「体系管理」只看到前端内联的旧快照，比文件夹少。
+    只覆盖模式（--only-existing-systems）：保留内联现有条目，仅替换同名内容。
     """
     if not SYSDIR.is_dir():
         return {"systems": 0, "edges": 0, "added": 0, "updated": 0}

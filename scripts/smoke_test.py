@@ -42,7 +42,7 @@ PROBE = r"""
 
   step(function(){
     // 218 是收录基准；库添加（DATA.library.adds）会在运行时补节点，所以用下限断言
-    ok("数据规模", DATA.nodes.length>=218 && DATA.systems.length===21,
+    ok("数据规模", DATA.nodes.length>=218 && DATA.systems.length>=21,
        DATA.nodes.length+" 只 / "+DATA.systems.length+" 体系");
     select("4586", false);
     step(function(){
