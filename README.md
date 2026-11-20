@@ -43,9 +43,14 @@
 
 ### Windows 桌面版（推荐）
 
-1. 下载 [release/SeerPeak-win64.zip](release/SeerPeak-win64.zip)（约 96 MB）。
+1. 打开 [Releases 页面](https://github.com/xinm43473-stack/seer-pvp/releases/latest)，下载 `SeerPeak-win64.zip`（约 96 MB）。
 2. 解压到任意目录。
 3. 双击 `SeerPeak.exe` 启动。
+
+> 仓库 `release/` 目录下存有同一份发行包，可作镜像下载；也可直接用命令行拉取：
+> ```text
+> https://github.com/xinm43473-stack/seer-pvp/releases/download/v1.0.0/SeerPeak-win64.zip
+> ```
 
 解压后的目录结构：
 
