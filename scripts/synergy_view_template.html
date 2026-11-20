@@ -402,6 +402,12 @@ label.fl{display:block;font-size:12px;color:var(--muted);margin-bottom:5px}
   padding:10px 12px;height:42px;font-size:14px;outline:none;margin-bottom:10px;transition:border-color .15s,box-shadow .15s;
   background:var(--field);color:var(--text)}
 .sysside input[type=search]:focus{border-color:var(--blue);box-shadow:0 0 0 3px var(--ring)}
+/* 体系侧栏：搜索框 + 属性筛选按钮同一行（按钮高度对齐 42px 输入框） */
+.sysside .searchrow{margin-bottom:10px}
+.sysside .searchrow input[type=search]{flex:1 1 auto;width:auto;min-width:0;margin-bottom:0}
+.sysside .searchrow .fbtn{height:42px;padding:0 12px;font-size:12.5px}
+/* 体系筛选只给属性，面板比其他两处窄一些 */
+.fpanel.sysfpanel{width:420px}
 .sysresults{max-height:212px;overflow:auto;border:1px solid var(--line);border-radius:var(--r-md);padding:5px;background:var(--surface-2)}
 .sres{display:flex;align-items:center;gap:8px;width:100%;border:1px solid transparent;background:var(--field);border-radius:var(--r-xs);padding:5px 7px;cursor:pointer;text-align:left;margin-bottom:3px}
 .sres:last-child{margin-bottom:0}
@@ -874,7 +880,10 @@ html[data-theme="dark"] .themebtn .ic-moon{display:none}
     </div>
     <div class="syswork">
       <div class="sysside">
-        <input type="search" id="sysQ" placeholder="搜索精灵">
+        <div class="searchrow">
+          <input type="search" id="sysQ" placeholder="搜索精灵">
+          <button class="fbtn" id="sysFilterBtn" type="button" title="按属性筛选精灵"><svg viewBox="0 0 16 16" width="12" height="12" fill="currentColor" aria-hidden="true"><path d="M1.5 3.1h13a.72.72 0 0 1 .55 1.18l-4.9 5.55v3.5a.72.72 0 0 1-1.1.6l-2.1-1.2a.72.72 0 0 1-.36-.62V9.83L.95 4.28A.72.72 0 0 1 1.5 3.1z"/></svg>属性<span class="fcount" id="sysFCount" hidden></span></button>
+        </div>
         <div class="sysresults" id="sysResults"></div>
         <label class="fl" style="margin-top:10px">已登记体系</label>
         <input type="search" id="sysFilter" placeholder="筛选体系">
@@ -979,6 +988,12 @@ html[data-theme="dark"] .themebtn .ic-moon{display:none}
   <div class="fhead"><b>筛选精灵库</b><span class="sp"></span><button class="xbtn" id="libFClose" type="button" aria-label="关闭">×</button></div>
   <div class="fbody" id="libFBody"></div>
   <div class="ffoot"><span id="libFStat"></span><span class="sp"></span><button class="fclear" id="libFReset" type="button">重置全部</button></div>
+</div>
+
+<div class="fpanel sysfpanel" id="sysFilterPanel" hidden>
+  <div class="fhead"><b>按属性筛选精灵</b><span class="sp"></span><button class="xbtn" id="sysFClose" type="button" aria-label="关闭">×</button></div>
+  <div class="fbody" id="sysFBody"></div>
+  <div class="ffoot"><span id="sysFStat"></span><span class="sp"></span><button class="fclear" id="sysFReset" type="button">重置</button></div>
 </div>
 
 <div class="tpeek" id="tagPeek" hidden>
@@ -1248,6 +1263,9 @@ let attrStrict = (() => {
   try { return localStorage.getItem(ATTR_STRICT_KEY) === "1"; } catch(e){ return false; }
 })();
 const LIB_FILTER = {attr:new Set(), tags:new Set(), rating:""};
+/* 体系画布的候选筛选：只有属性（体系是手工搭队，标签/评级在这里没有意义）。
+   与主列表的 FILTER 互不影响，但属性口径（attrStrict）两处共用。 */
+const SYS_FILTER = {attr:new Set()};
 function libRating(x){
   const n = nodeOf(String(x.id));
   return n ? ratingOf(effective(n.k) || n) : "暂无评级";
@@ -1747,7 +1765,7 @@ function attrSwitchHtml(){
 function setAttrStrict(on){
   attrStrict = !!on;
   try { localStorage.setItem(ATTR_STRICT_KEY, attrStrict ? "1" : "0"); } catch(e){}
-  document.querySelectorAll("#filterPanel .fswitch, #libFilterPanel .fswitch").forEach(sw => {
+  document.querySelectorAll("#filterPanel .fswitch, #libFilterPanel .fswitch, #sysFilterPanel .fswitch").forEach(sw => {
     sw.classList.toggle("on", attrStrict);
     const btn = sw.querySelector(".attrsw");
     if(btn) btn.setAttribute("aria-checked", String(attrStrict));
@@ -1757,6 +1775,7 @@ function setAttrStrict(on){
   });
   applyFilter();
   if($("libModal") && $("libModal").classList.contains("on")) applyLibFilter();
+  if($("sysFilterPanel") && !$("sysFilterPanel").hidden) applySysFilter();
 }
 function renderFilterPanel(){
   const body = $("fBody");
@@ -2686,10 +2705,16 @@ function toast(msg){
   el.textContent=msg; el.hidden=false;
   clearTimeout(el._t); el._t=setTimeout(()=>{ el.hidden=true; }, 2600);
 }
-function sysResults(){
+/* 体系候选：关键字与主列表同口径（定位／体系／魂印标签都能搜），再叠加属性筛选。
+   返回完整候选，sysResults 只截断显示，面板底部统计用完整长度。 */
+function sysCandidates(){
   const q = String($("sysQ").value||"").trim().toLowerCase();
-  // 与主列表同口径：定位／体系／魂印标签也能搜；软删除的精灵不再出现在候选里。
-  const rows = (DATA.nodes||[]).filter(n => !isDeleted(n.k) && (!q || searchTextOf(n).includes(q))).slice(0, SEARCH_ROWS_MAX);
+  return (DATA.nodes||[]).filter(n => !isDeleted(n.k)
+    && (!q || searchTextOf(n).includes(q))
+    && attrFilterHit(n.attr, SYS_FILTER.attr));
+}
+function sysResults(){
+  const rows = sysCandidates().slice(0, SEARCH_ROWS_MAX);
   $("sysResults").innerHTML = rows.map(n => {
     const used = graph.nodes.some(x => String(x.id)===String(n.id));
     const av = avatarOf(n);
@@ -2697,6 +2722,56 @@ function sysResults(){
       <span class="simg">${av.src?`<img src="${esc(av.src)}" data-fb="${esc(av.fb)}" onerror="imgFallback(this)">`:`<i>${esc(n.name.slice(0,1))}</i>`}</span>
       <span class="sname">${esc(n.name)}</span><span class="srt">#${esc(n.id)}</span></button>`;
   }).join("") || `<div class="empty" style="padding:6px">没有匹配</div>`;
+}
+/* ---------- 体系候选的属性筛选 ---------- */
+function renderSysFilterBar(){
+  const btn = $("sysFilterBtn"), cnt = $("sysFCount");
+  if(!btn) return;
+  const n = SYS_FILTER.attr.size;
+  if(cnt){ cnt.textContent = n; cnt.hidden = !n; }
+  btn.classList.toggle("on", !!n);
+}
+function syncSysFStat(){
+  const st = $("sysFStat");
+  if(st) st.textContent = "候选 " + sysCandidates().length + " 只" + (SYS_FILTER.attr.size ? "" : "（未筛属性）");
+}
+function renderSysFilterPanel(){
+  const body = $("sysFBody");
+  if(!body) return;
+  const attrCount = new Map();
+  (DATA.nodes||[]).forEach(n => {
+    if(isDeleted(n.k)) return;
+    attrParts(n.attr).forEach(a => attrCount.set(a, (attrCount.get(a) || 0) + 1));
+  });
+  const attrs = [...attrCount.entries()].sort((a,b) => b[1] - a[1] || a[0].localeCompare(b[0], "zh")).map(x => x[0]);
+  body.innerHTML =
+    `<div class="fgroup"><h5>属性（最多 2 个）</h5>${attrSwitchHtml()}<div class="fopts">` +
+    attrs.map(a => foptHtml("attr", a, SYS_FILTER.attr.has(a))).join("") + `</div></div>`;
+  syncSysFStat();
+}
+function applySysFilter(){
+  renderSysFilterBar();
+  sysResults();
+  syncSysFStat();
+}
+function openSysFilterPanel(){
+  const p = $("sysFilterPanel");
+  if(!p) return;
+  renderSysFilterPanel();
+  p.hidden = false;
+  const r = $("sysFilterBtn").getBoundingClientRect();
+  const w = p.offsetWidth, h = p.offsetHeight;
+  const left = Math.max(10, Math.min(r.right - w, window.innerWidth - w - 10));
+  let top = r.bottom + 6;
+  if(top + h > window.innerHeight - 10) top = Math.max(10, r.top - h - 6);
+  p.style.left = left + "px"; p.style.top = top + "px";
+}
+function closeSysFilterPanel(){ const p = $("sysFilterPanel"); if(p) p.hidden = true; }
+function resetSysFilter(){
+  SYS_FILTER.attr.clear();
+  const body = $("sysFBody");
+  if(body) body.querySelectorAll(".fopt.on").forEach(x => x.classList.remove("on"));
+  applySysFilter();
 }
 function layout(i){ return {x:20+(i%3)*132, y:20+Math.floor(i/3)*128}; }
 /* ---------- 技能卡：体系画布里的「技能节点」 ----------
@@ -3318,12 +3393,14 @@ function renderSysList(){
 function openSystemManager(mode, key){
   $("sysQ").value = "";
   $("sysFilter").value = "";
+  SYS_FILTER.attr.clear(); closeSysFilterPanel(); renderSysFilterBar();
   $("sysModal").classList.add("on");
   linkFrom = null; pointer = null; drag = null; noteDrag = null;
   setSysMode(mode||"create", key);
 }
 function closeSystemManager(){
   $("sysModal").classList.remove("on");
+  closeSysFilterPanel();
   cancelLinkMode(); closeNodeMenu(); closeEdgeMenu(); closeEdgeEditor(); closeEdgeColor();
   closeCanvasNote(); closeNoteMenu();
 }
@@ -3942,9 +4019,11 @@ document.addEventListener("click", e => {
   if(tp && !tp.hidden && !e.target.closest("#tagPeek") && !e.target.closest(".stag")) closeTagPeek();
   const lfp = $("libFilterPanel");
   if(lfp && !lfp.hidden && !e.target.closest("#libFilterPanel") && !e.target.closest("#libFilterBtn")) closeLibFilterPanel();
+  const sfp = $("sysFilterPanel");
+  if(sfp && !sfp.hidden && !e.target.closest("#sysFilterPanel") && !e.target.closest("#sysFilterBtn")) closeSysFilterPanel();
 });
 document.addEventListener("keydown", e => {
-  if(e.key === "Escape"){ closeTagPeek(); closeFilterPanel(); closeLibFilterPanel(); }
+  if(e.key === "Escape"){ closeTagPeek(); closeFilterPanel(); closeLibFilterPanel(); closeSysFilterPanel(); }
 });
 $("list").addEventListener("click", e => {
   if(e.target.closest("#addSpirit")){ libContext = "list"; openLibrary(); return; }
@@ -4598,7 +4677,24 @@ $("sysDir").addEventListener("change", e => {
   e.target.value = "";
 });
 $("sysSave").addEventListener("click", saveSystem);
-$("sysQ").addEventListener("input", sysResults);
+$("sysQ").addEventListener("input", () => { sysResults(); syncSysFStat(); });
+$("sysFilterBtn").addEventListener("click", e => {
+  e.stopPropagation();
+  const p = $("sysFilterPanel");
+  if(p.hidden) openSysFilterPanel(); else closeSysFilterPanel();
+});
+$("sysFClose").addEventListener("click", closeSysFilterPanel);
+$("sysFReset").addEventListener("click", resetSysFilter);
+$("sysFBody").addEventListener("click", e => {
+  if(e.target.closest("[data-sw='attrStrict']")){ setAttrStrict(!attrStrict); return; }
+  const b = e.target.closest(".fopt"); if(!b) return;
+  if(b.dataset.g !== "attr") return;
+  const v = b.dataset.v;
+  if(!SYS_FILTER.attr.has(v) && SYS_FILTER.attr.size >= 2){ toast("属性最多选两个"); return; }
+  if(SYS_FILTER.attr.has(v)) SYS_FILTER.attr.delete(v); else SYS_FILTER.attr.add(v);
+  b.classList.toggle("on", SYS_FILTER.attr.has(v));
+  applySysFilter();
+});
 $("sysFilter").addEventListener("input", renderSysList);
 $("sysResults").addEventListener("click", e => { const b = e.target.closest(".sres"); if(b && !b.disabled) addNode(b.getAttribute("data-id")); });
 $("sysZoomBar").addEventListener("click", e => {
