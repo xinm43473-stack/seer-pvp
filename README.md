@@ -79,7 +79,6 @@ SeerPeak/
 ```text
 seer-pvp/
 ├── SKILL.md                    # Agent Skill 入口：速查表、命令与证据规则
-├── HANDOVER.md                 # 开发交接文档：现状、约定、变更记录
 ├── data/
 │   ├── bwiki/                  # BWIKI 全量图鉴：精灵、魂印、克制表
 │   ├── seerapi/                # SeerAPI 数据：六维、技能、魂印、资料
