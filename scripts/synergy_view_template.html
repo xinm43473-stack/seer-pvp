@@ -1123,6 +1123,12 @@ function libraryNode(id){
 function applyLibraryAdds(){
   libraryAdds = [...new Set(libraryAdds.map(Number))].filter(id => LIB_MAP.has(id));
   const list = BASE_NODES.map(x => JSON.parse(JSON.stringify(x)));
+  // 拉取覆盖层：同一只精灵在 SeerAPI 有了更新的魂印时，内联快照（DATA.media）已经过时，
+  // 这里把它叠到 soul_mark（soulOf 的第一优先字段）；编辑器补丁仍由 effective() 压在上面。
+  list.forEach(n => {
+    const raw = rawSoul[String(n.id)] || rawSoul[String(n.k)];
+    if(raw && raw.soul) n.soul_mark = String(raw.soul);
+  });
   const seen = new Set(list.map(n => String(n.k)));
   libraryAdds.forEach(id => {
     if(seen.has(String(id))) return;
@@ -3460,6 +3466,30 @@ let pullCache = (() => {
   const v = loadJSON(PULL_KEY);
   return v && typeof v === "object" && !Array.isArray(v) ? v : {};
 })();
+/* 2026-11-20：「每次拉取都要拉到最新」。内联 DATA.media 是构建期快照，SeerAPI 后来给
+   同一只精灵追加的魂印（id 更大的那条）不在里面。这里存一层覆盖：键＝精灵 id，
+   值＝{sid, soul}；applyLibraryAdds() 重建节点时写进 soul_mark，编辑器补丁仍然优先。*/
+const RAW_SOUL_KEY = EDIT_KEY + "_raw";
+let rawSoul = (() => {
+  const v = loadJSON(RAW_SOUL_KEY);
+  return v && typeof v === "object" && !Array.isArray(v) ? v : {};
+})();
+function saveRawSoul(){ saveJSON(RAW_SOUL_KEY, Object.keys(rawSoul).length ? rawSoul : null); }
+function refreshRawSoul(rows){
+  const inData = new Set(BASE_NODES.map(n => String(n.id)));
+  let changed = 0;
+  rows.forEach(r => {
+    const key = String(r.id);
+    // 只覆盖数据层已有的精灵；库行（1977 只）本身已被 mergePulled 就地更新。
+    if(!inData.has(key) || !r.soul) return;
+    const prev = rawSoul[key];
+    if(prev && String(prev.sid) === String(r.soul_id) && prev.soul === r.soul) return;
+    rawSoul[key] = {sid: r.soul_id == null ? null : Number(r.soul_id), soul: String(r.soul)};
+    changed++;
+  });
+  if(changed) saveRawSoul();
+  return changed;
+}
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 function pullBtn(btn, text, busy){
   if(!btn) return;
@@ -3615,6 +3645,7 @@ function cleanRemote(text){
   return String(text || "")
     .replace(/\[sprite[^\]]*\]/g, "")
     .replace(/\[color=[^\]]*\]|\[\/color\]/g, "")
+    .replace(/\[[a-z][a-z0-9_=# /-]*\]/gi, "")   // 其余 Unity 单标签（[indent]/[i] 等）
     .replace(/<br\s*\/?>/gi, "\n")
     .replace(/[{}]/g, "")
     .replace(/\|/g, "\n")
@@ -3656,23 +3687,39 @@ async function loadPullMeta(btn){
     }
   }
 }
-async function loadPullSouls(btn){
-  if(SOUL_MAP.size) return;
+/* 每次拉取都重建魂印索引：以前 `if(SOUL_MAP.size) return` 让同一次会话里的第二次
+   拉取沿用旧文本，游戏改了魂印也看不到（2026-11-20 修）。force=true 时清表重拉。 */
+async function loadPullSouls(btn, force){
+  if(SOUL_MAP.size && !force) return;
+  if(force) SOUL_MAP.clear();
   const rows = await seerPages("soulmark?limit=200&expand=true",
     (n, total, page) => pullBtn(btn, `魂印 ${page}/${Math.ceil(total / 200)}`, true));
-  rows.forEach(x => SOUL_MAP.set(Number(x.id), cleanRemote(x.analyze_desc || x.desc || "")));
+  // desc 是纯文本；desc_formatting_adjustment／analyze_desc 带 [sprite]/[color] 标记，
+  // 只在没有 desc 时兜底，避免清洗后分条结构丢失。
+  rows.forEach(x => SOUL_MAP.set(Number(x.id),
+    cleanRemote(x.desc || x.desc_formatting_adjustment || x.analyze_desc || "")));
+}
+/* 同一只精灵会挂多条魂印：老版在前、新版在后（SeerAPI 的 soulmark id 递增）。
+   「只显示最新一版」→ 在能取到文本的几版里取 id 最大的那条。 */
+function newestSoul(pet){
+  const refs = Array.isArray(pet.soulmark) ? pet.soulmark : (pet.soulmark ? [pet.soulmark] : []);
+  let best = null;
+  refs.forEach(ref => {
+    const smid = Number(ref && ref.id);
+    if(!Number.isFinite(smid)) return;
+    const text = SOUL_MAP.get(smid);
+    if(!text) return;
+    if(!best || smid > best.sid) best = {sid: smid, text};
+  });
+  return best;
 }
 function petRow(pet){
   const tid = pet.type && (typeof pet.type === "object" ? pet.type.id : pet.type);
-  const refs = Array.isArray(pet.soulmark) ? pet.soulmark : (pet.soulmark ? [pet.soulmark] : []);
-  let soul = "";
-  for(const r of refs){
-    const v = SOUL_MAP.get(Number(r && r.id));
-    if(v){ soul = v; break; }
-  }
+  const best = newestSoul(pet);
   return {
     id: Number(pet.id), name: String(pet.name || ""),
-    attr: TYPE_MAP.get(Number(tid)) || "—", soul,
+    attr: TYPE_MAP.get(Number(tid)) || "—", soul: best ? best.text : "",
+    soul_id: best ? best.sid : null,
     avatar: SEER_H5 + "pet/head/" + pet.id + ".png",
     portrait: SEER_H5 + "fightResource/pet/" + pet.id + ".png",
     skills: [],
@@ -3722,18 +3769,21 @@ async function pullAll(){
   pullBusy = true; pullBtn(btn, "准备中…", true);
   try{
     await loadPullMeta(btn);
-    await loadPullSouls(btn);
+    await loadPullSouls(btn, true);      // 每次拉取都重建魂印索引，不吃上次会话的缓存
     const pets = await seerPages("pet?limit=200&expand=true",
       (n, total, page) => pullBtn(btn, `精灵 ${page}/${Math.ceil(total / 200)}`, true));
     // 只收项目范围（ID ≥ 2987）的精灵，避免把 1–2986 的远古精灵塞进库。
     const rows = pets.map(petRow).filter(x => x.id >= 2987 && x.name);
     const added = mergePulled(rows);
     persistPulled(rows);
+    // 数据层已有精灵（左侧列表）不吃 mergePulled，走覆盖层写进 soul_mark 再重建节点。
+    const soulUpd = refreshRawSoul(rows);
+    if(soulUpd || added) applyLibraryAdds();
     if($("libModal").classList.contains("on")) renderLibraryResults(true);
     // 新增精灵的图（本地没有的）一并下载，缓存进 IndexedDB，之后离线也能看。
     const imgOk = await pullImages(rows.map(r => r.id), btn, "图像");
-    if(imgOk){ renderAll(); }
-    toast(`全量拉取完成：${rows.length} 只，新增 ${added} 只${imgOk ? `，补图 ${imgOk} 只` : ""}；库内共 ${LIBRARY.length} 只，从列表底部＋添加（可勾选「只看未添加」）。`);
+    renderAll();                         // 魂印已就绪，图像是增量，别等它才重绘
+    toast(`全量拉取完成：${rows.length} 只，新增 ${added} 只，魂印更新 ${soulUpd} 只${imgOk ? `，补图 ${imgOk} 只` : ""}；库内共 ${LIBRARY.length} 只，从列表底部＋添加（可勾选「只看未添加」）。`);
   }catch(e){
     toast("全量拉取失败：" + e.message);
   }finally{

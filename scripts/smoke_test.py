@@ -364,6 +364,14 @@ PROBE = r"""
                        soulTxt.slice(0, 14));
                     ok("魂印无版本切换控件", verCtrl === 0, verCtrl + " 个控件");
 
+                    // 拉取/同步必须把「游戏后来追加的魂印」带上来（2026-11-20）：
+                    // 3396 灾厄女神潘多拉的内联快照只有 709，SeerAPI 后来追加 2170（加强版），
+                    // 图鉴要显示最新那条，不能还停在「天生免疫能力下降状态……」的老文本。
+                    select("3396", false);
+                    var pTxt = (document.querySelector("#hero .soul") || {}).textContent || "";
+                    ok("加强魂印已同步到图鉴",
+                       /最优系别/.test(pTxt) && !/天生免疫/.test(pTxt), pTxt.slice(0, 16));
+
                     // 名词释义照旧按这唯一一版渲染（3711 当前版命中 3 个通用效果名词）
                     select("3711", false);
                     var tn = [].map.call(document.querySelectorAll("#termSlot .trow"),

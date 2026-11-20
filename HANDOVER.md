@@ -3,7 +3,7 @@
 > 快照 2026-11-20｜项目 `E:\seerskill\seer-peak-pvp`｜Skill 镜像 `C:\Users\SHM20\.workbuddy\skills\seer-peak-pvp`
 > **本文是唯一交接文档**（原 `STRUCTURE.md`／`OPTIMIZATION.md`／`dist/HANDOVER-archive-*.md` 已并入或删除）。
 > 机制正文以 `references/docs/tactics.md` 为准，魂印原文以 `data/seerapi/soul_full.json` 为准。
-> **最近一次改动（2026-11-20）**：按用户要求**回退到 11-19 的程序**——删掉魂印「强化前／强化后」开关（只显示最新一版）、撤销全量拉取的覆盖与超时改造（回到「只入库、图像一并下载」）、撤销编辑补丁字段白名单；文件名恢复 `spirit_synergy_view.html`。`smoke_test` **53/53**。
+> **最近一次改动（2026-11-20）**：①拉取改为「每次都取最新」——抓取脚本默认全量重抓、前端每次重建魂印索引、同一只精灵取 id 最大的魂印、拉到的新魂印经覆盖层写进节点 `soul_mark`；②新增 `scripts/sync_latest_soul.py` 把最新魂印同步进展示层（14 只节点由旧版升到加强版，3396 灾厄女神潘多拉 709→2170）。此前同日还做过（已全部回退）：前端改名、魂印「强化前／强化后」开关、拉取覆盖与超时改造、编辑补丁字段白名单。`smoke_test` **54/54**。
 
 ---
 
@@ -33,9 +33,9 @@
 | 资料层 | 230 只（`DATA.media`）；魂印标签 1595 条；种族值 4951 条；魂印名词 548 条 |
 | 强化形态 | 22 只使用强化后魂印／种族值（附录 B）；**前端只显示最新一版魂印，没有版本开关** |
 | 体积 | 项目约 221MB＝`assets` 84M ＋ `data` 29M ＋ `references` 14M ＋ `dist` 92M ＋ `scripts` 1M |
-| 脚本 | `scripts/*.py` 42 个 ＋ `scripts/history/` 18 个一次性脚本 |
+| 脚本 | `scripts/*.py` 43 个 ＋ `scripts/history/` 18 个一次性脚本 |
 
-校验必须全绿：`check_roster.py` **0 ERROR**、`editor_schema.py` invariants OK、`audit_mechanics.py` 0 条、`smoke_test.py` **53/53**。
+校验必须全绿：`check_roster.py` **0 ERROR**、`editor_schema.py` invariants OK、`audit_mechanics.py` 0 条、`smoke_test.py` **54/54**。
 
 ---
 
@@ -113,7 +113,16 @@ python scripts/check_roster.py      # 0 ERROR 才算完
 
 单个精灵：优先在前端编辑面板改并导出补丁；或直接改内联 `const DATA`（走 `viewdata`，注意 CRLF）。改完跑 A 的第二步。
 
-批量刷新：顶部「全量拉取」走 SeerAPI 分页接口，只往库（1977 只隐藏源）里补新序号，**不改动已录入的 218 只**；拉完从列表底部「＋」逐只添加。图像随拉取一并下载并缓存进 IndexedDB。
+批量刷新：顶部「全量拉取」走 SeerAPI 分页接口，**每次点击都全量重抓**（魂印索引每次重建、同一只精灵取 id 最大的魂印＝最新结算文本）；新序号只进库（1977 只隐藏源），已录入的 218 只**只覆盖魂印**（写进 `localStorage[…]_raw` 覆盖层，重建节点时叠到 `soul_mark`，其它字段不动）；拉完从列表底部「＋」逐只添加。图像随拉取一并下载并缓存进 IndexedDB。
+
+命令行侧同一件事（先抓、再同步、再重建）：
+
+```bash
+python scripts/fetch_seerapi.py --all-deep   # 默认全量重抓（--skip-existing 才是旧行为）
+python scripts/sync_latest_soul.py --dry-run # 看哪些精灵的魂印有新版
+python scripts/sync_latest_soul.py           # 写进 spirit_library／spirit_info／内联 DATA
+python scripts/rebuild_view.py
+```
 
 ### 禁跑／不可跑
 
@@ -177,7 +186,11 @@ python scripts/check_roster.py      # 0 ERROR 才算完
   - **「在不在左侧列表」只认 `inListOf(k)`**（存在且未删除）。库面板的「已添加／添加」、`libOnly`「只看未添加」、重复添加拦截、标签浮层跳转、hash 选择全走它；直接写 `!!nodeOf(k)` 就是 2026-11-19 那个 bug——删掉的精灵在库里永远显示「已添加」、点了也没反应。
   - 加回列表统一走 `ensureInList(id)`：`present`／`restored`（清删除标记）／`added`（写 `library.adds`）／`none`（无魂印），别再各写一份。
   - 编辑面板的按钮在已删时是「恢复精灵」；不需要再手动去清 `DATA.library.adds`。
-- **魂印只显示最新一版**：图鉴正文走 `soulBlockHtml(n)` → `soulOf(n)`（`soul_mark` → 资料层 primary → 库魂印），名词档位用 `resolveTermMode(这段文本)` 解析。2026-11-20 起**不提供「强化前／强化后」切换**：曾经的 `soul_prev`／`soul_prev_id`／`advance` 已被 `rebuild_view.strip_soul_versions()` 每次重建清掉，别再往节点上写这三个字段（老补丁／旧 DATA 里出现也要清，否则会被误读成「还有一版没显示」）。拉取拿到的永远是最新结算文本，与这条口径一致。
+- **魂印只显示最新一版**：图鉴正文走 `soulBlockHtml(n)` → `soulOf(n)`（`soul_mark` → 资料层 primary → 库魂印），名词档位用 `resolveTermMode(这段文本)` 解析。2026-11-20 起**不提供「强化前／强化后」切换**：曾经的 `soul_prev`／`soul_prev_id`／`advance` 已被 `rebuild_view.strip_soul_versions()` 每次重建清掉，别再往节点上写这三个字段（老补丁／旧 DATA 里出现也要清，否则会被误读成「还有一版没显示」）。
+- **「最新版」怎么算（2026-11-20）**：同一只精灵在 SeerAPI 会挂多条魂印，**老版在前、新版在后（id 递增）**，所以最新＝id 最大的那条。三处必须同一口径：`petRow()` 的 `newestSoul()`（前端拉取）、`build_spirit_library.soul_rows()`／`build_spirit_media` 的 `primary`（「有 `has_format` 优先，否则 id 最大」——**不能退化成 `out[0]`**，那是老版）。
+- **拉取必须每次重建魂印索引**：`loadPullSouls(btn, true)` 清 `SOUL_MAP` 重拉；以前 `if(SOUL_MAP.size) return` 会让同一次会话的第二次拉取沿用旧文本。
+- **218 只的魂印覆盖层**：内联 `DATA.media` 是构建期快照，游戏后补的魂印不在里面。拉取把结果存 `localStorage[EDIT_KEY + "_raw"]`（`rawSoul`，`{sid, soul}`），`applyLibraryAdds()` 重建节点时写进 `soul_mark`；`effective()` 的编辑补丁仍压在上面。**别直接改 `BASE_NODES`**——每次 `applyLibraryAdds()` 都会从它克隆。
+- **离线同步脚本**：`sync_latest_soul.py` 只升级「还在显示旧版」的精灵（`soul_mark` 为空，或与 `DATA.media` 主版文本一致）；已经不一样的（如 22 只强化形态按强化后版本核过的）一律不动，所以可反复跑、幂等。拉取拿到的永远是最新结算文本，与这条口径一致。
 - **本地缓存**：`STORAGE = "seer_peak_view_edits_v3_r2"`（`_r2` 隔离旧值）；拉取缓存 `…_pulled`，覆盖层 `…_raw`。
 
 ---
@@ -193,6 +206,8 @@ python scripts/check_roster.py      # 0 ERROR 才算完
 - **魂印文本不许带 `[sprite …]`**：`sanitize_soul_markup()` 每次重建自动清洗 `nodes[].soul`／`soul_mark`／`library[].soul`，新增魂印字段时要纳入这一步。
 - **魂印名词** 548 条分 `ex`（专属）／`eff`（效果）／`timing`（时点）；找不到官方释义不编。
 - **强化形态** `references/catalog/advance_forms.json`（22 只 id→名称），只作**口径记录**：说明哪 22 只用了强化后的魂印／种族值（附录 B）。前端已不做版本切换，`rebuild_view` 不再读这个文件，也不再往节点写 `soul_prev`／`advance`。
+- **资料层是构建期快照**：`spirit_media.json`（11-10）／`spirit_library.json`（11-18）都不是实时数据，游戏后补的魂印只能靠 `fetch_seerapi.py` → `sync_latest_soul.py` 补进来（本次 3396 就是 11-06 快照缺 soulmark 2170）。`spirit_info.json` 的 `soul_mark` 口径＝**当前生效版全文**，同步脚本会一并更新。
+- **`data/seerapi/seerapi.json` 的 `soulmarks`** 已按 id 升序排列并标 `latest`（最后一条＝最新），`compare_souls.py` 之类按候选集比对，不受顺序影响。
 
 ---
 
@@ -229,6 +244,7 @@ python scripts/check_roster.py      # 0 ERROR 才算完
 3. 22 只强化形态只换了魂印／种族值／标签，强化后的技能尚未并入技能表。
 4. `tactics.md` 里 41 个已退役体系章节仍在（约 4 万字符），`query.py --system` 查不到；要清需用户确认。
 5. `SKILL.md` 部分段落仍是「41 项／227 只」的历史快照口径（开头已加注），未逐条改写。
+6. 拉取只同步魂印**正文**，不同步魂印效果标签（`DATA.soul_tags` 是构建期产物）：3396 换到 2170 后，标签仍按旧版那组显示（强攻／恢复／弱化），要重算得重跑 `fetch_seerapi_media.py` ＋ `build_spirit_media.py`。
 
 ---
 
@@ -242,7 +258,7 @@ python scripts/smoke_test.py                       # 53/53（自动找 Chrome/Ed
 python scripts/fetch_missing_skills.py --dry-run    # 库内技能为空的精灵（正常 0 只）
 ```
 
-`smoke_test.py` 覆盖：数据规模（218 只／21 体系，下限断言）、图鉴详情、属性技能图标、编辑器四张卡、卡片尺寸与层级、连线落心、备注文本可连线并落库、属性口径（宽松／严格／开关）、取色面板与线色生效／落库／回放、体系导出、两处线型一致、端点贴边、短备注贴合、技能表窄宽不塌、库内技能已补、图鉴显示定位与备注、顶部按钮与备注开关、技能表与候选倒序、双第五只标一条重点、重点只认编辑设置、删除后回库面板可重加（`inListOf`）、魂印只显示最新版（不含旧版文本）、魂印无版本切换控件、名词释义正常。**改体系数或卡片尺寸要同步改断言。**
+`smoke_test.py` 覆盖：数据规模（218 只／21 体系，下限断言）、图鉴详情、属性技能图标、编辑器四张卡、卡片尺寸与层级、连线落心、备注文本可连线并落库、属性口径（宽松／严格／开关）、取色面板与线色生效／落库／回放、体系导出、两处线型一致、端点贴边、短备注贴合、技能表窄宽不塌、库内技能已补、图鉴显示定位与备注、顶部按钮与备注开关、技能表与候选倒序、双第五只标一条重点、重点只认编辑设置、删除后回库面板可重加（`inListOf`）、魂印只显示最新版（不含旧版文本）、魂印无版本切换控件、**加强魂印已同步到图鉴（3396 显示 2170 而不是 709）**、名词释义正常。**改体系数或卡片尺寸要同步改断言。**
 
 **版本管理（2026-11-20 起）**：仓库已 `git init`（首次提交 `回退到 11-19 口径`）。`dist/`、`assets/`、`references/spirit_synergy_view.html` 在 `.gitignore` 里（产物与重资源可重建），改动只提交 `scripts/`、`references/`、`data/`、`*.md`。**每次改前端先看一眼 `git status`，改完提交一次**——回滚用 `git diff` / `git checkout`，不要再靠「有没有备份」猜。
 
@@ -273,6 +289,7 @@ python scripts\pack_skill.py     # 输出 items / testzip / 关键文件 md5
 | 2026-11-19 | 从 Edge leveldb 恢复「丢失」的 23 只补丁与 18 只库添加（`recover_local_storage.py`）；目录按来源拆成 `data/` 与 `references/`；**内联 DATA 读写收敛到 `scripts/viewdata.py`，交接文档合并为本文件** |
 | 2026-11-19 | 修「删除后从精灵库添加仍显示已添加」：新增 `inListOf()`（存在且未软删除）作为列表成员的唯一判定，库面板／`libOnly`／重复拦截／标签跳转／hash 全走它；`addFromLibrary` 抽出 `ensureInList()` 统一 present／restored／added／none 四条路；`smoke_test` 50/50 |
 | 2026-11-20 | 当日先后做过：前端改名 `赛尔号巅峰.html`、魂印「强化前／强化后」开关、全量拉取覆盖与超时重构、编辑补丁字段白名单。**当天全部回退**（用户要求回到 11-19 的程序）：文件名恢复 `references/spirit_synergy_view.html`；魂印只显示最新一版；拉取回到「只入库、图像一并下载」；编辑补丁不做字段过滤；`smoke_test` 53/53 |
+| 2026-11-20 | **拉取改为「每次都取最新」**：`fetch_seerapi.py` 默认全量重抓（`--skip-existing` 才跳过）、魂印按 id 排序标 `latest`；前端 `loadPullSouls(btn,true)` 每次重建索引、`newestSoul()` 取 id 最大的一条、拉到的魂印经 `rawSoul` 覆盖层写进节点 `soul_mark`、拉完无条件重绘；库构建 `primary` 不再退化成 `out[0]`；新增 `sync_latest_soul.py`（只升级还在显示旧版的精灵，幂等）。修 3396 灾厄女神潘多拉加强魂印不显示：709→2170，连带 14 只同类精灵升到加强版；`smoke_test` 54/54 |
 
 ---
 

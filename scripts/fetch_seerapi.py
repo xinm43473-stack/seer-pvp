@@ -18,6 +18,10 @@ SeerAPI 是结构化数据平台（GitHub: SeerAPI/seerapi），字段：
   python scripts/fetch_seerapi.py --ids 4364 4925 4594
   python scripts/fetch_seerapi.py --all-deep
   python scripts/fetch_seerapi.py --all-deep --with-skills   # 连技能一起抓（慢）
+  python scripts/fetch_seerapi.py --all-deep --skip-existing # 只补缺的（旧行为，省时但会漏新魂印）
+
+2026-11-20：默认**每次都重抓**。以前只在「没有魂印／缺 has_format」时才抓，
+游戏给老精灵追加一条新魂印（如 3396 灾厄女神潘多拉 → soulmark 2170）本地永远看不到。
 """
 import json
 import re
@@ -91,6 +95,12 @@ def fetch_pet(pid, with_skills=False):
         })
         time.sleep(0.15)
 
+    # 同一只精灵可能挂多条魂印：老版在前、新版在后（SeerAPI 的 soulmark id 递增）。
+    # 展示侧「只显示最新一版」＝ id 最大的那条，这里排好序并打 latest 标记留痕。
+    out["soulmarks"].sort(key=lambda m: int(m["id"]))
+    for i, m in enumerate(out["soulmarks"]):
+        m["latest"] = (i == len(out["soulmarks"]) - 1)
+
     if with_skills:
         for ref in p.get("skill") or []:
             sid = ref.get("skill", {}).get("id")
@@ -138,18 +148,29 @@ def main():
 
     with_skills = "--with-skills" in sys.argv
     refresh = "--refresh" in sys.argv
-    todo = [i for i in targets
-            if refresh
-            or str(i) not in store["pets"]
-            or not store["pets"][str(i)].get("soulmarks")
-            or "has_format" not in (store["pets"][str(i)]["soulmarks"][0] or {})
-            or (with_skills and not store["pets"][str(i)].get("skills"))]
-    print("fetching %d/%d pets (skills=%s)" % (len(todo), len(targets), with_skills))
+    skip_existing = "--skip-existing" in sys.argv
+    if skip_existing and not refresh:
+        # 旧行为：只补「没有魂印／缺 has_format」的。会漏掉游戏后来追加的魂印，慎用。
+        todo = [i for i in targets
+                if str(i) not in store["pets"]
+                or not store["pets"][str(i)].get("soulmarks")
+                or "has_format" not in (store["pets"][str(i)]["soulmarks"][0] or {})
+                or (with_skills and not store["pets"][str(i)].get("skills"))]
+    else:
+        # 默认全量重抓：本地永远跟上 SeerAPI 的最新结算文本与最新魂印条数。
+        todo = list(targets)
+    print("fetching %d/%d pets (skills=%s, mode=%s)"
+          % (len(todo), len(targets), with_skills, "skip-existing" if skip_existing and not refresh else "refresh"))
     for n, pid in enumerate(todo, 1):
+        prev = store["pets"].get(str(pid)) or {}
+        old_ids = [int(m["id"]) for m in (prev.get("soulmarks") or []) if m.get("id") is not None]
         try:
             store["pets"][str(pid)] = fetch_pet(pid, with_skills)
-            print("  [%d/%d] %s %s" % (n, len(todo), pid,
-                                       store["pets"][str(pid)]["name"]))
+            new_ids = [int(m["id"]) for m in store["pets"][str(pid)]["soulmarks"]]
+            extra = [i for i in new_ids if i not in old_ids]
+            print("  [%d/%d] %s %s%s" % (n, len(todo), pid,
+                                         store["pets"][str(pid)]["name"],
+                                         ("  +魂印 " + ",".join(map(str, extra))) if extra else ""))
         except Exception as exc:
             print("  [%d/%d] %s FAILED: %s" % (n, len(todo), pid, exc))
         time.sleep(0.2)

@@ -199,8 +199,9 @@ def main() -> int:
             })
         if not soul_rows:
             missing_soul.append(pid)
+        # 只显示最新一版：优先「当前生效版」（带格式化结算文本），否则取 id 最大的一条。
         primary = next((x for x in soul_rows if x["has_format"]), None) or (
-            soul_rows[0] if soul_rows else None)
+            max(soul_rows, key=lambda x: int(x["id"])) if soul_rows else None)
         for row in soul_rows:
             row["is_primary"] = bool(primary and row["id"] == primary["id"])
         soul_text = (primary or {}).get("text", "")

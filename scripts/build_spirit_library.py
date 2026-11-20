@@ -143,7 +143,11 @@ def main() -> int:
                         "primary": False,
                         "has_format": bool(row.get("desc_formatting_adjustment"))})
         if out:
-            primary = next((x for x in out if x["has_format"]), out[0])
+            # 同一只精灵会挂多条魂印：老版在前、新版在后（SeerAPI 的 soulmark id 递增）。
+            # 口径是「只显示最新一版」：优先取带格式化结算文本的（＝当前生效版），
+            # 都没有时取 id 最大的那条——不能再退化成 out[0]（那是老版）。
+            primary = next((x for x in out if x["has_format"]), None) \
+                or max(out, key=lambda x: int(x["id"]))
             primary["primary"] = True
         return out
 
