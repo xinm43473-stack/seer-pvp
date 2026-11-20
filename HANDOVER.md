@@ -285,16 +285,9 @@ python scripts\pack_skill.py     # 输出 items / testzip / 关键文件 md5
 | Windows | `desktop/exe/launcher.py`、`desktop/exe/build_exe.ps1` | `pwsh -NoProfile -File desktop/exe/build_exe.ps1` | `dist/desktop/SeerPeak/SeerPeak.exe`（onedir，116.7MB） |
 | Android | `desktop/android/AndroidManifest.xml`、`desktop/android/src/`、`desktop/android/res/`、`desktop/android/build_apk.py` | `python desktop/android/build_apk.py` | `dist/SeerPeak.apk`（83.2MB，已签名） |
 
-- **构建依赖不随仓库，2026-11-20 已从本机删除**（省 1.0GB）：原位置 `E:\seerskill\.buildtools\`。要重新打包时按下面三行重下即可（脚本会自动探测 `E:\seerskill\.buildtools\{jdk,sdk,venv-exe}`，也可 `--jdk`／`--sdk-root` 指定；官方源 dl.google.com／api.adoptium.net 在本机极慢，用镜像）：
-
-  ```powershell
-  # JDK 17（华为云，186MB，解压出 jdk-17.0.2）
-  curl -L -o jdk17.zip https://mirrors.huaweicloud.com/openjdk/17.0.2/openjdk-17.0.2_windows-x64_bin.zip
-  # cmdline-tools（腾讯云，147MB，必须放在 <sdk>\cmdline-tools\latest\ 下）
-  curl -L -o cmdline-tools.zip https://mirrors.cloud.tencent.com/AndroidSDK/commandlinetools-win-11076708_latest.zip
-  # 装构建组件（license 用 y 管道）；exe 另需 python -m venv venv-exe && pip install pywebview pyinstaller
-  sdkmanager.bat --sdk_root=<sdk> "build-tools;34.0.0" "platforms;android-34"
-  ```
+- **构建依赖不随仓库**：2026-11-20 起放在 `D:\ruanjianmen\dabao\`（705MB）——`jdk\jdk-17.0.2`、`sdk\cmdline-tools\latest` ＋ `sdk\build-tools\34.0.0` ＋ `sdk\platforms\android-34`、exe 用的 `venv-exe`（pywebview 6.2.1 ＋ PyInstaller 6.22.3）。两个构建脚本自动探测该目录（也认 `E:\seerskill\.buildtools`），或 `--jdk`／`--sdk-root` 指定。
+- **换机／重装一条命令**：`pwsh -NoProfile -File desktop/tools/install_toolchain.ps1`（默认 `-Root D:\ruanjianmen\dabao`，会跳过已装组件）。走镜像：华为云 JDK 17.0.2、腾讯云 cmdline-tools、清华 pypi。官方源（api.adoptium.net／dl.google.com）在本机要 45s 才响应头，别直连。
+- **工具链只是「能再造一个」的能力**：`dist/desktop/SeerPeak/` 是自包含的，删掉工具链也不影响已构建的 exe 运行。
 - **exe**：pywebview ＋ PyInstaller `--onedir`。发布必须带上整个 `SeerPeak` 文件夹（只拷 exe 跑不起来）；依赖系统 WebView2 Runtime（Win10/11 一般已装）。`build/` 与 `dist/` 不入库。
 - **apk**：无 Gradle 的手工链 —— `javac -source 8 -target 8 -bootclasspath android.jar` → `d8 --min-api 24` → `aapt2 compile/link -A assets` → 塞 `classes.dex` → `zipalign` → `apksigner`。`minSdk 24 / targetSdk 34`，横屏，`usesCleartextTraffic` 只为回环 HTTP。
 - **APK 体积来自离线全图**：`assets/www/assets/seerapi` 4248 个文件 80.5MB（头像／立绘／属性图）直接打进 assets，不再联网取图；`assets/www/references/spirit_synergy_view.html` 11.4MB。
@@ -317,6 +310,7 @@ python scripts\pack_skill.py     # 输出 items / testzip / 关键文件 md5
 | 2026-11-20 | **拉取改为「每次都取最新」**：`fetch_seerapi.py` 默认全量重抓（`--skip-existing` 才跳过）、魂印按 id 排序标 `latest`；前端 `loadPullSouls(btn,true)` 每次重建索引、`newestSoul()` 取 id 最大的一条、拉到的魂印经 `rawSoul` 覆盖层写进节点 `soul_mark`、拉完无条件重绘；库构建 `primary` 不再退化成 `out[0]`；新增 `sync_latest_soul.py`（只升级还在显示旧版的精灵，幂等）。修 3396 灾厄女神潘多拉加强魂印不显示：709→2170，连带 14 只同类精灵升到加强版；`smoke_test` 54/54 |
 | 2026-11-20 | **代码整理（行为不变）**：拉取参数收敛到前端 `PULL_CFG`（分页／并发／收录下限／重试／图片尺寸／`skillWorkers`），以后调速率或接新区间只改这一处；`apiJSON` 对 4xx 不再盲目重试、`seerPages` 的 `next` 支持相对 URL；修 `imgCachePut` 的 async executor 反模式；`imgCacheLoad` 从「每 key 开一次事务」改为单事务游标遍历；列表头像每只只算一次；`soulHtml` 改用入参 `mode` 避免串档；`fetch_seerapi.py` 每次保存刷新 `generated_at`；`smoke_test` 体系数改为下限断言；HANDOVER 命令示例 53→54 |
 | 2026-11-20 | **清理**：删掉 `dist/SeerPeak.apk`（83MB）、`E:\seerskill\.buildtools`（1.0GB 打包工具链）、`.workbuddy/memory`（16 天开发日志，与 HANDOVER 重叠）、`_work_v5`（v5 评分原始数据）；项目 353.6→269.8MB，exe 产物与源码不动 |
+| 2026-11-20 | **工具链迁到 D 盘**：删掉 `E:\seerskill\.buildtools`（1.0GB）后重装到 `D:\ruanjianmen\dabao`（705MB）；新增 `desktop/tools/install_toolchain.ps1` 一键重装，`build_apk.py`／`build_exe.ps1` 改为优先探测该目录；APK 用新工具链重建验证（7s／83.2MB／签名 OK）后按用户要求删除产物 |
 | 2026-11-20 | **打包**：新增 `desktop/exe`（pywebview＋PyInstaller onedir）与 `desktop/android`（javac/d8/aapt2 手工链，无 Gradle），产出 `dist/desktop/SeerPeak/SeerPeak.exe`（116.7MB）与 `dist/SeerPeak.apk`（83.2MB，minSdk 24／targetSdk 34）；两者都走 `127.0.0.1` 随机端口服务，避开 `file://` 下 IndexedDB 失效 |
 
 ---

@@ -17,10 +17,15 @@ Write-Output "[build] 镜像 assets（增量）"
 robocopy (Join-Path $proj 'assets') (Join-Path $app 'assets') /MIR /NFL /NDL /NJH /NJS /NP | Out-Null
 if ($LASTEXITCODE -ge 8) { throw "robocopy failed: $LASTEXITCODE" }
 
-$venv = Join-Path (Split-Path -Parent (Split-Path -Parent $PSScriptRoot)) '.buildtools\venv-exe'
-if (-not (Test-Path $venv)) { $venv = 'E:\seerskill\.buildtools\venv-exe' }
+# 工具链探测：用户长期存放目录优先，其次 E:\seerskill\.buildtools，最后项目内 .buildtools
+$venvCandidates = @(
+  (Join-Path 'D:\ruanjianmen\dabao' 'venv-exe'),
+  'E:\seerskill\.buildtools\venv-exe',
+  (Join-Path (Split-Path -Parent (Split-Path -Parent $PSScriptRoot)) '.buildtools\venv-exe')
+)
+$venv = $venvCandidates | Where-Object { Test-Path (Join-Path $_ 'Scripts\python.exe') } | Select-Object -First 1
+if (-not $venv) { throw "缺少 venv（pywebview + pyinstaller）：$($venvCandidates -join ' / ')" }
 $py = Join-Path $venv 'Scripts\python.exe'
-if (-not (Test-Path $py)) { throw "缺少 venv：$venv" }
 
 Write-Output "[build] PyInstaller"
 & $py -m PyInstaller --noconfirm --clean --windowed --onedir --name SeerPeak `

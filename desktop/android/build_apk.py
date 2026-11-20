@@ -57,15 +57,28 @@ def as_cmd(exe: Path, *args: str) -> list[str]:
     return [str(exe), *args]
 
 
+def _roots() -> list[Path]:
+    """打包工具链的探测位置：用户长期存放目录优先，其次项目外的历史位置。"""
+    roots = []
+    env = os.environ.get("SEERPKG_TOOLS")
+    if env:
+        roots.append(Path(env))
+    roots += [Path("D:/ruanjianmen/dabao"), Path("E:/seerskill/.buildtools")]
+    return roots
+
+
 def find_jdk(explicit: str | None) -> Path:
     if explicit:
         return Path(explicit)
     env = os.environ.get("JAVA_HOME")
     if env and (Path(env) / "bin" / "javac.exe").is_file():
         return Path(env)
-    root = Path("E:/seerskill/.buildtools/jdk")
-    for cand in sorted(root.glob("*/bin/javac.exe")):
-        return cand.parent.parent
+    for root in _roots():
+        for base in (root / "jdk", root):
+            if (base / "bin" / "javac.exe").is_file():
+                return base
+            for cand in sorted(base.glob("*/bin/javac.exe")):
+                return cand.parent.parent
     raise SystemExit("找不到 JDK，请用 --jdk 指定（需要 javac / keytool）")
 
 
@@ -76,9 +89,10 @@ def find_sdk(explicit: str | None) -> Path:
         env = os.environ.get(key)
         if env and (Path(env) / "platforms" / PLATFORM).is_dir():
             return Path(env)
-    cand = Path("E:/seerskill/.buildtools/sdk")
-    if (cand / "platforms").is_dir():
-        return cand
+    for root in _roots():
+        for base in (root / "sdk", root):
+            if (base / "platforms" / PLATFORM).is_dir():
+                return base
     raise SystemExit("找不到 Android SDK，请用 --sdk-root 指定")
 
 
