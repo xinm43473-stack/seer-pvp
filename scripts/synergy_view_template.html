@@ -796,23 +796,23 @@ html[data-theme="dark"] .themebtn .ic-moon{display:none}
   .picker{position:static;padding:12px}
   .picker .searchrow{position:sticky;top:var(--mhead,42px);z-index:50;background:var(--bg);padding:5px 0 7px}
   .picker .meta{margin:6px 0 4px}
-  /* 卡片墙：两列，头像铺满方形卡片，名字/序号压在头像下缘 */
-  #list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;max-height:none;overflow:visible}
+  /* 卡片墙：一行四个，头像铺满方形卡片，名字/序号压在头像下缘 */
+  #list{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;max-height:none;overflow:visible}
   #list li{position:relative;display:block;padding:0;overflow:hidden;aspect-ratio:1/1;
-    border:1px solid var(--line);border-radius:14px;background:var(--grad-plate);box-shadow:var(--sh-1)}
-  #list li::after{content:"";position:absolute;left:0;right:0;bottom:0;height:58px;z-index:1;
-    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.74));pointer-events:none}
+    border:1px solid var(--line);border-radius:10px;background:var(--grad-plate);box-shadow:var(--sh-1)}
+  #list li::after{content:"";position:absolute;left:0;right:0;bottom:0;height:40px;z-index:1;
+    background:linear-gradient(rgba(0,0,0,0),rgba(0,0,0,.76));pointer-events:none}
   #list li.on{border-color:var(--blue);box-shadow:0 0 0 2px var(--blue),var(--sh-2)}
   #list .av{position:absolute;inset:0;width:100%;height:100%;flex:0 0 auto;border:0;border-radius:0;
     background:transparent;overflow:hidden}
   #list .av img{width:100%;height:100%;max-width:100%;max-height:100%;object-fit:cover}
-  #list .av i{font-size:34px;color:#fff}
-  #list .nm{position:absolute;left:9px;right:9px;bottom:22px;z-index:2;max-width:calc(100% - 18px);
-    color:#fff;font-size:12.5px;line-height:1.25;text-shadow:0 1px 3px rgba(0,0,0,.65)}
-  #list .idn{position:absolute;left:9px;bottom:7px;z-index:2;color:rgba(255,255,255,.78);
-    font-size:10px;line-height:1;text-shadow:0 1px 2px rgba(0,0,0,.6)}
-  #list .rt{position:absolute;top:6px;right:6px;z-index:2;min-width:0;padding:0 5px;
-    background:rgba(15,20,30,.62);border:1px solid rgba(255,255,255,.28);border-radius:6px;color:#fff}
+  #list .av i{font-size:22px;color:#fff}
+  #list .nm{position:absolute;left:4px;right:4px;bottom:14px;z-index:2;max-width:calc(100% - 8px);
+    color:#fff;font-size:10px;line-height:1.2;text-shadow:0 1px 2px rgba(0,0,0,.7)}
+  #list .idn{position:absolute;left:4px;bottom:3px;z-index:2;color:rgba(255,255,255,.8);
+    font-size:8.5px;line-height:1;text-shadow:0 1px 1px rgba(0,0,0,.6)}
+  #list .rt{position:absolute;top:3px;right:3px;z-index:2;min-width:0;padding:0 3px;font-size:8.5px;
+    background:rgba(15,20,30,.62);border:1px solid rgba(255,255,255,.26);border-radius:4px;color:#fff}
   #list li.on .nm{color:#fff}
   #list li.addrow{grid-column:1/-1;aspect-ratio:auto;position:static;margin-top:2px;border-style:dashed;
     display:flex;justify-content:center;padding:10px 0}
