@@ -14,6 +14,7 @@ from __future__ import annotations
 import argparse
 import math
 import os
+import re
 import shutil
 import subprocess
 import sys
@@ -35,6 +36,13 @@ MIN_SDK = "24"
 TARGET_SDK = "34"
 BUILD_TOOLS = "34.0.0"
 PLATFORM = "android-34"
+
+# 版本号：每次发布递增，安装器据此区分新旧；Android 只允许同签名覆盖升级
+VERSION_CODE = 2
+VERSION_NAME = "1.0.1"
+
+# 签名密钥固定在项目内（build/ 每次构建都会被清空，放那里会导致签名漂移）
+KEYSTORE = HERE / "seerpeak.jks"
 
 
 def log(msg: str) -> None:
@@ -155,7 +163,19 @@ def stage_assets() -> Path:
     return BUILD / "assets"
 
 
-def build(jdk: Path, sdk: Path) -> Path:
+def stage_manifest(version_code: int, version_name: str) -> Path:
+    """manifest 里写死了版本号，aapt2 的 --version-code 会被它压过，先落到构建目录再 link。"""
+    text = MANIFEST.read_text(encoding="utf-8")
+    text, n1 = re.subn(r'android:versionCode="\d+"', f'android:versionCode="{version_code}"', text)
+    text, n2 = re.subn(r'android:versionName="[^"]*"', f'android:versionName="{version_name}"', text)
+    if n1 != 1 or n2 != 1:
+        raise SystemExit("AndroidManifest.xml 缺少唯一的 versionCode / versionName 声明")
+    out = BUILD / "AndroidManifest.xml"
+    out.write_text(text, encoding="utf-8")
+    return out
+
+
+def build(jdk: Path, sdk: Path, version_code: int, version_name: str) -> Path:
     # build-tools 的 d8/apksigner 启动脚本依赖 JAVA_HOME / PATH 找到 java
     os.environ["JAVA_HOME"] = str(jdk)
     os.environ["PATH"] = str(jdk / "bin") + os.pathsep + os.environ.get("PATH", "")
@@ -177,6 +197,7 @@ def build(jdk: Path, sdk: Path) -> Path:
     DIST.mkdir(parents=True, exist_ok=True)
     ensure_icon()
 
+    manifest = stage_manifest(version_code, version_name)
     assets_dir = stage_assets()
     log(f"assets 体积 {sum(f.stat().st_size for f in (assets_dir / 'www').rglob('*') if f.is_file()) / 1048576:.1f} MB")
 
@@ -205,9 +226,9 @@ def build(jdk: Path, sdk: Path) -> Path:
     gen = BUILD / "gen"
     gen.mkdir()
     run([str(aapt2), "link", "-o", str(unsigned), "-I", str(android_jar),
-         "--manifest", str(MANIFEST), "-A", str(assets_dir),
+         "--manifest", str(manifest), "-A", str(assets_dir),
          "--java", str(gen), "--min-sdk-version", MIN_SDK, "--target-sdk-version", TARGET_SDK,
-         "--version-code", "1", "--version-name", "1.0.0", str(res_zip)])
+         "--version-code", str(version_code), "--version-name", version_name, str(res_zip)])
 
     # 4) 把 classes.dex 写进 APK（aapt2 不处理 dex）
     with zipfile.ZipFile(unsigned, "a", zipfile.ZIP_DEFLATED) as zf:
@@ -218,7 +239,7 @@ def build(jdk: Path, sdk: Path) -> Path:
     run([str(zipalign), "-p", "-f", "4", str(unsigned), str(aligned)])
 
     # 6) 签名
-    keystore = BUILD / "seerpeak.jks"
+    keystore = KEYSTORE
     if not keystore.is_file():
         run([str(keytool), "-genkeypair", "-keystore", str(keystore), "-alias", "seerpeak",
              "-keyalg", "RSA", "-keysize", "2048", "-validity", "10000",
@@ -236,13 +257,15 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--sdk-root", default=None)
     ap.add_argument("--jdk", default=None)
+    ap.add_argument("--version-code", type=int, default=VERSION_CODE)
+    ap.add_argument("--version-name", default=VERSION_NAME)
     args = ap.parse_args()
     start = time.time()
     jdk = find_jdk(args.jdk)
     sdk = find_sdk(args.sdk_root)
     log(f"JDK  {jdk}")
     log(f"SDK  {sdk}")
-    out = build(jdk, sdk)
+    out = build(jdk, sdk, args.version_code, args.version_name)
     log(f"完成 {out}  {out.stat().st_size / 1048576:.1f} MB  {time.time() - start:.0f}s")
     return 0
 

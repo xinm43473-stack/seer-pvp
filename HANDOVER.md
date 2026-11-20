@@ -289,10 +289,13 @@ python scripts\pack_skill.py     # 输出 items / testzip / 关键文件 md5
 - **换机／重装一条命令**：`pwsh -NoProfile -File desktop/tools/install_toolchain.ps1`（默认 `-Root D:\ruanjianmen\dabao`，会跳过已装组件）。走镜像：华为云 JDK 17.0.2、腾讯云 cmdline-tools、清华 pypi。官方源（api.adoptium.net／dl.google.com）在本机要 45s 才响应头，别直连。
 - **工具链只是「能再造一个」的能力**：`dist/desktop/SeerPeak/` 是自包含的，删掉工具链也不影响已构建的 exe 运行。
 - **exe**：pywebview ＋ PyInstaller `--onedir`。发布必须带上整个 `SeerPeak` 文件夹（只拷 exe 跑不起来）；依赖系统 WebView2 Runtime（Win10/11 一般已装）。`build/` 与 `dist/` 不入库。
-- **apk**：无 Gradle 的手工链 —— `javac -source 8 -target 8 -bootclasspath android.jar` → `d8 --min-api 24` → `aapt2 compile/link -A assets` → 塞 `classes.dex` → `zipalign` → `apksigner`。`minSdk 24 / targetSdk 34`，横屏，`usesCleartextTraffic` 只为回环 HTTP。
+- **apk**：无 Gradle 的手工链 —— `javac -source 8 -target 8 -bootclasspath android.jar` → `d8 --min-api 24` → `aapt2 compile/link -A assets` → 塞 `classes.dex` → `zipalign` → `apksigner`。`minSdk 24 / targetSdk 34`，**竖屏**（`screenOrientation="portrait"`，配合前端 `@media (max-width:640px)` 手机布局），`usesCleartextTraffic` 只为回环 HTTP。
 - **APK 体积来自离线全图**：`assets/www/assets/seerapi` 4248 个文件 80.5MB（头像／立绘／属性图）直接打进 assets，不再联网取图；`assets/www/references/spirit_synergy_view.html` 11.4MB。
-- **签名是本地调试 key**：`build/android/seerpeak.jks`（alias `seerpeak`，store/key 密码均 `android`），只适合自己安装；要分发或上架必须换正式 keystore，并先卸载同包名应用。
+- **签名 key 固定在 `desktop/android/seerpeak.jks`**（alias `seerpeak`，store/key 密码均 `android`，SHA-256 `06795dd0…b773f`），随仓库提交。`build/` 每次构建都会被清空，key 绝不能放那里——放那儿会导致每次构建换一把新 key，手机上覆盖安装被 Android 拒绝（`INSTALL_FAILED_UPDATE_INCOMPATIBLE`），旧版一直留着，看起来像「装了新包但还是旧界面」。
+- **版本号**：`AndroidManifest.xml` 的 `versionCode`／`versionName` 是基线，`build_apk.py` 按 `VERSION_CODE`／`VERSION_NAME`（或 `--version-code`／`--version-name`）重写后再 link——manifest 里显式写的值会压过 aapt2 的 `--version-code`，必须这样处理。每次发版递增 `versionCode`，安装器才会走升级流程。
+- **WebView 不吃旧缓存**：入口 HTML 响应 `Cache-Control: no-store`（图片等静态资源仍 `immutable`），且加载 URL 带 `?v=<versionCode>`，升级后缓存键必变。
 - **重建顺序**：改前端或 `rebuild_view.py` 之后，exe／apk 都要重新构建才会带上新产物；`desktop/` 源码入库，`build/`、`dist/` 忽略。
+- **装到手机**：同签名才能覆盖升级；2026-11-20 之前的旧包用的是已丢失的临时 key，**必须先卸载旧版再装新包**（卸载会清掉 WebView 图片缓存，重进自动重建）。
 
 ---
 
@@ -312,6 +315,7 @@ python scripts\pack_skill.py     # 输出 items / testzip / 关键文件 md5
 | 2026-11-20 | **清理**：删掉 `dist/SeerPeak.apk`（83MB）、`E:\seerskill\.buildtools`（1.0GB 打包工具链）、`.workbuddy/memory`（16 天开发日志，与 HANDOVER 重叠）、`_work_v5`（v5 评分原始数据）；项目 353.6→269.8MB，exe 产物与源码不动 |
 | 2026-11-20 | **工具链迁到 D 盘**：删掉 `E:\seerskill\.buildtools`（1.0GB）后重装到 `D:\ruanjianmen\dabao`（705MB）；新增 `desktop/tools/install_toolchain.ps1` 一键重装，`build_apk.py`／`build_exe.ps1` 改为优先探测该目录；APK 用新工具链重建验证（7s／83.2MB／签名 OK）后按用户要求删除产物 |
 | 2026-11-20 | **手机竖屏布局**（`@media (max-width:640px)`，桌面与平板样式不变）：首页改成一行四个的方形头像卡片墙——头像铺满卡片、名字与序号压在头像下缘、评级徽标在右上角，点卡片进图鉴；图鉴顶部新增返回栏（‹／名称／编辑／体系）。`body[data-mview]` 切「列表页／图鉴页」，`select()` 配 `pushState`/`popstate` 走两页导航（详情内换选中只 `replaceState`），返回时复原列表滚动位置；顶部工具栏单行吸顶（隐藏站点标题，375 宽下四个按钮＋主题键全部露出，更窄才横滑），搜索／筛选行吸在工具栏下方（CSS 变量 `--mhead`）。断点常量 `PHONE_MQ`，桌面分支仍走 `replaceState`；`smoke_test` 54/54 |
+| 2026-11-20 | **APK 修复「装了新包还是旧界面」**：根因是 `build_apk.py` 每次 `shutil.rmtree(BUILD)` 把签名 key 一起删掉、重新 `keytool -genkeypair`，签名漂移导致 Android 拒绝覆盖安装；同时 versionCode 固定 1、WebView 对 HTML 发 `immutable` 缓存头。改：key 固定到 `desktop/android/seerpeak.jks` 并入库、版本号 2／1.0.1 参数化（manifest 基线 + 构建期重写）、HTML `no-store`、URL 带 `?v=versionCode`、`sensorLandscape` 改 `portrait` |
 | 2026-11-20 | **打包**：新增 `desktop/exe`（pywebview＋PyInstaller onedir）与 `desktop/android`（javac/d8/aapt2 手工链，无 Gradle），产出 `dist/desktop/SeerPeak/SeerPeak.exe`（116.7MB）与 `dist/SeerPeak.apk`（83.2MB，minSdk 24／targetSdk 34）；两者都走 `127.0.0.1` 随机端口服务，避开 `file://` 下 IndexedDB 失效 |
 
 ---

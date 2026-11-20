@@ -63,7 +63,17 @@ public class MainActivity extends Activity {
         web.setWebChromeClient(new WebChromeClient());
         setContentView(web);
 
-        web.loadUrl("http://127.0.0.1:" + port + "/references/spirit_synergy_view.html");
+        web.loadUrl("http://127.0.0.1:" + port
+                + "/references/spirit_synergy_view.html?v=" + versionCode());
+    }
+
+    /** 版本号参与 URL，WebView 缓存键随之改变，覆盖升级后不会复用旧页面。 */
+    private int versionCode() {
+        try {
+            return getPackageManager().getPackageInfo(getPackageName(), 0).versionCode;
+        } catch (Exception e) {
+            return 1;
+        }
     }
 
     @Override

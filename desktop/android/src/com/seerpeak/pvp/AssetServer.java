@@ -112,10 +112,14 @@ final class AssetServer implements Runnable {
     }
 
     private void write(Socket c, int code, String mime, byte[] body) throws IOException {
+        // 入口 HTML 必须每次回源校验：WebView 会缓存 200，升级后仍加载旧页面；
+        // 其余静态资源按内容长期缓存，省重复读取 assets。
+        String cache = (code == 200 && !mime.startsWith("text/html"))
+                ? "public, max-age=31536000, immutable" : "no-store";
         String head = "HTTP/1.1 " + code + (code == 200 ? " OK" : " ERROR") + "\r\n"
                 + "Content-Type: " + mime + "\r\n"
                 + "Content-Length: " + body.length + "\r\n"
-                + "Cache-Control: " + (code == 200 ? "public, max-age=31536000, immutable" : "no-store") + "\r\n"
+                + "Cache-Control: " + cache + "\r\n"
                 + "Connection: close\r\n\r\n";
         OutputStream os = c.getOutputStream();
         os.write(head.getBytes(StandardCharsets.UTF_8));
