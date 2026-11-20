@@ -1896,6 +1896,13 @@ function tagFilterHit(tags, want){
   if(!want || !want.size) return true;
   return [...want].every(t => tags.includes(t));
 }
+/* 关键字搜索的统一字段：名称 / 序号 / 属性 / 别名 / 定位 / 体系 / 魂印标签。
+   左侧列表与体系画布的「搜索精灵」共用同一份拼接，避免两处口径漂移。 */
+function searchTextOf(n){
+  return [n.name, n.id, n.attr, (n.aliases||[]).join(" "), (n.roles||[]).join(" "),
+    (n.classes||[]).join(" "), (n.systems||[]).join(" "), (soulTagsOf(n)||[]).join(" ")]
+    .join(" ").toLowerCase();
+}
 function filtered(){
   const q = state.q.trim().toLowerCase();
   return (DATA.nodes||[]).filter(n => {
@@ -1906,10 +1913,7 @@ function filtered(){
     if(!tagFilterHit(soulTagsOf(n), FILTER.tags)) return false;
     if(FILTER.rating && !ratingOf(effective(n.k) || n).includes(FILTER.rating)) return false;
     if(FILTER.roles.size && !roleTagsOf(n).some(r => FILTER.roles.has(r))) return false;
-    if(!q) return true;
-    return [n.name, n.id, n.attr, (n.aliases||[]).join(" "), (n.roles||[]).join(" "),
-      (n.classes||[]).join(" "), (n.systems||[]).join(" "), (soulTagsOf(n)||[]).join(" ")]
-      .join(" ").toLowerCase().includes(q);
+    return !q || searchTextOf(n).includes(q);
   });
 }
 function renderList(){
@@ -2684,7 +2688,8 @@ function toast(msg){
 }
 function sysResults(){
   const q = String($("sysQ").value||"").trim().toLowerCase();
-  const rows = (DATA.nodes||[]).filter(n => !q || [n.name,n.id,n.attr,(n.aliases||[]).join(" ")].join(" ").toLowerCase().includes(q)).slice(0, SEARCH_ROWS_MAX);
+  // 与主列表同口径：定位／体系／魂印标签也能搜；软删除的精灵不再出现在候选里。
+  const rows = (DATA.nodes||[]).filter(n => !isDeleted(n.k) && (!q || searchTextOf(n).includes(q))).slice(0, SEARCH_ROWS_MAX);
   $("sysResults").innerHTML = rows.map(n => {
     const used = graph.nodes.some(x => String(x.id)===String(n.id));
     const av = avatarOf(n);
