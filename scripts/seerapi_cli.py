@@ -9,7 +9,7 @@
 
 本项目里两条通道的分工：
   * **单条人工核查 / 争议复核** → 本脚本，走官方 CLI（数据源权威、字段最全）
-  * **批量落盘（133 只魂印、全部技能）** → fetch_seerapi.py / fetch_skills_full.py
+  * **批量落盘（133 只魂印、全部技能）** → fetch_seerapi.py / fetch_seerapi_media.py
     （一次进程内 HTTP 批量，CLI 每次启动约 2.5s，不适合 2000+ 次调用）
 
 用法:

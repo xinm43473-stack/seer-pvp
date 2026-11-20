@@ -181,7 +181,7 @@ python scripts/rebuild_view.py
 - **重点技能只认 `key_skills`**：`keyStateOf(n)` ＋ `isKeySkill()`，判定式就是按名称命中，**没有第二条通路**；第五／神谕／特训只影响 `orderedSkills()` 的展示档位，不再自动算重点（曾导致 218 只里 54 只编辑与显示不一致）。
 - **技能表顺序**：`orderedSkills()` 三处共用（图鉴技能表、技能卡选择器、编辑面板「重点技能」候选）。档位＝重点（按 `key_skills` 顺序）→ 第五 → 神谕 → 特训 → 其余，同档内按源顺序**倒序**（学习等级升序 → 高等级在前）。不要整表 `reverse()`。
 - **定位只有一组**：界面「定位」＝6 大类词表 ＋「特色」自定义文本。数据层仍写 `classes`／`roles`，`splitRoleTags()` 自动分流，图鉴与筛选用 `roleTagsOf(n)` 合并读。**`classes` 必须留在 schema fields 里（`hidden:true`）**，删了会把用户选的分类丢掉；`roles` 的校验器是 `_validate_roles()`。
-- **备注只有一处**：`roster[*].note`＝实战备注＋核心机制合并文本（`migrate_roles_note.py`，幂等）；`mechanics`／`editor_note` 只作历史兜底。
+- **备注只有一处**：`roster[*].note`＝实战备注＋核心机制合并文本（2026-11-18 一次性迁移，脚本已退役）；`mechanics`／`editor_note` 只作历史兜底。
 - **软删除是「标记」不是「删节点」**：`deletions[id]` 写 localStorage，节点始终留在 `DATA.nodes`（画布、体系、连线都还要用它）。所以
   - **「在不在左侧列表」只认 `inListOf(k)`**（存在且未删除）。库面板的「已添加／添加」、`libOnly`「只看未添加」、重复添加拦截、标签浮层跳转、hash 选择全走它；直接写 `!!nodeOf(k)` 就是 2026-11-19 那个 bug——删掉的精灵在库里永远显示「已添加」、点了也没反应。
   - 加回列表统一走 `ensureInList(id)`：`present`／`restored`（清删除标记）／`added`（写 `library.adds`）／`none`（无魂印），别再各写一份。

@@ -16,7 +16,7 @@ Local sources (no network at build time):
   * data/seerapi/spirit_media.json                 - local WebP images
   * references/catalog/spirit_master_list.csv      - whether the id is already listed
 
-Run scripts/fetch_library_full.py once to fill the raw cache, then:
+（原始缓存已落盘；重建直接运行：）
     python scripts/build_spirit_library.py
 """
 
@@ -41,7 +41,7 @@ SKILL_CAP = 30
 H5 = "https://seerh5.61.com/resource/assets/"
 
 def local_image(kind: str, sid: int) -> str:
-    """本地已下载的头像/立绘（scripts/fetch_library_images.py 落盘）。"""
+    """本地已下载的头像/立绘（assets/seerapi/pet_*，离线落盘）。"""
     for ext in (".webp", ".png"):
         rel = f"assets/seerapi/pet_{kind}/{sid}{ext}"
         path = ROOT / rel

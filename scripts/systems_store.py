@@ -7,7 +7,7 @@
     清PP体系.json       单个体系（扁平存 system 对象，首键 $schema）
 
 这样单个体系可以独立拷贝／转发；前端「导入体系文件」读的就是这种格式，
-`split_systems.py` / `merge_systems.py` 负责与旧的聚合文件 systems.json 互转。
+`merge_systems.py` 负责把单体系文件合回聚合文件 systems.json（单体系文件本身即事实源）。
 """
 from __future__ import annotations
 

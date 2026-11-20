@@ -19,7 +19,7 @@
 而带格式化文本的那条机制完全不同，谁生效必须抓网页／公告人工核。
 
 用法:
-  python scripts/patch_seerapi_formats.py   # 先补 has_format 字段
+  （has_format 缺失时按「无格式化文本」处理；全量重抓走 fetch_seerapi.py）
   python scripts/compare_souls.py --json
 """
 import json
